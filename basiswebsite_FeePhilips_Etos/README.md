@@ -45,7 +45,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="/Users/feephilips/Desktop/basiswebsite_FeePhilips_Etos/images/home2.jpeg" width="375px" alt="2">
 
   <img src="/Users/feephilips/Desktop/basiswebsite_FeePhilips_Etos/images/home3.jpeg" width="375px" alt="3">
-
+![home1](https://github.com/feephilips/Fed-2/assets/118175206/a9120611-a840-4bbb-9216-c43ab9603b6b)
   <img src="/Users/feephilips/Desktop/basiswebsite_FeePhilips_Etos/images/home4.jpeg" width="375px" alt="4">
 
   <img src="/Users/feephilips/Desktop/basiswebsite_FeePhilips_Etos/images/home5.jpeg" width="375px" alt="5">
