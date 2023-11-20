@@ -40,7 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home page
-  <img src="/Users/feephilips/Desktop/basiswebsite_FeePhilips_Etos/readme-images/home1.jpeg" width="375px" alt="1">
+  <img src="readme-images/home1.jpeg" width="375px" alt="1">
 
   <img src="/Users/feephilips/Desktop/basiswebsite_FeePhilips_Etos/images/home2.jpeg" width="375px" alt="2">
 
