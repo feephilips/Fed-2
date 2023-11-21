@@ -40,33 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home page
-  <img src="readme-images/home1.jpeg" width="375px" alt="1">
-
-  <img src="readme-images/home2.jpeg" width="375px" alt="2">
-
-  <img src="readme-images/home3.jpeg" width="375px" alt="3">
-
-  <img src="readme-images/home4.jpeg" width="375px" alt="4">
-
-  <img src="readme-images/home5.jpeg" width="375px" alt="5">
-
-  <img src="readme-images/home6.jpeg" width="375px" alt="6">
-
-  <img src="readme-images/home7.jpeg" width="375px" alt="7">
-
-  <img src="readme-images/home8.jpeg" width="375px" alt="8">
-
-  <img src="readme-images/home9.jpeg" width="375px" alt="9">
-
-  <img src="readme-images/home10.jpeg" width="375px" alt="10">
-
-  <img src="readme-images/home11.jpeg" width="375px" alt="11">
-
-  <img src="readme-images/home12.jpeg" width="375px" alt="12">
+  <img src="readme-images/homepage.png" width="375px" alt="Homepage">
   
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Pagina 2, make-up
+  <img src="readme-images/make-up_pagina.png" width="375px" alt="Make-up pagina">
  
 </details>
 
