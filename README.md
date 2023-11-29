@@ -43,7 +43,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/homepage.png" width="375px" alt="Homepage">
   
   #### Screenshot(s) van de tweede pagina (small screen):
-  Pagina 2, make-up
+  Pagina 2,
   <img src="readme-images/make-up_pagina.png" width="375px" alt="Make-up pagina">
  
 </details>
@@ -68,17 +68,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-![Breakdown schets - Frame 1](https://github.com/feephilips/Fed-2/assets/118175206/90ab24ed-1a80-4ef7-a728-e67da4376493)
-
+  <img src="readme-images/" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-![Breakdown schets - Frame 2](https://github.com/feephilips/Fed-2/assets/118175206/812043ad-6a5e-494d-94d6-f6507821a415)
-
+  <img src="readme-images/helepagina.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/menu" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -92,13 +88,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Ik heb mn breakdown schets af en klaar voor het feedback moment. Ik heb hem op miro staan. Hie staat de link: https://miro.com/app/board/uXjVNKPZtxQ=/.
-  Ook heb ik alles in de HTML staan, om zo te kijken of alles goed staat, voor tijdens het feedback gesprek. Sommige dingen twijfel ik nog over dus ik met <!-- in de code erbij gezet. 
+  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb mn breakdown schets af en klaar voor het feedback moment. Ik heb hem op miro staan. Hie staat de link: https://miro.com/app/board/uXjVNKPZtxQ=/. Ook heb ik alles in de HTML staan, om zo te kijken of alles goed staat, voor tijdens het feedback gesprek. Sommige dingen twijfel ik nog over dus ik met <!-- in de code erbij gezet.
 
-  Ik heb aan de zijkant mijn vragen neer gezet op miro. Ik heb vooral vragen over H2 en H3. Soms ook hoe ik dingen het beste kan groeperen. Ik hoop dat ik na de feedback van morgen duidelijk heb of mijn html opbouw klopt. EN deze kloppend kan maken hierna. Dan ga ik alle img etc toevoegen. 
+Ik heb aan de zijkant mijn vragen neer gezet op miro. Ik heb vooral vragen over H2 en H3. Soms ook hoe ik dingen het beste kan groeperen. Ik hoop dat ik na de feedback van morgen duidelijk heb of mijn html opbouw klopt. EN deze kloppend kan maken hierna. Dan ga ik alle img etc toevoegen.
 
-vragen morgen:
-Ik heb ook nog wat vragen over de toegankelijkheid test die ik gedaan heb. sommige onderdelen snap ik niet of zijn niet van toepassing. 
+vragen morgen: Ik heb ook nog wat vragen over de toegankelijkheid test die ik gedaan heb. sommige onderdelen snap ik niet of zijn niet van toepassing.
+
 
 
   ### Agenda voor meeting
