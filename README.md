@@ -69,9 +69,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+![Breakdown schets - Frame 1](https://github.com/feephilips/Fed-2/assets/118175206/90ab24ed-1a80-4ef7-a728-e67da4376493)
+
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+![Breakdown schets - Frame 2](https://github.com/feephilips/Fed-2/assets/118175206/812043ad-6a5e-494d-94d6-f6507821a415)
+
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
