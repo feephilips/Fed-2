@@ -14,54 +14,110 @@
 
 <body>
 	<header>
-		<!-- het menu -->
-        <nav>
-			<img src="./images/Menu.png" alt="Het menu">
-			
-			<h1>Categorieën</h1>
-			<ul>
-			  <li><a href="#">Merken</a></li>
-			  <li><a href="#">Beauty</a></li>
-			  <li><a href="#">Verzorging</a></li>
-			  <li><a href="#">Gezondheid</a></li>
-			  <li><a href="#">Zwanger,Baby & Kind</a></li>
-			  <li><a href="#">thuis & Op reis</a></li>
-			  <li><a href="#">Cadeaus</a></li>
-			  <li><a href="#">Eerder Gekocht</a></li>
-			</ul>
-
-			<h1>Acount</h1>
-			<ul>
-			  <li><a href="#">Inloggen</a></li>
-			  <li><a href="#">Folder acties</a></li>
-			  <li><a href="#">Mijn Etos</a></li>
-			  <li><a href="#">Service</a></li>
-			  <li><a href="#">Winkeld</a></li>
-		
-			</ul>
-		</nav>
-
 		<!-- het logo -->
 		<a href="#index.html">
-			<img src="./images/etos_logo.png" alt="Etos logo, link naar de homepagina">
+			<img src="./images/etos_logo.png" alt="Ga naar de home pagina">
 		</a>
-			
-		<!-- links boven aan -->
-		<section>
+		
+		<!-- de open button -->
+		<!-- de button is niet relevant voor screenreaders -->
+		<!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" />Menu</button>
+		
+		
+		<!--  het menu -->
+		<nav>
+		  <!-- de sluit button -->
+		  <!-- de button is ook niet relevant voor screenreaders -->
+		  <button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" />Sluit</button>
+		  
+		  <h2>Categorieën</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="" alt="">
+						<span> "Folder acties"</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="" alt="">
+						<span> "Merken"</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="" alt="">
+						<span> "Beauty"</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="" alt="">
+						<span> "Verzorging"</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="" alt="">
+						<span> "Gezondheid"</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="" alt="">
+						<span> "Zwanger, Baby & Kind "</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="" alt="">
+						<span> "Thuis & Op Reis"</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="" alt="">
+						<span> "Cadeaus"</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="" alt="">
+						<span> "Eerder gekocht"</span>
+					</a>
+				</li>
+				<li>
+					<a href=""><span>Folder Acties</span></a>
+				</li>
+				<li>
+					<a href=""><span>Mijn Etos</span></a>
+				</li>
+				<li>
+					<a href=""><span>Service</span></a>
+				</li>
+				<li>
+					<a href=""><span>winkels</span></a>
+				</li>
+			</ul>
+		</nav>
+		
+		<!-- favo's link -->
+		<div>
 			<a href="#"><img src="./images/account.png" alt="Mijn account"></a>
 			<a href="#"><img src="./images/geliked.png" alt="Gelikete items"></a>
 			<a href="#"><img src="./images/winkelmandje.png" alt="winkelmandje"></a>
-		</section>
+		</div>
 
 		<!-- het zoek-formulier -->
+	
 		<form role="search" action="#">
 			<input type="search" name="search" id="search" placeholder="Waar ben je naar opzoek?" autocomplete="off" aria-label="zoeken">
 		</form>
 		<img src="./images/zoekicoon.png" alt="zoek icoon">
+	  </header>
 
-	</header>
-
-	<main>
+<main>
 		<article>
 			<h2>Naïf Stapelkorting</h2>
 			<p>Lekker zacht voor het babyhuidje én je portemonnee. Combineer en profiteer van korting op alle producten van Naïf!</p>
@@ -95,24 +151,32 @@
 		<h2>Log in voor nóg meer voordeel met Mijn Etos</h2>
 		<ul>
 			<li>
-				<h3>Mijn Etos</h3>
-				<a href="">log-in of meld je aan</a>
-				<img src="" alt="Mijn Etos">
+				<a href="">
+					<h3>Mijn Etos</h3>
+					<p>of meld je aan</p>
+					<img src="" alt="Mijn Etos">
+				</a>
 			</li>
 			<li>
-				<h3>Mijn Etos</h3>
-				<a href="">log-in of meld je aan</a>
-				<img src="" alt="Mijn Etos">
+				<a href="">
+					<h3>Mijn Etos</h3>
+					<p>of meld je aan</p>
+					<img src="" alt="Mijn Etos">
+				</a>
 			</li>
 			<li>
-				<h3>Mijn Etos</h3>
-				<a href="">log-in of meld je aan</a>
-				<img src="" alt="Mijn Etos">
+				<a href="">
+					<h3>Mijn Etos</h3>
+					<p>of meld je aan</p>
+					<img src="" alt="Mijn Etos">
+				</a>
 			</li>
 			<li>
-				<h3>Mijn Etos</h3>
-				<a href="">log-in of meld je aan</a>
-				<img src="" alt="Mijn Etos">
+				<a href="">
+					<h3>Mijn Etos</h3>
+					<p>of meld je aan</p>
+					<img src="" alt="Mijn Etos">
+				</a>
 			</li>
 		</ul>
 
@@ -128,25 +192,38 @@
 		<h2>Populaire Black Friday acties</h2>
 		<ul>
 			<li>
-				<a href="#">La Roche-Posay en Vichy
+				<a href="#">
+					<p></p>
 					<img src="" alt="">
-					<img src="" alt="">
+					<p></p>
 				</a>
-				<a href="#">La Roche-Posay en Vichy
+			</li>
+			<li>
+				<a href="#">
+					<p></p>
 					<img src="" alt="">
-					<img src="" alt="">
+					<p></p>
 				</a>
-				<a href="#">La Roche-Posay en Vichy
+			</li>
+			<li>
+				<a href="#">
+					<p></p>
 					<img src="" alt="">
-					<img src="" alt="">
+					<p></p>
 				</a>
-				<a href="#">La Roche-Posay en Vichy
+			</li>
+			<li>
+				<a href="#">
+					<p></p>
 					<img src="" alt="">
-					<img src="" alt="">
+					<p></p>
 				</a>
-				<a href="#">La Roche-Posay en Vichy
+			</li>
+			<li>
+				<a href="#">
+					<p></p>
 					<img src="" alt="">
-					<img src="" alt="">
+					<p></p>
 				</a>
 			</li>
 		</ul>
