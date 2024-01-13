@@ -69,11 +69,16 @@ header > a:first-of-type img {
 	--color-text-zwart:#111;
   --color-text-wit:rgb(255, 255, 255);
 	--color-background:rgb(255, 255, 255);
+  --color-backgroundzwart:rgb(0, 0, 0);;
   --color-backgroundlightpink: rgb(249, 236, 235);
   --color-zoekbalk:rgb(228, 199, 198);
   --color-achtergrond-snelshoppen: rgb(248, 241, 241);
+  --color-backgroundroze: rgb(229, 0, 91);
+  --color-backgroundlichtpink2: rgb(248, 241, 241);
+  --color-buttonpink: rgb(228, 199, 198);
+  --color-backgroundlichtpink3:rgb(242, 227, 227);
 
-  --general-color:#012;
+ 
   --general-background:#fff;
   
   --header-gradient:linear-gradient(#f8a, #fbd);
@@ -474,14 +479,14 @@ header form input{
 /*Ik heb de vorgorde gedaan door middel van display flex, column en dan elk onderdeel een order geven*/
 
 /*Hier padding ipv margin zo dat het geheel roze is er om heen*/
-main article:first-of-type{
+main>article:first-of-type{
   padding: 1em;
   display: flex;
   flex-direction: column;
   background-color: var(--color-backgroundlightpink) ;
 }
 
-main article:first-of-type h2{
+main>article:first-of-type h2{
   font-size: 32px;
   font-family: "IvarDisplay";
   order: 2;
@@ -490,7 +495,7 @@ main article:first-of-type h2{
   margin-left: 0em;
 }
 
-main article:first-of-type p{
+main>article:first-of-type p{
   font-family: "Apercu Pro";
   font-size: 1em;
   line-height: 1.5em;
@@ -499,12 +504,12 @@ main article:first-of-type p{
   order: 3;
 }
 
-main article:first-of-type img{
+main>article:first-of-type img{
   width: 100%;
   order: 1;
 }
 
-main article:first-of-type a{
+main>article:first-of-type a{
   font-size: 0.8em;
   text-align: center;
   font-family: "Apercu Pro";
@@ -514,7 +519,7 @@ main article:first-of-type a{
   background-color: var(--button-color);
   color: var(--color-text-wit);
   border-radius: 0.625em;
-  display: block;
+  display: grid;
   text-decoration: none;
   order: 4;
 }
@@ -522,7 +527,7 @@ main article:first-of-type a{
 /**SNELSHOPPEN*********************************************************************************/
 
 /*Deze geldt voor alle H2 op de pagina*/
-main>h2 {
+main h2 {
   font-family: 'IvarDisplay' ;
   font-size: 1.6em;
   font-weight:600;
@@ -607,7 +612,7 @@ main ul:nth-of-type(2) li a{
 main ul:nth-of-type(3){
   display: grid;
   grid-template-rows: repeat(2, 1fr); /* 2 rijen met dezelfde hoogte */
-  grid-template-columns: repeat(3, 1fr); /* 3 kolommen met dezelfde breedte */
+  grid-template-columns: repeat(3, 262px); /* 3 kolommen met dezelfde breedte */
   gap: 0px; /* Optioneel: voeg wat ruimte toe tussen de cellen */
   overflow: auto;
   max-height: 210px;
@@ -617,7 +622,7 @@ main ul:nth-of-type(3){
 
 main ul:nth-of-type(3) li{
   width:18.7em;
-  height: 4.7em ;
+  
   list-style: none;
   margin: .5em;
   
@@ -626,12 +631,12 @@ main ul:nth-of-type(3) li{
 
 main ul:nth-of-type(3) li a{
   font-family: "Apercu Pro";
+  
   margin: 0em;
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+  display: grid;
+  grid-template-rows:36px 36px ; /* Twee rijen van automatische hoogte */
+  grid-template-columns: 72px 190px; /* Twee kolommen van automatische breedte */
 }
 
 
@@ -639,26 +644,26 @@ main ul:nth-of-type(3) li a{
 
 main ul:nth-of-type(3) li a h3{
   font-size: 1em ;
+  padding-left: .8em;
   color: var(--color-text-zwart);
   order: 2;
   margin: 0em;
   align-content:flex-start;
-  position: absolute;
   padding-top: 1em;
-
+  grid-column: 2/3 ;
+  grid-row: 1/2;
 }
 
 /*met position absolute blijft hi stan*/
 main ul:nth-of-type(3) li a p{
   font-size: 14px;
+  padding-left: 1em;
   color: var(--color-text-zwart);
-  border-bottom: 1px solid #000;
-  max-width: 8.8em;
   order: 3;
   margin: 0em;
   align-content: flex-start;
-  position: absolute;
-  padding-top: 3em;
+  grid-column: 2/3 ;
+  grid-row: 2/3;
 }
 
 
@@ -667,33 +672,669 @@ main ul:nth-of-type(3) li a img{
   max-height: 4.5em ;
   order: 1;
   align-self: flex-start;
-  position: absolute;
+  grid-row: 1/-1;
+  grid-column: 1/2;
 }
 
 /***Diverse Vitamines*******************************************************************************/
 
-main article:nth-of-type(2){
+main>article:nth-of-type(2){
+  min-height: 275px;
   margin: 1em;
-  background-color: var(--button-background);
+  background-color: var(--color-backgroundroze);
   border-radius: 0.625em;
+  display: grid;
+  grid-template-columns: repeat max-content; /* Twee kolommen van gelijke breedte */
+  grid-template-rows: repeat(3, max-content );
+  
 }
 
-main article:nth-of-type(2)>h2{
-margin-left: .5em;
-padding-top: .5em;
-max-width: 5em;
-font-size: 26px;
+main>article:nth-of-type(2)>h2{
+  margin-top: .5em;
+  margin-left: .5em;
+  margin-bottom: 0em;
+  font-size: 26px;
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
 
-main article:nth-of-type(2)>p{
+/*Raar dat hier boven padding .5 en onder 1 hetselfde doet*/
+main>article:nth-of-type(2)>p{
+  display: flex;
+  margin-top: 0em;
+  margin-left: 1em;
+  align-self: flex-start;
   font-family: "Apercu Pro" ;
+  max-width: 18em;
+  font-size: 13px;
   line-height: 2em;
-  max-width: 12em;
-  margin-left: 1em;
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
 
-main article:nth-of-type(2)>a{
+main>article:nth-of-type(2)>a{
+  max-height: 3em;
+  font-family: "Apercu Pro" ;
+  font-size: 13px;
   margin-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 7em;
+  padding: 10px 22px 12px 22px;
+  max-width: fit-content;
+  background-color: var(--color-backgroundzwart) ;
+  color: var(--general-background);
+  text-decoration: none;
+  border-radius: 0.6em;
+  grid-row: 3/4;;
+  grid-column: 1/2;
+}
+
+main>article:nth-of-type(2)>img{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding-right: 2em;
+  width: 225px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  grid-row: 1/-1;
+  grid-column: 2/3;
+}
+/**2e**********************************************************/
+main>article:nth-of-type(3){
+  min-height: 275px;
+  margin: 1em;
+  background-color: var(--color-backgroundroze);
+  border-radius: 0.625em;
+  display: grid;
+  grid-template-columns: repeat max-content; /* Twee kolommen van gelijke breedte */
+  grid-template-rows: repeat(3, max-content );
+  
+}
+
+main>article:nth-of-type(3)>h2{
+  margin-top: .5em;
+  margin-left: .5em;
+  margin-bottom: 0em;
+  font-size: 26px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+
+main>article:nth-of-type(3)>p{
+  display: flex;
+  margin-top: 0em;
+  margin-left: 1em;
+  align-self: flex-start;
+  font-family: "Apercu Pro" ;
+  max-width: 18em;
+  font-size: 13px;
+  line-height: 2em;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+main>article:nth-of-type(3)>a{
+  max-height: 3em;
+  font-family: "Apercu Pro" ;
+  font-size: 13px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 7em;
+  padding: 10px 22px 12px 22px;
+  max-width: fit-content;
+  background-color: var(--color-backgroundzwart) ;
+  color: var(--general-background);
+  text-decoration: none;
+  border-radius: 0.6em;
+  grid-row: 3/4;;
+  grid-column: 1/2;
+}
+
+main>article:nth-of-type(3)>img{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding-right: 2em;
+  width: 225px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  margin: 1em;
+  grid-row: 1/-1;
+  grid-column: 2/3;
+}
+
+
+/**Populaire weekacties******************************************************************************************************/
+
+main ul:nth-of-type(4){
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 0em;
+}
+
+main ul:nth-of-type(4) li{
+  list-style-type: none;
+  background-color: var(--color-backgroundroze);
+  border-radius: 0.625em;
   padding: 1em;
-  background-color: var ;
+  margin: .3em;
+  max-width: 535px ;
+
+}
+
+main ul:nth-of-type(4) a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+main ul:nth-of-type(4) li a img:first-of-type{
+  order:-1;
+  height: 46px;
+  width: 46px;
+}
+
+main ul:nth-of-type(4) li a p{
+  order: 1;
+  font-family: "Apercu Pro" ;
+  font-size: 13px;
+  color: var(--color-text-zwart);
+  text-decoration: none;
+  padding-left: 1em;
+  
+}
+
+main ul:nth-of-type(4) li a img:nth-of-type(2){
+  order: 2;
+  height: 46px;
+  width: 46px;
+  display: flex;
+  margin-left: auto;
+ 
+}
+
+/****NOG 2*****************************************************************************************/
+
+
+main article:nth-of-type(4){
+  min-height: 275px;
+  margin: 1em;
+  background-color: var(--color-backgroundroze);
+  border-radius: 0.625em;
+  display: grid;
+  grid-template-columns: repeat max-content; /* Twee kolommen van gelijke breedte */
+  grid-template-rows: repeat(3, max-content );
+  
+}
+
+main article:nth-of-type(4)>h2{
+  margin-top: .5em;
+  margin-left: .5em;
+  margin-bottom: 0em;
+  font-size: 26px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+/*Raar dat hier boven padding .5 en onder 1 hetselfde doet*/
+main article:nth-of-type(4)>p{
+  display: flex;
+  margin-top: 0em;
+  margin-left: 1em;
+  align-self: flex-start;
+  font-family: "Apercu Pro" ;
+  max-width: 18em;
+  font-size: 13px;
+  line-height: 2em;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+main article:nth-of-type(4)>a{
+  max-height: 3em;
+  font-family: "Apercu Pro" ;
+  font-size: 13px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 7em;
+  padding: 10px 22px 12px 22px;
+  max-width: fit-content;
+  background-color: var(--color-backgroundzwart) ;
+  color: var(--general-background);
+  text-decoration: none;
+  border-radius: 0.6em;
+  grid-row: 3/4;;
+  grid-column: 1/2;
+}
+
+main article:nth-of-type(4)>img{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding-right: 2em;
+  width: 225px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  margin: 1em;
+  grid-row: 1/-1;
+  grid-column: 2/3;
+}
+/**2e**********************************************************/
+main article:nth-of-type(5){
+  min-height: 275px;
+  margin: 1em;
+  background-color: var(--color-backgroundroze);
+  border-radius: 0.625em;
+  display: grid;
+  grid-template-columns: repeat max-content; /* Twee kolommen van gelijke breedte */
+  grid-template-rows: repeat(3, max-content );
+  
+}
+
+main article:nth-of-type(5)>h2{
+  margin-top: .5em;
+  margin-left: .5em;
+  margin-bottom: 0em;
+  font-size: 26px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+/*Raar dat hier boven padding .5 en onder 1 hetselfde doet*/
+main article:nth-of-type(5)>p{
+  display: flex;
+  margin-top: 0em;
+  margin-left: 1em;
+  align-self: flex-start;
+  font-family: "Apercu Pro" ;
+  max-width: 18em;
+  font-size: 13px;
+  line-height: 2em;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+main article:nth-of-type(5)>a{
+  max-height: 3em;
+  font-family: "Apercu Pro" ;
+  font-size: 13px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 7em;
+  padding: 10px 22px 12px 22px;
+  max-width: fit-content;
+  background-color: var(--color-backgroundzwart) ;
+  color: var(--general-background);
+  text-decoration: none;
+  border-radius: 0.6em;
+  grid-row: 3/4;;
+  grid-column: 1/2;
+}
+
+main article:nth-of-type(5)>img{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding-right: 2em;
+  width: 225px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  margin: 1em;
+  grid-row: 1/-1;
+  grid-column: 2/3;
+}
+
+main article:nth-of-type(5){
+  min-height: 275px;
+  margin: 1em;
+  background-color: var(--color-backgroundroze);
+  border-radius: 0.625em;
+  display: grid;
+  grid-template-columns: repeat max-content; /* Twee kolommen van gelijke breedte */
+  grid-template-rows: repeat(3, max-content );
+  
+}
+
+/***ETOSFOLDER*****************************************************************************************************/
+main article:nth-of-type(6){
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-left: 1em;
+  background-color: var(--color-backgroundlichtpink2);
+  border-radius: 0.625em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Twee kolommen van gelijke breedte */
+  grid-template-rows: repeat(4,max-content );
+  row-gap: .5em;
+}
+
+main article:nth-of-type(6)>h2{
+  margin-left: 0em;
+  margin-top: .5em;
+  margin-bottom: 0em;
+  font-size: 26px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+/*Raar dat hier boven padding .5 en onder 1 hetselfde doet*/
+main article:nth-of-type(6)>p{
+  display: flex;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  align-self: flex-start;
+  font-family: "Apercu Pro" ;
+  max-width: 18em;
+  font-size: 13px;
+  line-height: 2em;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+main article:nth-of-type(6)>a:nth-of-type(1){
+  max-height: 3em;
+  font-family: "Apercu Pro" ;
+  font-size: 13px;
+  padding: 10px 22px 12px 22px;
+  max-width: fit-content;
+  background-color: var(--color-buttonpink);
+  color: var(--color-text-zwart);
+  text-decoration: none;
+  border-radius: 0.6em;
+  grid-row: 3/4;;
+  grid-column: 1/2;
+}
+
+main article:nth-of-type(6)>a:nth-of-type(2){
+  max-height: 3em;
+  font-family: "Apercu Pro" ;
+  font-size: 13px;
+  margin-bottom: 1em;
+  padding: 10px 22px 12px 22px;
+  max-width: fit-content;
+  background-color: var(--color-backgroundzwart) ;
+  color: var(--general-background);
+  text-decoration: none;
+  border-radius: 0.6em;
+  grid-row: 4/5;;
+  grid-column: 1/2;
+}
+
+main article:nth-of-type(6)>img{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 1em;
+  max-width: 100%;
+  max-height: 100%;
+  width: 80%;
+  height: auto;
+  grid-row: 1/-1;
+  grid-column: 2/3;
+}
+
+/***AFDVIES EN INSPIRATIE************************************************************************************/
+
+main>div{
+  display: flex;
+  flex-direction: row;
+  margin-right: 1em;
+  overflow: auto;
+}
+
+main>div article:nth-of-type(1){
+  height: 350px;
+  width: 295px;
+  background-image: url('https://www.etos.nl/dw/image/v2/BCTN_PRD/on/demandware.static/-/Sites-etos-nl-Library/default/dwca83dceb/Content/Rich%20Content/RC-Inspiration-Detail-Hero/Gezondheid/Sport_Beginnen_Met_Sporten.jpg?sw=422');
+  background-size: cover; /* Zorgt ervoor dat de achtergrondafbeelding het hele scherm bedekt */
+  background-position: center; /* Plaatst de afbeelding in het midden van het element */
+  background-repeat: no-repeat; 
+  border-radius: 0.625em;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+
+main>div article:nth-of-type(1) a{ 
+  text-decoration: none;
+  margin-left: 1em;
+  display: grid;
+  grid-template-rows: repeat(4, max-content); /* Creëer 4 rijen met gelijke hoogte */
+  
+}
+
+main div article:nth-of-type(1) a h3{
+  font-family: "Apercu Pro";
+  font-size: 14px;
+  color: var(--color-text-wit);
+  order: 1;
+}
+
+main div article:nth-of-type(1) a p{
+  font-family: "Apercu Pro";
+  font-size: 22px;
+  color: var(--color-text-wit);
+  width: 265px;
+  order: 2;
+  margin-top: 0em;
+}
+
+main div article:nth-of-type(1) a>img:nth-of-type(1){
+  width: 24px;
+  min-height: 24px;
+  order: 3;
+  padding-bottom: 1em;
+}
+/*Lastig om deze boven in te krijgen, heb het op meerdere manieren geprobeerd eerst met siplay flex maar omdat je de rest
+onder in wilt hebben schuift het automatisch mee, en als ik een grid maak kan ik hem wel naar boven krijgen + werkt de align self en justify self*/
+main div article:nth-of-type(1) a>img:nth-of-type(2){
+  width: 16.25px;
+  height: 19.14px;
+  justify-self: end;
+  align-self: start;
+  margin-bottom:4.5em;
+  margin-right: 1.5em;
+}
+
+/*2*/
+
+main div>article:nth-of-type(2){
+  height: 350px;
+  width: 295px;
+  background-image: url('https://www.etos.nl/dw/image/v2/BCTN_PRD/on/demandware.static/-/Sites-etos-nl-Library/default/dwcbdbbb88/Content/Rich%20Content/RC-Inspiration-Detail-Hero/Verzorging/Topical_Droge-huid2.jpg?sw=844');
+  background-size: cover; /* Zorgt ervoor dat de achtergrondafbeelding het hele scherm bedekt */
+  background-position: center; /* Plaatst de afbeelding in het midden van het element */
+  background-repeat: no-repeat; 
+  border-radius: 0.625em;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+
+main div>article:nth-of-type(2) a { 
+  text-decoration: none;
+  margin-left: 1em;
+  display: grid;
+  grid-template-rows: repeat(4, max-content); /* Creëer 4 rijen met gelijke hoogte */
+  
+}
+
+main div>article:nth-of-type(2) a h3{
+  font-family: "Apercu Pro";
+  font-size: 14px;
+  color: var(--color-text-wit);
+  order: 1;
+}
+
+main div>article:nth-of-type(2) a p{
+  font-family: "Apercu Pro";
+  font-size: 22px;
+  color: var(--color-text-wit);
+  width: 265px;
+  margin-top: 0em;
+  order: 2;
+}
+
+main div>article:nth-of-type(2) a img:nth-of-type(1){
+  width: 24px;
+  min-height: 24px;
+  order: 3;
+  padding-bottom: 1em;
+}
+/*Lastig om deze boven in te krijgen, heb het op meerdere manieren geprobeerd eerst met siplay flex maar omdat je de rest
+onder in wilt hebben schuift het automatisch mee, en als ik een grid maak kan ik hem wel naar boven krijgen + werkt de align self en justify self*/
+main div>article:nth-of-type(2) a img:nth-of-type(2){
+  width: 16.25px;
+  height: 19.14px;
+  justify-self: end;
+  align-self: start;
+  margin-bottom:6.5em;
+  margin-right: 1.5em;
+}
+
+/*3e*/
+
+main>div article:nth-of-type(3){
+  height: 350px;
+  width: 295px;
+  background-image: url("https://www.etos.nl/dw/image/v2/BCTN_PRD/on/demandware.static/-/Sites-etos-nl-Library/default/dwe30dea8e/Content/Home2Image/Adviescomp/Homepage-adviescomp-keelontsteking.jpg?sw=844");
+  background-size: cover; /* Zorgt ervoor dat de achtergrondafbeelding het hele scherm bedekt */
+  background-position: center; /* Plaatst de afbeelding in het midden van het element */
+  background-repeat: no-repeat; 
+  border-radius: 0.625em;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+
+main>div article:nth-of-type(3) a { 
+  text-decoration: none;
+  margin-left: 1em;
+  display: grid;
+  grid-template-rows: repeat(4, max-content); /* Creëer 4 rijen met gelijke hoogte */
+  
+}
+
+main>div article:nth-of-type(3) a h3{
+  font-family: "Apercu Pro";
+  font-size: 14px;
+  color: var(--color-text-wit);
+  order: 1;
+}
+
+main>div article:nth-of-type(3) a p{
+  font-family: "Apercu Pro";
+  font-size: 22px;
+  color: var(--color-text-wit);
+  width: 265px;
+  margin-top: 0em;
+  order: 2;
+}
+
+main>div article:nth-of-type(3) a img:nth-of-type(1){
+  width: 24px;
+  min-height: 24px;
+  order: 3;
+  padding-bottom: 1em;
+}
+/*Lastig om deze boven in te krijgen, heb het op meerdere manieren geprobeerd eerst met siplay flex maar omdat je de rest
+onder in wilt hebben schuift het automatisch mee, en als ik een grid maak kan ik hem wel naar boven krijgen + werkt de align self en justify self*/
+main>div article:nth-of-type(3) a img:nth-of-type(2){
+  width: 16.25px;
+  height: 19.14px;
+  justify-self: end;
+  align-self: start;
+  margin-bottom:8.533em;
+  margin-right: 1.5em;
+}
+
+
+/******Boven footer*****************************************************************************************/
+
+main>ul:nth-of-type(5){
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: var(--color-backgroundlichtpink3);
+  padding-left: 0em;
+  padding-left: 15px;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 0em;
+  gap: 1.5em;
+}
+
+main>ul:nth-of-type(5) li{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+  justify-content: flex-start;
+  height: 14px;
+}
+
+main>ul:nth-of-type(5) li p{
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  order: 2;
+}
+
+main>ul:nth-of-type(5) li img{
+  height: 11px;
+  width: 12px;
+  order: 1;
+}
+
+/***ETOS*************************************************************************************************/
+footer{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+footer>img{
+  height:48px;
+  width:60px ;
+  margin-top: 1.5em;
+}
+
+footer>p{
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  line-height: 2em;
+}
+
+footer>ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-left: 0em;
+}
+
+footer>li{
+  
+}
+
+footer ul li a{
+  text-decoration: none;
+  font-family: "Apercu Pro" ;
+  font-size: 16px;
 }
