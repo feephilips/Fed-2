@@ -67,8 +67,11 @@ header > a:first-of-type img {
 :root {
 	/* startje */
 	--color-text-zwart:#111;
+  --color-text-lightgray: rgb(132, 132, 132);
   --color-text-wit:rgb(255, 255, 255);
-	--color-background:rgb(255, 255, 255);
+  --color-text-groen:rgb(0, 111, 69);
+	--color-backgroundwit:rgb(255, 255, 255);
+  --color-backgroundfooter:rgb(252, 249, 249);
   --color-backgroundzwart:rgb(0, 0, 0);;
   --color-backgroundlightpink: rgb(249, 236, 235);
   --color-zoekbalk:rgb(228, 199, 198);
@@ -77,19 +80,16 @@ header > a:first-of-type img {
   --color-backgroundlichtpink2: rgb(248, 241, 241);
   --color-buttonpink: rgb(228, 199, 198);
   --color-backgroundlichtpink3:rgb(242, 227, 227);
-
+  --color-background:rgb(255, 255, 255);
+  --color-backgroundproducten:rgb(245, 245, 245);
  
   --general-background:#fff;
-  
-  --header-gradient:linear-gradient(#f8a, #fbd);
-  
-  --menu-gradient:linear-gradient(#8af, #bdf);
-  --menu-border:#46f;
-  
+ 
+  --blackborder: rgb(0, 0, 0);
+  --greenborder: rgb(0, 111, 69);
+
   --button-color:rgb(0, 0, 0);
-  --button-background:#f46;
-  
-  --title-gradient:linear-gradient(#f46 40%, #f8a 80%);
+
 }
 
 /* Simpele CSS Remedy */
@@ -403,7 +403,8 @@ header form input{
 /****************************************************************/
 /* styling voor de header als de browser minimaal 38em breed is */
 /****************************************************************/
-@media (min-width:38em) {
+@media (min-width:1024px) {
+  
   header > button {
     display:none;
   }
@@ -440,8 +441,8 @@ header form input{
 
 /****************************************************************/
 /* styling voor de header als de browser minimaal 57em breed is */
-/****************************************************************/
-@media (min-width:57em) {
+/****************************************************************
+@media (min-width:767px) {
   header > a:last-of-type,
   nav a {
 
@@ -451,7 +452,7 @@ header form input{
 
 
 
-
+/
 
 
 
@@ -479,6 +480,10 @@ header form input{
 /*Ik heb de vorgorde gedaan door middel van display flex, column en dan elk onderdeel een order geven*/
 
 /*Hier padding ipv margin zo dat het geheel roze is er om heen*/
+
+
+
+  
 main>article:first-of-type{
   padding: 1em;
   display: flex;
@@ -505,9 +510,14 @@ main>article:first-of-type p{
 }
 
 main>article:first-of-type img{
-  width: 100%;
   order: 1;
+  max-width: auto;
+  max-height: 220px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
+
 
 main>article:first-of-type a{
   font-size: 0.8em;
@@ -593,7 +603,7 @@ main ul:nth-of-type(2) li{
   margin-left: 1em;
   background-color: var(--general-background);
   list-style: none;
-  border:solid 1px var(--general-color);
+  border:solid 1px var(--color-text-lightgray);
   border-radius: .6em;
   padding: .5em 1em;
 }
@@ -607,7 +617,7 @@ main ul:nth-of-type(2) li a{
   width: auto;
 }
 
-/************************************************************************************/
+/***log in voor nog meer voordeel*********************************************************************************/
 
 main ul:nth-of-type(3){
   display: grid;
@@ -679,14 +689,13 @@ main ul:nth-of-type(3) li a img{
 /***Diverse Vitamines*******************************************************************************/
 
 main>article:nth-of-type(2){
-  min-height: 275px;
+  max-height: 257px;
   margin: 1em;
   background-color: var(--color-backgroundroze);
   border-radius: 0.625em;
   display: grid;
   grid-template-columns: repeat max-content; /* Twee kolommen van gelijke breedte */
   grid-template-rows: repeat(3, max-content );
-  
 }
 
 main>article:nth-of-type(2)>h2{
@@ -698,7 +707,6 @@ main>article:nth-of-type(2)>h2{
   grid-column: 1/2;
 }
 
-/*Raar dat hier boven padding .5 en onder 1 hetselfde doet*/
 main>article:nth-of-type(2)>p{
   display: flex;
   margin-top: 0em;
@@ -718,7 +726,7 @@ main>article:nth-of-type(2)>a{
   font-size: 13px;
   margin-left: 1em;
   margin-bottom: 1em;
-  margin-top: 7em;
+  margin-top: 5.5em;
   padding: 10px 22px 12px 22px;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
@@ -734,24 +742,23 @@ main>article:nth-of-type(2)>img{
   justify-self: center;
   align-self: center;
   padding-right: 2em;
-  width: 225px;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 267px;
+  max-height: 192.984px;
   width: 100%;
   height: auto;
+  margin: 0em;
   grid-row: 1/-1;
   grid-column: 2/3;
 }
 /**2e**********************************************************/
 main>article:nth-of-type(3){
-  min-height: 275px;
+  max-height: 257px;
   margin: 1em;
   background-color: var(--color-backgroundroze);
   border-radius: 0.625em;
   display: grid;
   grid-template-columns: repeat max-content; /* Twee kolommen van gelijke breedte */
   grid-template-rows: repeat(3, max-content );
-  
 }
 
 main>article:nth-of-type(3)>h2{
@@ -762,7 +769,6 @@ main>article:nth-of-type(3)>h2{
   grid-row: 1/2;
   grid-column: 1/2;
 }
-
 
 main>article:nth-of-type(3)>p{
   display: flex;
@@ -783,7 +789,7 @@ main>article:nth-of-type(3)>a{
   font-size: 13px;
   margin-left: 1em;
   margin-bottom: 1em;
-  margin-top: 7em;
+  margin-top: 5.5em;
   padding: 10px 22px 12px 22px;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
@@ -799,20 +805,18 @@ main>article:nth-of-type(3)>img{
   justify-self: center;
   align-self: center;
   padding-right: 2em;
-  width: 225px;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 267px;
+  max-height: 192.984px;
   width: 100%;
   height: auto;
-  margin: 1em;
+  margin: 0em;
   grid-row: 1/-1;
   grid-column: 2/3;
 }
 
-
 /**Populaire weekacties******************************************************************************************************/
 
-main ul:nth-of-type(4){
+main>ul:nth-of-type(4){
   display: flex;
   flex-direction: column;
   padding-left: 1em;
@@ -820,29 +824,29 @@ main ul:nth-of-type(4){
   margin-left: 0em;
 }
 
-main ul:nth-of-type(4) li{
+main>ul:nth-of-type(4) li{
   list-style-type: none;
   background-color: var(--color-backgroundroze);
   border-radius: 0.625em;
   padding: 1em;
   margin: .3em;
-  max-width: 535px ;
+  max-width: 725px ;
 
 }
 
-main ul:nth-of-type(4) a{
+main>ul:nth-of-type(4) a{
   text-decoration: none;
   display: flex;
   flex-direction: row;
 }
 
-main ul:nth-of-type(4) li a img:first-of-type{
+main>ul:nth-of-type(4) li a img:first-of-type{
   order:-1;
   height: 46px;
   width: 46px;
 }
 
-main ul:nth-of-type(4) li a p{
+main>ul:nth-of-type(4) li a p{
   order: 1;
   font-family: "Apercu Pro" ;
   font-size: 13px;
@@ -852,7 +856,7 @@ main ul:nth-of-type(4) li a p{
   
 }
 
-main ul:nth-of-type(4) li a img:nth-of-type(2){
+main>ul:nth-of-type(4) li a img:nth-of-type(2){
   order: 2;
   height: 46px;
   width: 46px;
@@ -863,19 +867,17 @@ main ul:nth-of-type(4) li a img:nth-of-type(2){
 
 /****NOG 2*****************************************************************************************/
 
-
-main article:nth-of-type(4){
-  min-height: 275px;
+main>article:nth-of-type(4){
+  max-height: 257px;
   margin: 1em;
   background-color: var(--color-backgroundroze);
   border-radius: 0.625em;
   display: grid;
   grid-template-columns: repeat max-content; /* Twee kolommen van gelijke breedte */
   grid-template-rows: repeat(3, max-content );
-  
 }
 
-main article:nth-of-type(4)>h2{
+main>article:nth-of-type(4)>h2{
   margin-top: .5em;
   margin-left: .5em;
   margin-bottom: 0em;
@@ -884,8 +886,7 @@ main article:nth-of-type(4)>h2{
   grid-column: 1/2;
 }
 
-/*Raar dat hier boven padding .5 en onder 1 hetselfde doet*/
-main article:nth-of-type(4)>p{
+main>article:nth-of-type(4)>p{
   display: flex;
   margin-top: 0em;
   margin-left: 1em;
@@ -898,13 +899,13 @@ main article:nth-of-type(4)>p{
   grid-column: 1/2;
 }
 
-main article:nth-of-type(4)>a{
+main>article:nth-of-type(4)>a{
   max-height: 3em;
   font-family: "Apercu Pro" ;
   font-size: 13px;
   margin-left: 1em;
   margin-bottom: 1em;
-  margin-top: 7em;
+  margin-top: 5.5em;
   padding: 10px 22px 12px 22px;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
@@ -915,33 +916,31 @@ main article:nth-of-type(4)>a{
   grid-column: 1/2;
 }
 
-main article:nth-of-type(4)>img{
+main>article:nth-of-type(4)>img{
   display: flex;
   justify-self: center;
   align-self: center;
   padding-right: 2em;
-  width: 225px;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 267px;
+  max-height: 192.984px;
   width: 100%;
   height: auto;
-  margin: 1em;
+  margin: 0em;
   grid-row: 1/-1;
   grid-column: 2/3;
 }
 /**2e**********************************************************/
-main article:nth-of-type(5){
-  min-height: 275px;
+main>article:nth-of-type(5){
+  max-height: 257px;
   margin: 1em;
   background-color: var(--color-backgroundroze);
   border-radius: 0.625em;
   display: grid;
   grid-template-columns: repeat max-content; /* Twee kolommen van gelijke breedte */
   grid-template-rows: repeat(3, max-content );
-  
 }
 
-main article:nth-of-type(5)>h2{
+main>article:nth-of-type(5)>h2{
   margin-top: .5em;
   margin-left: .5em;
   margin-bottom: 0em;
@@ -950,8 +949,8 @@ main article:nth-of-type(5)>h2{
   grid-column: 1/2;
 }
 
-/*Raar dat hier boven padding .5 en onder 1 hetselfde doet*/
-main article:nth-of-type(5)>p{
+
+main>article:nth-of-type(5)>p{
   display: flex;
   margin-top: 0em;
   margin-left: 1em;
@@ -964,13 +963,13 @@ main article:nth-of-type(5)>p{
   grid-column: 1/2;
 }
 
-main article:nth-of-type(5)>a{
+main>article:nth-of-type(5)>a{
   max-height: 3em;
   font-family: "Apercu Pro" ;
   font-size: 13px;
   margin-left: 1em;
   margin-bottom: 1em;
-  margin-top: 7em;
+  margin-top: 5.5em;
   padding: 10px 22px 12px 22px;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
@@ -981,34 +980,24 @@ main article:nth-of-type(5)>a{
   grid-column: 1/2;
 }
 
-main article:nth-of-type(5)>img{
+main>article:nth-of-type(5)>img{
   display: flex;
   justify-self: center;
   align-self: center;
   padding-right: 2em;
-  width: 225px;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 267px;
+  max-height: 192.984px;
   width: 100%;
   height: auto;
-  margin: 1em;
+  margin: 0em;
   grid-row: 1/-1;
   grid-column: 2/3;
 }
 
-main article:nth-of-type(5){
-  min-height: 275px;
-  margin: 1em;
-  background-color: var(--color-backgroundroze);
-  border-radius: 0.625em;
-  display: grid;
-  grid-template-columns: repeat max-content; /* Twee kolommen van gelijke breedte */
-  grid-template-rows: repeat(3, max-content );
-  
-}
+
 
 /***ETOSFOLDER*****************************************************************************************************/
-main article:nth-of-type(6){
+main>article:nth-of-type(6){
   margin-left: 1em;
   margin-right: 1em;
   padding-left: 1em;
@@ -1020,7 +1009,7 @@ main article:nth-of-type(6){
   row-gap: .5em;
 }
 
-main article:nth-of-type(6)>h2{
+main>article:nth-of-type(6)>h2{
   margin-left: 0em;
   margin-top: .5em;
   margin-bottom: 0em;
@@ -1030,7 +1019,7 @@ main article:nth-of-type(6)>h2{
 }
 
 /*Raar dat hier boven padding .5 en onder 1 hetselfde doet*/
-main article:nth-of-type(6)>p{
+main>article:nth-of-type(6)>p{
   display: flex;
   margin-top: 0em;
   margin-bottom: 0em;
@@ -1043,7 +1032,7 @@ main article:nth-of-type(6)>p{
   grid-column: 1/2;
 }
 
-main article:nth-of-type(6)>a:nth-of-type(1){
+main>article:nth-of-type(6)>a:nth-of-type(1){
   max-height: 3em;
   font-family: "Apercu Pro" ;
   font-size: 13px;
@@ -1057,7 +1046,7 @@ main article:nth-of-type(6)>a:nth-of-type(1){
   grid-column: 1/2;
 }
 
-main article:nth-of-type(6)>a:nth-of-type(2){
+main>article:nth-of-type(6)>a:nth-of-type(2){
   max-height: 3em;
   font-family: "Apercu Pro" ;
   font-size: 13px;
@@ -1072,7 +1061,7 @@ main article:nth-of-type(6)>a:nth-of-type(2){
   grid-column: 1/2;
 }
 
-main article:nth-of-type(6)>img{
+main>article:nth-of-type(6)>img{
   display: flex;
   justify-self: center;
   align-self: center;
@@ -1171,7 +1160,7 @@ main div>article:nth-of-type(2) a {
   text-decoration: none;
   margin-left: 1em;
   display: grid;
-  grid-template-rows: repeat(4, max-content); /* Creëer 4 rijen met gelijke hoogte */
+  grid-template-rows: repeat(4, max-content);
   
 }
 
@@ -1267,9 +1256,615 @@ main>div article:nth-of-type(3) a img:nth-of-type(2){
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/*****ALLES IN HUIS OM JE WINTERFRIS TE VOELEN****************************************************/
+
+main> ul:nth-of-type(5){
+  height: 453px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 1em;
+  overflow: auto;
+  list-style: none;
+  gap: 1em;
+  padding-left: 1em;
+  margin-bottom: 4em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(1)  a{
+  height: 453px;
+  width: 204px;
+  display: grid;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr); 
+  grid-template-columns: repeat(2, 1fr); 
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  background-color: var(--color-backgroundproducten);
+  padding: .5em;
+  border-radius: 10px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/*titel*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a h3{
+  font-family: "Apercu Pro" ;
+  font-size: 16px;
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+
+/*20stuks*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a p:nth-of-type(1){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  color: var(--color-text-lightgray);
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+/*2.53*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a p:nth-of-type(2){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  text-decoration: line-through;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  display: flex;
+  align-self: flex-start;
+}
+/*1.53*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a p:nth-of-type(3){
+  font-family: "Apercu Pro" ;
+  font-size: 17px;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  padding-top: .5em;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*vegan*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a p:nth-of-type(4){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  border:solid 1px var(--greenborder);
+  border-radius: 10px;
+  color: var(--color-text-groen);
+  background-color: var(--color-backgroundwit);
+  padding: .4em;
+  width: max-content;
+
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-start;
+  margin-top: 0em;
+}
+
+/*virmine*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a img:nth-of-type(1){
+  height: 140px;
+  width: auto;
+  grid-row: 1/4;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+/*sterren*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a img:nth-of-type(2){
+  height: 27px;
+  width: auto;
+  grid-row: 6/7;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+/*mijnetos*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a img:nth-of-type(3){
+  height: 80px;
+  width: 48px;
+  display: flex;
+  justify-self: flex-end;
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+/*voeg toe*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a button:first-of-type{
+  height: 17px;
+  width: 164px;
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  border:solid 2px var(--blackborder);
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-backgroundwit);
+  grid-row: 7/8;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(1)  a>button:nth-of-type(2){
+  height: max-content;
+  width: max-content;
+  border: none;
+  background: none;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(1) a button:nth-of-type(2) img{
+  height: auto;
+  width: 24px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+/********************************************************************8**********************/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a{
+  height: 453px;
+  width: 204px;
+  display: grid;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr); 
+  grid-template-columns: repeat(2, 1fr); 
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  background-color: var(--color-backgroundproducten);
+  padding: .5em;
+  border-radius: 10px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/*titel*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a h3{
+  font-family: "Apercu Pro" ;
+  font-size: 16px;
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+
+/*20stuks*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a p:nth-of-type(1){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  color: var(--color-text-lightgray);
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+/*2.53*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a p:nth-of-type(2){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  text-decoration: line-through;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  display: flex;
+  align-self: flex-start;
+}
+/*1.53*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a p:nth-of-type(3){
+  font-family: "Apercu Pro" ;
+  font-size: 17px;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  padding-top: .5em;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*vegan*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a p:nth-of-type(4){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  border:solid 1px var(--greenborder);
+  border-radius: 10px;
+  color: var(--color-text-groen);
+  background-color: var(--color-backgroundwit);
+  padding: .4em;
+  width: max-content;
+
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-start;
+  margin-top: 0em;
+}
+
+/*virmine*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a img:nth-of-type(1){
+  height: 140px;
+  width: auto;
+  grid-row: 1/4;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+/*sterren*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a img:nth-of-type(2){
+  height: 27px;
+  width: auto;
+  grid-row: 6/7;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+/*mijnetos*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a img:nth-of-type(3){
+  height: 80px;
+  width: 48px;
+  display: flex;
+  justify-self: flex-end;
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+/*voeg toe*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a button:first-of-type{
+  height: 17px;
+  width: 164px;
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  border:solid 2px var(--blackborder);
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-backgroundwit);
+  grid-row: 7/8;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(2)  a>button:nth-of-type(2){
+  height: max-content;
+  width: max-content;
+  border: none;
+  background: none;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(2) a button:nth-of-type(2) img{
+  height: auto;
+  width: 24px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+/********************************************************************8**********************/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a{
+  height: 453px;
+  width: 204px;
+  display: grid;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr); 
+  grid-template-columns: repeat(2, 1fr); 
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  background-color: var(--color-backgroundproducten);
+  padding: .5em;
+  border-radius: 10px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/*titel*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a h3{
+  font-family: "Apercu Pro" ;
+  font-size: 16px;
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+
+/*20stuks*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a p:nth-of-type(1){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  color: var(--color-text-lightgray);
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+/*2.53*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a p:nth-of-type(2){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  text-decoration: line-through;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  display: flex;
+  align-self: flex-start;
+}
+/*1.53*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a p:nth-of-type(3){
+  font-family: "Apercu Pro" ;
+  font-size: 17px;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  padding-top: .5em;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*vegan*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a p:nth-of-type(4){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  border:solid 1px var(--greenborder);
+  border-radius: 10px;
+  color: var(--color-text-groen);
+  background-color: var(--color-backgroundwit);
+  padding: .4em;
+  width: max-content;
+
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-start;
+  margin-top: 0em;
+}
+
+/*virmine*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a img:nth-of-type(1){
+  height: 140px;
+  width: auto;
+  grid-row: 1/4;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+/*sterren*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a img:nth-of-type(2){
+  height: 27px;
+  width: auto;
+  grid-row: 6/7;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+/*mijnetos*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a img:nth-of-type(3){
+  height: 80px;
+  width: 48px;
+  display: flex;
+  justify-self: flex-end;
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+/*voeg toe*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a button:first-of-type{
+  height: 17px;
+  width: 164px;
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  border:solid 2px var(--blackborder);
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-backgroundwit);
+  grid-row: 7/8;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(3)  a>button:nth-of-type(2){
+  height: max-content;
+  width: max-content;
+  border: none;
+  background: none;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(3) a button:nth-of-type(2) img{
+  height: auto;
+  width: 24px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+/********************************************************************8**********************/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a{
+  height: 453px;
+  width: 204px;
+  display: grid;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr); 
+  grid-template-columns: repeat(2, 1fr); 
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  background-color: var(--color-backgroundproducten);
+  padding: .5em;
+  border-radius: 10px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/*titel*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a h3{
+  font-family: "Apercu Pro" ;
+  font-size: 16px;
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+
+/*20stuks*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a p:nth-of-type(1){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  color: var(--color-text-lightgray);
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+/*2.53*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a p:nth-of-type(2){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  text-decoration: line-through;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  display: flex;
+  align-self: flex-start;
+}
+/*1.53*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a p:nth-of-type(3){
+  font-family: "Apercu Pro" ;
+  font-size: 17px;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  padding-top: .5em;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*vegan*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a p:nth-of-type(4){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  border:solid 1px var(--greenborder);
+  border-radius: 10px;
+  color: var(--color-text-groen);
+  background-color: var(--color-backgroundwit);
+  padding: .4em;
+  width: max-content;
+
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-start;
+  margin-top: 0em;
+}
+
+/*virmine*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a img:nth-of-type(1){
+  height: 140px;
+  width: auto;
+  grid-row: 1/4;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+/*sterren*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a img:nth-of-type(2){
+  height: 27px;
+  width: auto;
+  grid-row: 6/7;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+/*mijnetos*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a img:nth-of-type(3){
+  height: 80px;
+  width: 48px;
+  display: flex;
+  justify-self: flex-end;
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+/*voeg toe*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a button:first-of-type{
+  height: 17px;
+  width: 164px;
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  border:solid 2px var(--blackborder);
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-backgroundwit);
+  grid-row: 7/8;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(4)  a>button:nth-of-type(2){
+  height: max-content;
+  width: max-content;
+  border: none;
+  background: none;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(4) a button:nth-of-type(2) img{
+  height: auto;
+  width: 24px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /******Boven footer*****************************************************************************************/
 
-main>ul:nth-of-type(5){
+main>ul:nth-of-type(6){
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -1282,7 +1877,7 @@ main>ul:nth-of-type(5){
   gap: 1.5em;
 }
 
-main>ul:nth-of-type(5) li{
+main>ul:nth-of-type(6) li{
   display: flex;
   flex-direction: row;
   gap: 1em;
@@ -1291,13 +1886,13 @@ main>ul:nth-of-type(5) li{
   height: 14px;
 }
 
-main>ul:nth-of-type(5) li p{
+main>ul:nth-of-type(6) li p{
   font-family: "Apercu Pro" ;
   font-size: 14px;
   order: 2;
 }
 
-main>ul:nth-of-type(5) li img{
+main>ul:nth-of-type(6) li img{
   height: 11px;
   width: 12px;
   order: 1;
@@ -1305,8 +1900,9 @@ main>ul:nth-of-type(5) li img{
 
 /***ETOS*************************************************************************************************/
 footer{
-  margin-left: 1em;
-  margin-right: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: var(--color-backgroundfooter);
 }
 
 footer>img{
@@ -1321,20 +1917,285 @@ footer>p{
   line-height: 2em;
 }
 
-footer>ul{
+footer>ul:nth-of-type(1) {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 1.5em;
   padding-left: 0em;
 }
 
-footer>li{
-  
-}
 
-footer ul li a{
+
+footer ul:nth-of-type(1) li a{
   text-decoration: none;
   font-family: "Apercu Pro" ;
   font-size: 16px;
+  color: var(--color-text-zwart);
 }
+
+footer> div{
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(2, max-content);
+}
+
+footer>div a{
+  font-family: "Apercu Pro" ;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  grid-column:1/2 ;
+  grid-row:1/2;
+  order: 1;
+  max-width: 270px;
+}
+
+footer>div p{
+  font-family: "Apercu Pro";
+  font-size: 12px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  order: 2;
+  margin-top: 0em;
+  max-width: 270px;
+}
+
+footer>div img{
+  display: flex;
+  align-self: center;
+  justify-self: start;
+  height:auto ;
+  width: 100px;
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  order: 3;
+}
+
+footer> ul:nth-of-type(2){
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 0em;
+}
+
+footer> ul:nth-of-type(2) li{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+  justify-content: flex-start;
+  height: 14px;
+  
+}
+
+footer> ul:nth-of-type(2) li p{
+  font-family: "Apercu Pro";
+  font-size: 12px;
+  order:2;
+}
+
+footer> ul:nth-of-type(2) li img{
+  height: 11px;
+  width: 12px;
+  order: 1;
+}
+
+footer>a{
+  text-decoration: none;
+  font-family: "Apercu Pro";
+  font-size: 14px;
+  color: var(--color-text-zwart);
+  background-color: var(--color-backgroundwit);
+  border:solid 1px var(--blackborder);
+  border-radius: 10px;
+  padding-top: .6em;
+  padding-bottom: .6em;
+  padding-left: auto;
+  padding-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*Betaalmethodes*/
+footer> ul:nth-of-type(3){
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap:1em;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding:1em;
+  background-color: var(--color-backgroundwit);
+  margin-bottom: 0em;
+}
+
+
+footer> ul:nth-of-type(3) li img{
+  height:auto ;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+/****SOCIALS***/
+
+footer>ul:nth-of-type(4){
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin-top: 0em;
+}
+
+footer> ul:nth-of-type(4) li img{
+  height:auto ;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/**copyright etc*/
+
+footer>ul:nth-of-type(5){
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+  row-gap: .5em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0em;
+  background-color: var(--color-backgroundwit);
+  border-radius: 10px;
+}
+
+
+footer>ul:nth-of-type(5) p{
+  text-decoration: none;
+  font-family: "Apercu Pro";
+  font-size: 12px;
+  color:var(--color-text-lightgray) ;
+}
+
+footer>ul:nth-of-type(5) a{
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  font-family: "Apercu Pro";
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************************************************************************************************/
+/* Vanaf hier middel scherm*/
+/********************************************************************************************************************************/
+
+@media (min-width:767px) {
+
+  main ul:first-of-type{
+    margin: 1em ;
+    margin-bottom: 3em;
+    padding: 0em;
+    display: flex;
+    flex-direction: row;
+    max-width: 63.9em;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 1.5em;
+    padding-left: 0em;
+  }
+  
+  main ul:first-of-type li{
+    background-color: var(--color-achtergrond-snelshoppen);
+    border-radius: 0.6em ;
+    list-style: none;
+  }
+
+  main ul:first-of-type li a{
+    width: 155px;
+    height: 142px;
+  }
+  
+  main ul:first-of-type a p{
+    text-decoration: none; 
+    font-family: "Apercu Pro" ;
+    font-size: 0.8em;
+    color: var(--color-text-zwart);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    order: 2;
+    padding: .5em;
+    margin:0em
+  }
+  
+  main ul:first-of-type a img{
+    display: flex;
+    height: 6em;
+    width: 4em;
+    order:1;
+  }
+  
+/***POPULAIREMERKEN*******************************************************************************/
+
+main ul:nth-of-type(2){
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3em;
+
+/*Bron: opgezocht via chatGPT omdat ik het nergens anders kon vinden omdat ik de term niet meer wist*/
+  max-width: 63.9em; /* Breedte van de container */
+  overflow-x: auto; /* Horizontale scrollbar weergeven indien nodig */
+  white-space: nowrap;
+  padding-left: 0em;
+}
+
+main ul:nth-of-type(2) li{
+  margin-left: 1em;
+  margin-bottom: 1em;
+  background-color: var(--general-background);
+  list-style: none;
+  border:solid 1px var(--color-text-lightgray);
+  border-radius: .6em;
+  padding: .3em 3.5em;
+}
+
+main ul:nth-of-type(2) li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; 
+  height: 3em;
+  width: auto;
+}
+  
+
+
+
+}
+
+
+
