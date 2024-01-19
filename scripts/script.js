@@ -1,6 +1,7 @@
 // JavaScript Document
 console.log("hi");
 
+
 /******************************/
 /* menu openen de MENU button */
 /******************************/
@@ -8,7 +9,7 @@ console.log("hi");
 /* JOUW CODE HIER - stap 4 */
 
 // stap 1: zoek de menu-button op en sla die op in een variabele
-var openButton = document.querySelector("header > button");
+var openButton = document.querySelector("header div> button");
 
 // stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
 openButton.onclick = openMenu;

@@ -76,13 +76,13 @@ header > a:first-of-type img {
   --color-backgroundlightpink: rgb(249, 236, 235);
   --color-zoekbalk:rgb(228, 199, 198);
   --color-achtergrond-snelshoppen: rgb(248, 241, 241);
-  --color-backgroundroze: rgb(229, 0, 91);
+  --color-backgroundroze: rgb(248, 241, 241);
   --color-backgroundlichtpink2: rgb(248, 241, 241);
   --color-buttonpink: rgb(228, 199, 198);
   --color-backgroundlichtpink3:rgb(242, 227, 227);
   --color-background:rgb(255, 255, 255);
   --color-backgroundproducten:rgb(245, 245, 245);
- 
+  --color-text:#012;
   --general-background:#fff;
  
   --blackborder: rgb(0, 0, 0);
@@ -131,38 +131,23 @@ body {
 /*********************************************************************************/
 /* styling voor de small-screen versie van de website  63.9em*/
 /*********************************************************************************/
-
 /*************/
 /* DE HEADER */
 /*************/
-body {
-  margin:0;
-  background-color:var(--general-background);
-  color:var(--general-color);
-  max-width: 63.9em;
-}
-
 header {
   min-height:4em;
   
   background-color: white;
   line-height:1;
   position: sticky;
-
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
   
   position:sticky;
   top:0;
   
-
-  
   display:grid; 
   grid-template-columns:1fr 1fr; 
+  grid-template-rows: auto;
   grid-auto-flow:dense; 
-  
-  position: ab;
 }
 
 /* alle links in de header */
@@ -192,8 +177,6 @@ header > a:first-of-type img {
 }
 
 
-
-
 /**********/
 /* Menu en logo */
 /**********/
@@ -213,7 +196,7 @@ header > div:nth-of-type(2){
   display:flex;
   justify-content: flex-end;
   column-gap:1.5em;
-  padding-top: 0,5em;
+  align-self: center;
   padding-right: 1em;
 }
 
@@ -283,10 +266,12 @@ header > button {
 
 
 /***************/
-/* SLUIT BUTTON */
+/* SLUIT BUTTON kruistje */
 /***************/
 nav button {
- justify-self:start;
+ justify-self:end;
+ height: 2em;
+ width: 1em;
 }
 
 
@@ -294,27 +279,20 @@ nav button {
 
 
 /************/
-/* HET MENU */
+/* HET MENU open op klein scherm*/
 /************/
-nav {
+header nav{
   padding:1em;
-  
+  background-color: var(--general-background);
   display:grid;
   align-content:start;
   gap:1em;
-  
-  background-image:var(--menu-gradient);
-  
-
   position:fixed;
   left:0;
   right:0;
   top:0;
   bottom:0;
-
   translate:-100% 0%;
-  
-
   transition:translate .3s;
 }
 
@@ -323,9 +301,80 @@ nav.toonMenu {
   translate:0% 0%;
 }
 
+/*eerste ul boven aan de nav*************************************/
+header nav h2{
+  font-family: "Apercu Pro";
+  font-size: 16px;
+}
+
+header nav ul:first-of-type{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+header nav ul:first-of-type li{
+  display: flex;
+  flex-direction: row;
+  
+}
 
 
+header nav ul:first-of-type li a img:first-of-type{
+  order: 1;
+  align-self: center;
+  justify-self: flex-start;
+  padding: 1em;
+  border-radius: 2em ;
+  background-color: rgb(251, 245, 244);
+  height: 3.5em;
+}
 
+header nav ul:first-of-type li a{
+  text-decoration: none;
+  width: 100%;
+  height:4em;
+}
+
+header nav ul:first-of-type li a p{
+  order: 2;
+  font-family: "Apercu Pro";
+  font-size: 14px;
+ 
+  justify-self: center;
+  color: var(--color-text);
+}
+
+header nav ul:first-of-type li img:nth-of-type(2){
+  order: 3;
+  align-self: center;
+  justify-self: flex-end;
+  margin-left: auto;
+  height: .7em;
+}
+
+/*tweede ul boven aan de nav*************************************/
+
+header nav ul:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+header nav ul:nth-of-type(2) li a{
+  text-decoration: none;
+}
+
+header nav ul:nth-of-type(2) li a p{
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+/*De eerste hier niet laten zien*/
+header nav ul:nth-of-type(2) li:nth-of-type(1){
+  display: none;
+}
 
 /*******************/
 /* LIJST MET LINKS */
@@ -339,7 +388,7 @@ nav ul {
 
 
 /************************/
-/* alle onderdelen */
+/* EEN LINK IN DE LIJST */
 /************************/
 nav a {
   /* icon en tekst met gap-je naast elkaar */
@@ -347,22 +396,15 @@ nav a {
   align-items:center;
   column-gap:.25em;
   
-  border-bottom:solid 1px var(--menu-border);
 }
 
-nav a img {
-  width:auto;
-  height:2em;
-}
+
 
 nav a.active {
   font-weight:bold;
 }
 
 
-/************************/
-/* zoekbalk */
-/************************/
 header div:nth-of-type(3){
   display: grid;
   grid-column: 1/-1;
@@ -400,59 +442,7 @@ header form input{
 
 
 
-/****************************************************************/
-/* styling voor de header als de browser minimaal 38em breed is */
-/****************************************************************/
-@media (min-width:1024px) {
-  
-  header > button {
-    display:none;
-  }
-  
-  nav {
-    position:static;
-    translate:unset;
-    padding:0;
-    
-    background:none;
-  }
-  
-  nav button {
-    display:none;
-  }
-  
-  nav ul {
-    display:flex;
-    gap:1em;
-  }
-  
-  nav a {
-    flex-direction:column;
-    
-    border:none;
-  }
-  
-  header > a:last-of-type {
-    flex-direction:column;
-  }
-}
 
-
-
-/****************************************************************/
-/* styling voor de header als de browser minimaal 57em breed is */
-/****************************************************************
-@media (min-width:767px) {
-  header > a:last-of-type,
-  nav a {
-
-    flex-direction:row;
-  }
-}
-
-
-
-/
 
 
 
@@ -1898,6 +1888,10 @@ main>ul:nth-of-type(6) li img{
   order: 1;
 }
 
+main>ul:nth-of-type(6) li img:nth-of-type(2){
+  display: none;
+}
+
 /***ETOS*************************************************************************************************/
 footer{
   padding-left: 1em;
@@ -1925,9 +1919,48 @@ footer>ul:nth-of-type(1) {
   padding-left: 0em;
 }
 
+footer>ul:nth-of-type(2) {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-left: 0em;
+}
 
+footer>ul:nth-of-type(3) {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-left: 0em;
+}
+
+/*hier mee alle andere items uit de ul halen*/
+footer> ul:nth-of-type(1) li:not(:nth-of-type(1)){
+  display: none;
+}
+footer> ul:nth-of-type(2) li:not(:nth-of-type(1)){
+  display: none;
+}
+footer> ul:nth-of-type(3) li:not(:nth-of-type(1)){
+  display: none;
+}
 
 footer ul:nth-of-type(1) li a{
+  text-decoration: none;
+  font-family: "Apercu Pro" ;
+  font-size: 16px;
+  color: var(--color-text-zwart);
+}
+
+footer ul:nth-of-type(2) li a{
+  text-decoration: none;
+  font-family: "Apercu Pro" ;
+  font-size: 16px;
+  color: var(--color-text-zwart);
+}
+
+footer ul:nth-of-type(3) li a{
   text-decoration: none;
   font-family: "Apercu Pro" ;
   font-size: 16px;
@@ -1972,7 +2005,7 @@ footer>div img{
   order: 3;
 }
 
-footer> ul:nth-of-type(2){
+footer> ul:nth-of-type(4){
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -1980,7 +2013,7 @@ footer> ul:nth-of-type(2){
   padding-left: 0em;
 }
 
-footer> ul:nth-of-type(2) li{
+footer> ul:nth-of-type(4) li{
   display: flex;
   flex-direction: row;
   gap: 1em;
@@ -1990,13 +2023,13 @@ footer> ul:nth-of-type(2) li{
   
 }
 
-footer> ul:nth-of-type(2) li p{
+footer> ul:nth-of-type(4) li p{
   font-family: "Apercu Pro";
   font-size: 12px;
   order:2;
 }
 
-footer> ul:nth-of-type(2) li img{
+footer> ul:nth-of-type(4) li img{
   height: 11px;
   width: 12px;
   order: 1;
@@ -2020,7 +2053,7 @@ footer>a{
 
 
 /*Betaalmethodes*/
-footer> ul:nth-of-type(3){
+footer> ul:nth-of-type(5){
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -2035,7 +2068,7 @@ footer> ul:nth-of-type(3){
 }
 
 
-footer> ul:nth-of-type(3) li img{
+footer> ul:nth-of-type(5) li img{
   height:auto ;
   width: 30px;
   display: flex;
@@ -2044,7 +2077,7 @@ footer> ul:nth-of-type(3) li img{
 
 /****SOCIALS***/
 
-footer>ul:nth-of-type(4){
+footer>ul:nth-of-type(6){
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -2056,7 +2089,7 @@ footer>ul:nth-of-type(4){
   margin-top: 0em;
 }
 
-footer> ul:nth-of-type(4) li img{
+footer> ul:nth-of-type(6) li img{
   height:auto ;
   width: 30px;
   display: flex;
@@ -2066,7 +2099,7 @@ footer> ul:nth-of-type(4) li img{
 
 /**copyright etc*/
 
-footer>ul:nth-of-type(5){
+footer>ul:nth-of-type(7){
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -2081,14 +2114,14 @@ footer>ul:nth-of-type(5){
 }
 
 
-footer>ul:nth-of-type(5) p{
+footer>ul:nth-of-type(7) p{
   text-decoration: none;
   font-family: "Apercu Pro";
   font-size: 12px;
   color:var(--color-text-lightgray) ;
 }
 
-footer>ul:nth-of-type(5) a{
+footer>ul:nth-of-type(7) a{
   text-decoration: none;
   color: var(--color-text-zwart);
   font-family: "Apercu Pro";
@@ -2127,6 +2160,9 @@ footer>ul:nth-of-type(5) a{
     padding-left: 0em;
   }
   
+  main h2{
+    font-size: 35px;
+  }
   main ul:first-of-type li{
     background-color: var(--color-achtergrond-snelshoppen);
     border-radius: 0.6em ;
@@ -2141,7 +2177,7 @@ footer>ul:nth-of-type(5) a{
   main ul:first-of-type a p{
     text-decoration: none; 
     font-family: "Apercu Pro" ;
-    font-size: 0.8em;
+    font-size: 14pxem;
     color: var(--color-text-zwart);
     display: flex;
     justify-content: center;
@@ -2191,7 +2227,1101 @@ main ul:nth-of-type(2) li a{
   height: 3em;
   width: auto;
 }
+
+
+
+/*log in voor nog meer voordeel*******************************************************/
+main ul:nth-of-type(3){
+  display: grid;
+  grid-template-rows: repeat(2, 1fr); 
+  grid-template-columns: repeat(3, 400px);
+  gap: 0px; 
+  overflow: auto;
+  max-height: 310px;
+  margin-left: 1em;
+  padding-left: 0em;
+}
+
+main ul:nth-of-type(3) li{
+  width:18.7em;
+  list-style: none;
+  margin: .5em;
   
+}
+
+
+main ul:nth-of-type(3) li a{
+  font-family: "Apercu Pro";
+  margin: 0em;
+  text-decoration: none;
+  display: grid;
+  grid-template-rows:36px 36px ; /* Twee rijen van automatische hoogte */
+  grid-template-columns: 72px 190px; /* Twee kolommen van automatische breedte */
+}
+
+
+/*Het lukt me hier niet om de H3 zonder textdecoration te doen en de p wel? Dus heb de lijn onder de p gezet*/
+
+main ul:nth-of-type(3) li a h3{
+  font-size: 1em ;
+  padding-left: .8em;
+  color: var(--color-text-zwart);
+  order: 2;
+  margin: 0em;
+  align-content:flex-start;
+  padding-top: 1em;
+  grid-column: 2/3 ;
+  grid-row: 1/2;
+}
+
+/*met position absolute blijft hi stan*/
+main ul:nth-of-type(3) li a p{
+  font-size: 14px;
+  padding-left: 1em;
+  color: var(--color-text-zwart);
+  order: 3;
+  margin: 0em;
+  align-content: flex-start;
+  grid-column: 2/3 ;
+  grid-row: 2/3;
+}
+
+
+main ul:nth-of-type(3) li a img{
+  max-width:6.5em ;
+  max-height: 4.5em ;
+  order: 1;
+  align-self: flex-start;
+  grid-row: 1/-1;
+  grid-column: 1/2;
+}
+
+/*populaire weekacties*************************************************/
+
+main>ul:nth-of-type(4){
+  margin-left: 0em;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+main>ul:nth-of-type(4) li{
+  list-style-type: none;
+  background-color: var(--color-backgroundroze);
+  border-radius: 0.625em;
+  padding: 1em;
+  margin: .3em;
+  height: 162px;
+  display: flex;
+  justify-content: center;
+
+}
+
+main>ul:nth-of-type(4) li:nth-of-type(1){
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+main>ul:nth-of-type(4) li:nth-of-type(2){
+  grid-column: 3/5;
+  grid-row: 1/2;
+}
+
+main>ul:nth-of-type(4) li:nth-of-type(3){
+  grid-column: 5/7;
+  grid-row: 1/2;
+}
+
+main>ul:nth-of-type(4) li:nth-of-type(4){
+  grid-column: 1/4;
+  grid-row: 2/3;
+  
+}
+
+main>ul:nth-of-type(4) li:nth-of-type(5){
+  grid-column: 4/7;
+  grid-row: 2/3;
+}
+
+main>ul:nth-of-type(4) a{
+  text-decoration: none;
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+main>ul:nth-of-type(4) li a img:first-of-type{
+  order:-1;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  grid-row: 1/2;  
+  grid-column: 1/-1;
+}
+
+main>ul:nth-of-type(4) li a p{
+  order: 2;
+  font-family: "Apercu Pro" ;
+  font-size: 13px;
+  color: var(--color-text-zwart);
+  text-decoration: none;
+  padding-left: 1em;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  grid-row: 2/3; 
+  grid-column: 1/-1;
+}
+
+main>ul:nth-of-type(4) li a img:nth-of-type(2){
+  order: 1;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  margin-left: auto;
+  grid-row: 1/2; 
+  grid-column: 1/-1;
+  margin-left: 5.5em;
+}
+
+
+
+
+
+/*****ALLES IN HUIS OM JE WINTERFRIS TE VOELEN****************************************************/
+
+main> ul:nth-of-type(5){
+  height: 553px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 1em;
+  overflow: auto;
+  list-style: none;
+  gap: 1em;
+  padding-left: 1em;
+  margin-bottom: 4em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(1)  a{
+  height: 553px;
+  width: 304px;
+  display: grid;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr); 
+  grid-template-columns: repeat(2, 1fr); 
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  background-color: var(--color-backgroundproducten);
+  padding: .5em;
+  border-radius: 10px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/*titel*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a h3{
+  font-family: "Apercu Pro" ;
+  font-size: 18px;
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+
+/*20stuks*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a p:nth-of-type(1){
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  color: var(--color-text-lightgray);
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+/*2.53*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a p:nth-of-type(2){
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  text-decoration: line-through;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  display: flex;
+  align-self: flex-start;
+}
+/*1.53*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a p:nth-of-type(3){
+  font-family: "Apercu Pro" ;
+  font-size: 17px;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  padding-top: .5em;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*vegan*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a p:nth-of-type(4){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  border:solid 1px var(--greenborder);
+  border-radius: 10px;
+  color: var(--color-text-groen);
+  background-color: var(--color-backgroundwit);
+  padding: .4em;
+  width: max-content;
+
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-start;
+  margin-top: 0em;
+}
+
+/*virmine*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a img:nth-of-type(1){
+  height: 190px;
+  width: auto;
+  grid-row: 1/4;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+/*sterren*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a img:nth-of-type(2){
+  height: 27px;
+  width: auto;
+  grid-row: 6/7;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+/*mijnetos*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a img:nth-of-type(3){
+  height: 90px;
+  width: 58px;
+  display: flex;
+  justify-self: flex-end;
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+/*voeg toe*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a button:first-of-type{
+  height: 20px;
+  width: 164px;
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  border:solid 2px var(--blackborder);
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-backgroundwit);
+  grid-row: 7/8;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(1)  a>button:nth-of-type(2){
+  height: max-content;
+  width: max-content;
+  border: none;
+  background: none;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(1) a button:nth-of-type(2) img{
+  height: auto;
+  width: 24px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+/************************************************************************/
+
+
+main> ul:nth-of-type(5) li:nth-of-type(2)  a{
+  height: 553px;
+  width: 304px;
+  display: grid;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr); 
+  grid-template-columns: repeat(2, 1fr); 
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  background-color: var(--color-backgroundproducten);
+  padding: .5em;
+  border-radius: 10px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/*titel*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a h3{
+  font-family: "Apercu Pro" ;
+  font-size: 18px;
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+
+/*20stuks*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a p:nth-of-type(1){
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  color: var(--color-text-lightgray);
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+/*2.53*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a p:nth-of-type(2){
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  text-decoration: line-through;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  display: flex;
+  align-self: flex-start;
+}
+/*1.53*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a p:nth-of-type(3){
+  font-family: "Apercu Pro" ;
+  font-size: 17px;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  padding-top: .5em;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*vegan*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a p:nth-of-type(4){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  border:solid 1px var(--greenborder);
+  border-radius: 10px;
+  color: var(--color-text-groen);
+  background-color: var(--color-backgroundwit);
+  padding: .4em;
+  width: max-content;
+
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-start;
+  margin-top: 0em;
+}
+
+/*virmine*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a img:nth-of-type(1){
+  height: 190px;
+  width: auto;
+  grid-row: 1/4;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+/*sterren*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a img:nth-of-type(2){
+  height: 27px;
+  width: auto;
+  grid-row: 6/7;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+/*mijnetos*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a img:nth-of-type(3){
+  height: 90px;
+  width: 58px;
+  display: flex;
+  justify-self: flex-end;
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+/*voeg toe*/
+main> ul:nth-of-type(5) li:nth-of-type(2)  a button:first-of-type{
+  height: 20px;
+  width: 164px;
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  border:solid 2px var(--blackborder);
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-backgroundwit);
+  grid-row: 7/8;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(2)  a>button:nth-of-type(2){
+  height: max-content;
+  width: max-content;
+  border: none;
+  background: none;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(2) a button:nth-of-type(2) img{
+  height: auto;
+  width: 24px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+/*******************************************************************************/
+
+
+main> ul:nth-of-type(5) li:nth-of-type(3)  a{
+  height: 553px;
+  width: 304px;
+  display: grid;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr); 
+  grid-template-columns: repeat(2, 1fr); 
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  background-color: var(--color-backgroundproducten);
+  padding: .5em;
+  border-radius: 10px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/*titel*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a h3{
+  font-family: "Apercu Pro" ;
+  font-size: 18px;
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+
+/*20stuks*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a p:nth-of-type(1){
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  color: var(--color-text-lightgray);
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+/*2.53*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a p:nth-of-type(2){
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  text-decoration: line-through;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  display: flex;
+  align-self: flex-start;
+}
+/*1.53*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a p:nth-of-type(3){
+  font-family: "Apercu Pro" ;
+  font-size: 17px;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  padding-top: .5em;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*vegan*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a p:nth-of-type(4){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  border:solid 1px var(--greenborder);
+  border-radius: 10px;
+  color: var(--color-text-groen);
+  background-color: var(--color-backgroundwit);
+  padding: .4em;
+  width: max-content;
+
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-start;
+  margin-top: 0em;
+}
+
+/*virmine*/
+main> ul:nth-of-type(5) li:nth-of-type(1)  a img:nth-of-type(1){
+  height: 190px;
+  width: auto;
+  grid-row: 1/4;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+/*sterren*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a img:nth-of-type(2){
+  height: 27px;
+  width: auto;
+  grid-row: 6/7;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+/*mijnetos*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a img:nth-of-type(3){
+  height: 90px;
+  width: 58px;
+  display: flex;
+  justify-self: flex-end;
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+/*voeg toe*/
+main> ul:nth-of-type(5) li:nth-of-type(3)  a button:first-of-type{
+  height: 20px;
+  width: 164px;
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  border:solid 2px var(--blackborder);
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-backgroundwit);
+  grid-row: 7/8;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(3)  a>button:nth-of-type(2){
+  height: max-content;
+  width: max-content;
+  border: none;
+  background: none;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(3) a button:nth-of-type(2) img{
+  height: auto;
+  width: 24px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+/***************************************************************************/
+
+
+
+main> ul:nth-of-type(5) li:nth-of-type(4)  a{
+  height: 553px;
+  width: 304px;
+  display: grid;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr); 
+  grid-template-columns: repeat(2, 1fr); 
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  background-color: var(--color-backgroundproducten);
+  padding: .5em;
+  border-radius: 10px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/*titel*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a h3{
+  font-family: "Apercu Pro" ;
+  font-size: 18px;
+  grid-row: 5/6;
+  grid-column: 1/3;
+}
+
+/*20stuks*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a p:nth-of-type(1){
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  color: var(--color-text-lightgray);
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+/*2.53*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a p:nth-of-type(2){
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  text-decoration: line-through;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  display: flex;
+  align-self: flex-start;
+}
+/*1.53*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a p:nth-of-type(3){
+  font-family: "Apercu Pro" ;
+  font-size: 17px;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  padding-top: .5em;
+  display: flex;
+  align-self: flex-end;
+}
+
+/*vegan*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a p:nth-of-type(4){
+  font-family: "Apercu Pro" ;
+  font-size: 12px;
+  border:solid 1px var(--greenborder);
+  border-radius: 10px;
+  color: var(--color-text-groen);
+  background-color: var(--color-backgroundwit);
+  padding: .4em;
+  width: max-content;
+
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-start;
+  margin-top: 0em;
+}
+
+/*virmine*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a img:nth-of-type(1){
+  height: 190px;
+  width: auto;
+  grid-row: 1/4;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+/*sterren*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a img:nth-of-type(2){
+  height: 27px;
+  width: auto;
+  grid-row: 6/7;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+/*mijnetos*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a img:nth-of-type(3){
+  height: 90px;
+  width: 58px;
+  display: flex;
+  justify-self: flex-end;
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+/*voeg toe*/
+main> ul:nth-of-type(5) li:nth-of-type(4)  a button:first-of-type{
+  height: 20px;
+  width: 164px;
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  border:solid 2px var(--blackborder);
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-backgroundwit);
+  grid-row: 7/8;
+  grid-column: 1/3;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(4)  a>button:nth-of-type(2){
+  height: max-content;
+  width: max-content;
+  border: none;
+  background: none;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(4) a button:nth-of-type(2) img{
+  height: auto;
+  width: 24px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+/**Boven footer*********************************************/
+main>ul:nth-of-type(6){
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: var(--color-backgroundlichtpink3);
+  padding-left: 1em;
+  padding-left: 1em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  gap: 2em;
+  height: 180px;
+}
+
+main>ul:nth-of-type(6) li{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: flex-start;
+  height: 14px;
+  width: 100%;
+}
+
+main>ul:nth-of-type(6) li p{
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  order: 2;
+  text-align: center;
+}
+
+main>ul:nth-of-type(6) li img:nth-of-type(1){
+  display: none;
+}
+
+main>ul:nth-of-type(6) li img:nth-of-type(2){
+  display: block;
+  height: 30px;
+  width: 30px;
+  order: 1;
+}
+
+/*****footer*********************************************************************************/
+
+footer{
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: var(--color-backgroundfooter);
+  display: grid;
+  grid-template-rows: repeat(6, max-content);
+  grid-template-columns: repeat (minmax(250px, 1fr));
+  column-gap: 2em;
+  width: auto;
+  height: auto;
+}
+
+
+footer>img{
+  height:48px;
+  width:60px ;
+  margin-top: 1.5em;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+footer>p{
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  line-height: 2em;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  max-width: 390px;
+  min-width: 256px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+
+footer>ul:nth-of-type(1) {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 0em;
+  margin-top: 1em;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  max-width: 355px;
+  align-self: flex-end;
+}
+
+footer> ul:nth-of-type(1) li:not(:nth-of-type(1)){
+  display: block;
+  width: max-content;
+  height: fit-content;
+}
+
+footer>ul:nth-of-type(2) {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 0em;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  max-width: 155px;
+}
+
+footer> ul:nth-of-type(2) li:not(:nth-of-type(1)){
+  display: block;
+  width: max-content;
+  height: fit-content;
+}
+
+footer>ul:nth-of-type(3) {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 0em;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  max-width: 155px;
+}
+
+footer> ul:nth-of-type(3) li:not(:nth-of-type(1)){
+  display: block;
+  width: max-content;
+  height: fit-content;
+}
+
+footer ul:nth-of-type(1) li a{
+  text-decoration: none;
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  color: var(--color-text-zwart);
+}
+footer ul:nth-of-type(1) li:first-of-type a{
+  font-size: 16px;
+}
+
+footer ul:nth-of-type(2) li a{
+  text-decoration: none;
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  color: var(--color-text-zwart);
+}
+footer ul:nth-of-type(2) li:first-of-type a{
+  font-size: 16px;
+}
+footer ul:nth-of-type(3) li a{
+  text-decoration: none;
+  font-family: "Apercu Pro" ;
+  font-size: 14px;
+  color: var(--color-text-zwart);
+}
+footer ul:nth-of-type(3) li:first-of-type a{
+  font-size: 16px;
+}
+
+footer> div{
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(2, max-content);
+  grid-column: 3/4;
+  grid-row: 2/3;
+  max-width: 355px;
+}
+
+footer>div a{
+  font-family: "Apercu Pro" ;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  grid-column:1/2 ;
+  grid-row:1/2;
+  order: 1;
+  max-width: 270px;
+}
+
+footer>div p{
+  font-family: "Apercu Pro";
+  font-size: 12px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  order: 2;
+  margin-top: 0em;
+  max-width: 150px;
+}
+
+footer>div img{
+  display: flex;
+  align-self: center;
+  justify-self: start;
+  height:auto ;
+  width: 100px;
+  grid-column: 2/3;
+  grid-row: 1/-1;
+  order: 3;
+}
+
+footer> ul:nth-of-type(4){
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-left: 0em;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  max-width: 355px;
+  display: flex;
+  align-self: flex-end;
+}
+
+footer> ul:nth-of-type(4) li{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+  justify-content: flex-start;
+  height: 14px;
+  
+}
+
+footer> ul:nth-of-type(4) li p{
+  font-family: "Apercu Pro";
+  font-size: 12px;
+  order:2;
+}
+
+footer> ul:nth-of-type(4) li img{
+  height: 11px;
+  width: 12px;
+  order: 1;
+}
+
+footer>a{
+  text-decoration: none;
+  font-family: "Apercu Pro";
+  font-size: 14px;
+  color: var(--color-text-zwart);
+  background-color: var(--color-backgroundwit);
+  border:solid 1px var(--blackborder);
+  border-radius: 10px;
+  padding-top: .6em;
+  padding-bottom: .6em;
+  padding-left: auto;
+  padding-right: auto;
+  display: flex;
+  justify-content: center;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  max-width: 355px;
+  max-height: 48px;
+}
+
+
+/*Betaalmethodes*/
+footer> ul:nth-of-type(5){
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap:1em;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding:1em;
+  background-color: var(--color-backgroundwit);
+  margin-bottom: 0em;
+  grid-column: 1/4;
+  grid-row: 4/5;
+}
+
+
+footer> ul:nth-of-type(5) li img{
+  height:auto ;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+/****SOCIALS***/
+
+footer>ul:nth-of-type(6){
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin-top: 0em;
+  grid-column: 1/4;
+  grid-row: 5/6;
+}
+
+footer> ul:nth-of-type(6) li img{
+  height:auto ;
+  width: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/**copyright etc*/
+
+footer>ul:nth-of-type(7){
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+  row-gap: .5em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0em;
+  background-color: var(--color-backgroundwit);
+  border-radius: 10px;
+  grid-column: 1/4;
+  grid-row: 6/7;
+}
+
+
+footer>ul:nth-of-type(7) p{
+  text-decoration: none;
+  font-family: "Apercu Pro";
+  font-size: 12px;
+  color:var(--color-text-lightgray) ;
+}
+
+footer>ul:nth-of-type(7) a{
+  text-decoration: none;
+  color: var(--color-text-zwart);
+  font-family: "Apercu Pro";
+  font-size: 12px;
+}
+
+
+
+
+
 
 
 
@@ -2199,3 +3329,171 @@ main ul:nth-of-type(2) li a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 38em breed is */
+/****************************************************************/
+
+@media (min-width:1023px) {
+  
+
+
+
+
+/*HEADER*******************************************************************/
+  /*De button weg halen om menu te openen*/
+    header div > button {
+      display:none;
+    }
+    
+    nav button {
+      display:none;
+    }
+    
+    nav ul {
+      display:flex;
+      gap:1em;
+    }
+    
+    nav a {
+      flex-direction:column;
+      border:none;
+    }
+    
+    header > a:last-of-type {
+      flex-direction:column;
+    }
+  
+    nav.toonMenu{
+        display: none;
+      }
+  
+  
+    /*****Vanaf hier brede nav**************************************************/
+  
+  
+    header{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 82px 50px ; 
+      padding-left: 2em;
+      padding-right: 2em;
+      background: var(--general-background);
+    }
+  
+    header div:first-of-type{
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+  
+    header > div:nth-of-type(2){
+      display:flex;
+      justify-content: flex-end;
+      column-gap:1.5em;
+      align-self: center;
+      padding-right: 1em;
+      grid-row: 1/2;
+      grid-column:3/4;
+    }
+    
+    header>div:nth-of-type(1) a img{
+      width: auto;
+      height: 50px;
+    }
+  
+    header>div:nth-last-of-type(2) a img{
+      width: auto;
+      height: 25px;
+      padding-left:1.8em;
+    }
+  
+    header> div:nth-of-type(3){
+        display: grid;
+        grid-column: 1/-1;
+        grid-template-columns: 10fr 1fr;
+        background-color: white;
+        grid-row: 1/2;
+        grid-column:2/3;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        
+      }
+    
+    header nav ul:nth-last-of-type(3) li a p {
+      width: max-content;
+    }
+    
+    header> div:nth-of-type(3) form{
+      width: 90%;
+      height: 3.1em;
+      display: grid;
+      grid-column: 1/-1;
+      grid-template-columns: 10fr 1fr;
+      padding: 0.1em 1em 0.1em 1em;
+      border-radius: 2em;
+      border: 1px black solid;
+      justify-self: center;
+      background-color: var(--color-background);
+      margin: 0.5em;
+      align-self: center;
+    }
+  
+    /*De ul list van de nav*/
+    header>nav{
+      grid-row: 2/3;
+      grid-column:1/4;
+      padding-top: 0em;
+      padding-bottom: 0em;
+     
+      /*Hierdoor komt hij weer terug*/
+      position: static;
+      translate: unset;
+    
+      display: flex;
+      flex-direction: row;
+      gap:.5em;
+      width: 985px;
+    }
+  
+    header> nav img{
+      display: none;
+    }
+  
+    header> nav h2{
+      display: none;
+    }
+  
+    /*Deze terug halen voor bovenste balk*/
+    header> nav ul:nth-of-type(2){
+      display: none;
+    }
+  
+    header> nav ul:first-of-type{
+      display: flex;
+      flex-direction: row;
+      gap: 2em;
+      justify-content: center;
+      align-items: flex-start;
+      height: max-content;
+    }
+  
+    header> nav ul:first-of-type p{
+      font-size: 16px;
+      white-space: nowrap;
+    }
+  
+    header>nav ul:first-of-type li a {
+      height: 14px;
+     
+    }
+    /*DE MAIN*************************************************************/
+  }
