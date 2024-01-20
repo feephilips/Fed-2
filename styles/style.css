@@ -678,7 +678,7 @@ main ul:nth-of-type(3) li a img{
 
 /***Diverse Vitamines*******************************************************************************/
 
-main>article:nth-of-type(2){
+main>section:nth-of-type(1) article:nth-of-type(1){
   max-height: 257px;
   margin: 1em;
   background-color: var(--color-backgroundroze);
@@ -688,7 +688,7 @@ main>article:nth-of-type(2){
   grid-template-rows: repeat(3, max-content );
 }
 
-main>article:nth-of-type(2)>h2{
+main>section:nth-of-type(1) article:nth-of-type(1)>h2{
   margin-top: .5em;
   margin-left: .5em;
   margin-bottom: 0em;
@@ -697,7 +697,7 @@ main>article:nth-of-type(2)>h2{
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(2)>p{
+main>section:nth-of-type(1) article:nth-of-type(1)>p{
   display: flex;
   margin-top: 0em;
   margin-left: 1em;
@@ -710,13 +710,13 @@ main>article:nth-of-type(2)>p{
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(2)>a{
+main>section:nth-of-type(1) article:nth-of-type(1)>a{
   max-height: 3em;
   font-family: "Apercu Pro" ;
   font-size: 13px;
   margin-left: 1em;
-  margin-bottom: 1em;
-  margin-top: 5.5em;
+  margin-bottom: 2em;
+  margin-top: 4.5em;
   padding: 10px 22px 12px 22px;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
@@ -727,7 +727,7 @@ main>article:nth-of-type(2)>a{
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(2)>img{
+main>section:nth-of-type(1) article:nth-of-type(1)>img{
   display: flex;
   justify-self: center;
   align-self: center;
@@ -741,7 +741,7 @@ main>article:nth-of-type(2)>img{
   grid-column: 2/3;
 }
 /**2e**********************************************************/
-main>article:nth-of-type(3){
+main>section:nth-of-type(1) article:nth-of-type(2){
   max-height: 257px;
   margin: 1em;
   background-color: var(--color-backgroundroze);
@@ -751,7 +751,7 @@ main>article:nth-of-type(3){
   grid-template-rows: repeat(3, max-content );
 }
 
-main>article:nth-of-type(3)>h2{
+main>section:nth-of-type(1) article:nth-of-type(2)>h2{
   margin-top: .5em;
   margin-left: .5em;
   margin-bottom: 0em;
@@ -760,7 +760,7 @@ main>article:nth-of-type(3)>h2{
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(3)>p{
+main>section:nth-of-type(1) article:nth-of-type(2)>p{
   display: flex;
   margin-top: 0em;
   margin-left: 1em;
@@ -773,13 +773,13 @@ main>article:nth-of-type(3)>p{
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(3)>a{
+main>section:nth-of-type(1) article:nth-of-type(2)>a{
   max-height: 3em;
   font-family: "Apercu Pro" ;
   font-size: 13px;
   margin-left: 1em;
-  margin-bottom: 1em;
-  margin-top: 5.5em;
+  margin-bottom: 2em;
+  margin-top: 4.5em;
   padding: 10px 22px 12px 22px;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
@@ -790,7 +790,7 @@ main>article:nth-of-type(3)>a{
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(3)>img{
+main>section:nth-of-type(1) article:nth-of-type(2)>img{
   display: flex;
   justify-self: center;
   align-self: center;
@@ -857,7 +857,7 @@ main>ul:nth-of-type(4) li a img:nth-of-type(2){
 
 /****NOG 2*****************************************************************************************/
 
-main>article:nth-of-type(4){
+main>section:nth-of-type(2) article:nth-of-type(1){
   max-height: 257px;
   margin: 1em;
   background-color: var(--color-backgroundroze);
@@ -867,7 +867,7 @@ main>article:nth-of-type(4){
   grid-template-rows: repeat(3, max-content );
 }
 
-main>article:nth-of-type(4)>h2{
+main>section:nth-of-type(2) article:nth-of-type(1)>h2{
   margin-top: .5em;
   margin-left: .5em;
   margin-bottom: 0em;
@@ -876,7 +876,7 @@ main>article:nth-of-type(4)>h2{
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(4)>p{
+main>section:nth-of-type(2) article:nth-of-type(1)>p{
   display: flex;
   margin-top: 0em;
   margin-left: 1em;
@@ -889,13 +889,13 @@ main>article:nth-of-type(4)>p{
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(4)>a{
+main>section:nth-of-type(2) article:nth-of-type(1)>a{
   max-height: 3em;
   font-family: "Apercu Pro" ;
   font-size: 13px;
   margin-left: 1em;
-  margin-bottom: 1em;
-  margin-top: 5.5em;
+  margin-bottom: 2em;
+  margin-top: 4.5em;
   padding: 10px 22px 12px 22px;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
@@ -906,7 +906,7 @@ main>article:nth-of-type(4)>a{
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(4)>img{
+main>section:nth-of-type(2) article:nth-of-type(1)>img{
   display: flex;
   justify-self: center;
   align-self: center;
@@ -920,7 +920,7 @@ main>article:nth-of-type(4)>img{
   grid-column: 2/3;
 }
 /**2e**********************************************************/
-main>article:nth-of-type(5){
+main>section:nth-of-type(2) article:nth-of-type(2){
   max-height: 257px;
   margin: 1em;
   background-color: var(--color-backgroundroze);
@@ -930,7 +930,7 @@ main>article:nth-of-type(5){
   grid-template-rows: repeat(3, max-content );
 }
 
-main>article:nth-of-type(5)>h2{
+main>section:nth-of-type(2) article:nth-of-type(2)>h2{
   margin-top: .5em;
   margin-left: .5em;
   margin-bottom: 0em;
@@ -940,7 +940,7 @@ main>article:nth-of-type(5)>h2{
 }
 
 
-main>article:nth-of-type(5)>p{
+main>section:nth-of-type(2) article:nth-of-type(2)>p{
   display: flex;
   margin-top: 0em;
   margin-left: 1em;
@@ -953,13 +953,13 @@ main>article:nth-of-type(5)>p{
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(5)>a{
+main>section:nth-of-type(2) article:nth-of-type(2)>a{
   max-height: 3em;
   font-family: "Apercu Pro" ;
   font-size: 13px;
   margin-left: 1em;
-  margin-bottom: 1em;
-  margin-top: 5.5em;
+  margin-bottom: 2em;
+  margin-top: 4.5em;
   padding: 10px 22px 12px 22px;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
@@ -970,7 +970,7 @@ main>article:nth-of-type(5)>a{
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(5)>img{
+main>section:nth-of-type(2) article:nth-of-type(2)>img{
   display: flex;
   justify-self: center;
   align-self: center;
@@ -987,19 +987,19 @@ main>article:nth-of-type(5)>img{
 
 
 /***ETOSFOLDER*****************************************************************************************************/
-main>article:nth-of-type(6){
-  margin-left: 1em;
-  margin-right: 1em;
+main>section:nth-of-type(3) article:nth-of-type(1){
+  margin: 1em;
   padding-left: 1em;
   background-color: var(--color-backgroundlichtpink2);
   border-radius: 0.625em;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Twee kolommen van gelijke breedte */
+  grid-template-columns: repeat(2, 1fr); 
   grid-template-rows: repeat(4,max-content );
   row-gap: .5em;
+
 }
 
-main>article:nth-of-type(6)>h2{
+main>section:nth-of-type(3) article:nth-of-type(1) >h2{
   margin-left: 0em;
   margin-top: .5em;
   margin-bottom: 0em;
@@ -1009,20 +1009,20 @@ main>article:nth-of-type(6)>h2{
 }
 
 /*Raar dat hier boven padding .5 en onder 1 hetselfde doet*/
-main>article:nth-of-type(6)>p{
+main>section:nth-of-type(3) article:nth-of-type(1) >p{
   display: flex;
   margin-top: 0em;
-  margin-bottom: 0em;
+  margin-bottom: 2em;
   align-self: flex-start;
   font-family: "Apercu Pro" ;
-  max-width: 18em;
+  max-width: 304px;
   font-size: 13px;
   line-height: 2em;
   grid-row: 2/3;
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(6)>a:nth-of-type(1){
+main>section:nth-of-type(3) article:nth-of-type(1)>a:nth-of-type(1){
   max-height: 3em;
   font-family: "Apercu Pro" ;
   font-size: 13px;
@@ -1036,7 +1036,7 @@ main>article:nth-of-type(6)>a:nth-of-type(1){
   grid-column: 1/2;
 }
 
-main>article:nth-of-type(6)>a:nth-of-type(2){
+main>section:nth-of-type(3) article:nth-of-type(1)>a:nth-of-type(2){
   max-height: 3em;
   font-family: "Apercu Pro" ;
   font-size: 13px;
@@ -1049,21 +1049,86 @@ main>article:nth-of-type(6)>a:nth-of-type(2){
   border-radius: 0.6em;
   grid-row: 4/5;;
   grid-column: 1/2;
+  margin-bottom: 2em;
 }
 
-main>article:nth-of-type(6)>img{
+main>section:nth-of-type(3) article:nth-of-type(1)>img{
   display: flex;
   justify-self: center;
   align-self: center;
-  padding: 1em;
-  max-width: 100%;
-  max-height: 100%;
-  width: 80%;
+  padding-right: 2em;
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
   height: auto;
   grid-row: 1/-1;
   grid-column: 2/3;
 }
 
+/*2e etos folder balk*********************************************************/
+main>section:nth-of-type(3) article:nth-of-type(2){
+  margin:1em;
+  padding-left: 1em;
+  background-color: var(--color-backgroundlichtpink2);
+  border-radius: 0.625em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Twee kolommen van gelijke breedte */
+  grid-template-rows: repeat(4,max-content );
+  row-gap: .5em;
+  max-height: 249px;
+}
+
+main>section:nth-of-type(3) article:nth-of-type(2) >h2{
+  margin-left: 0em;
+  margin-top: .5em;
+  margin-bottom: 0em;
+  font-size: 26px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+/*Raar dat hier boven padding .5 en onder 1 hetselfde doet*/
+main>section:nth-of-type(3) article:nth-of-type(2) >p{
+  display: flex;
+  margin-top: 0em;
+  margin-bottom: 2em;
+  align-self: flex-start;
+  font-family: "Apercu Pro" ;
+  max-width: 418em;
+  font-size: 13px;
+  line-height: 2em;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+main>section:nth-of-type(3) article:nth-of-type(2)>a:nth-of-type(1){
+  max-height: 3em;
+  font-family: "Apercu Pro" ;
+  font-size: 13px;
+  padding: 10px 22px 12px 22px;
+  max-width: fit-content;
+  background-color: var(--color-buttonpink);
+  color: var(--color-text-zwart);
+  text-decoration: none;
+  border-radius: 0.6em;
+  grid-row: 3/4;;
+  grid-column: 1/2;
+  margin-bottom: 2em;
+}
+
+
+main>section:nth-of-type(3) article:nth-of-type(2)>img{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 1em;
+  max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: auto;
+  grid-row: 1/-1;
+  grid-column: 2/3;
+}
 /***AFDVIES EN INSPIRATIE************************************************************************************/
 
 main>div{
@@ -3496,4 +3561,195 @@ footer>ul:nth-of-type(7) a{
      
     }
     /*DE MAIN*************************************************************/
+
+    /*naif stapelkorting*/
+
+    main>article:first-of-type {
+      padding: 0em 1em 0em 1em;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, max-content); 
+      row-gap: 1em;
+      background-color: var(--color-backgroundlightpink);
+    }
+    
+    main> article:first-of-type h2{
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin-top: 2em;
+      margin-left: 1em;
+    }
+  
+    main> article:first-of-type p{
+      grid-column: 1/2;
+      grid-row: 2/3;
+      margin-left: 2em;
+      max-width: 510px;
+    }
+    
+    main> article:first-of-type a{
+      grid-column: 1/2;
+      grid-row: 3/4;
+      height: 50px;
+      margin-left: 2em;
+      margin-top: 2em;
+      margin-bottom: 5em;
+      margin-right: 2em;
+    }
+
+    main> article:first-of-type img{
+      grid-column: 2/3;
+      grid-row: 1/4;
+      object-fit: cover;
+
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      max-height: none;
   }
+  
+  
+  /*snel shoppen**********************************************/
+  main ul:first-of-type {
+    max-width: 100%;
+  }
+  /*populaire merken*******************/
+
+  main ul:nth-of-type(2) {
+    max-width: 100%;
+  }
+
+  /*diverse vitamines*/
+  main section:nth-of-type(1){
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  main>section:nth-of-type(1) article:nth-of-type(2){
+    width: 100%;
+  }
+
+  main>section:nth-of-type(1) article:nth-of-type(1){
+    width: 100%;
+  }
+
+  main section:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  main>section:nth-of-type(2) article:nth-of-type(2){
+    width: 100%;
+  }
+
+  main>section:nth-of-type(2) article:nth-of-type(1){
+    width: 100%;
+  }
+
+  /*populaire weekacties*****************/
+  main>ul:nth-of-type(4) {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    overflow-x: auto;
+    
+  }
+
+  main>ul:nth-of-type(4) li{
+    width: 100%;
+  }
+
+  /*folder*****************/
+  main section:nth-of-type(3){
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  main>section:nth-of-type(3) article:nth-of-type(2){
+    width: 100%;
+  }
+
+  main>section:nth-of-type(3) article:nth-of-type(1){
+    width: 100%;
+  }
+
+ /*Advies en inspiratie*************/
+
+ main div{
+  height: 490px;
+  width: 100%;
+  gap: 6em;
+  margin-right: 0em;
+  padding-bottom: 0em;
+ }
+
+ main div article{
+  transform: scale(1.3); /* Pas de schaal aan zoals gewenst (1.5 betekent 150% vergroting) */
+  transform-origin: top left; 
+}
+
+/*Footer*/
+footer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, max-content);
+}
+
+footer> img{
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+footer> p{
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+footer> ul:nth-of-type(1){
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+footer> ul:nth-of-type(2){
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+footer> ul:nth-of-type(3){
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+footer ul:nth-of-type(5){
+  grid-row: 2/3;
+  grid-column: 4/5;
+  max-width:120px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+footer ul:nth-of-type(6){
+  grid-row: 3/4;
+  grid-column: 4/5;
+   max-width:190px;
+  display: flex;
+  justify-self: center;
+  align-self: flex-start;
+  margin-top: 2em;
+}
+
+footer ul:nth-of-type(7){
+  grid-row: 4/5;
+  grid-column: 1/-1;
+}
+
+
+
+}
+
+1260
