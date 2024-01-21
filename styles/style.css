@@ -293,7 +293,8 @@ header nav{
   top:0;
   bottom:0;
   translate:-100% 0%;
-  transition:translate .3s;
+  transition:translate.3s;
+  overflow-y: scroll;
 }
 
 /* als menu open is */
@@ -304,7 +305,7 @@ nav.toonMenu {
 /*eerste ul boven aan de nav*************************************/
 header nav h2{
   font-family: "Apercu Pro";
-  font-size: 16px;
+  font-size: 1em;
 }
 
 header nav ul:first-of-type{
@@ -482,11 +483,11 @@ main>article:first-of-type{
 }
 
 main>article:first-of-type h2{
-  font-size: 32px;
+  font-size: 2em;
   font-family: "IvarDisplay";
   order: 2;
   margin-top: .5em;
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
   margin-left: 0em;
 }
 
@@ -502,7 +503,7 @@ main>article:first-of-type p{
 main>article:first-of-type img{
   order: 1;
   max-width: auto;
-  max-height: 220px;
+  max-height: 13.75em;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -542,7 +543,7 @@ main ul:first-of-type{
   display: grid;
   grid-template-rows: repeat(3, 1fr); /* Drie rijen met gelijke hoogte */
   grid-template-columns: repeat(3, 1fr); /* Drie kolommen met gelijke breedte */
-  gap: 10px; /* Optioneel: voeg ruimte toe tussen de grid-items */
+  gap: 0.625em; /* Optioneel: voeg ruimte toe tussen de grid-items */
 }
 
 main ul:first-of-type li{
@@ -578,9 +579,11 @@ main ul:first-of-type li:last-of-type{
 
 /***POPULAIREMERKEN*******************************************************************************/
 
-main ul:nth-of-type(2){
+main>ul:nth-of-type(2){
   display: flex;
   flex-direction: row;
+  margin: 1em;
+  gap: 1em;
 
 /*Bron: opgezocht via chatGPT omdat ik het nergens anders kon vinden omdat ik de term niet meer wist*/
   max-width: 63.9em; /* Breedte van de container */
@@ -590,21 +593,24 @@ main ul:nth-of-type(2){
 }
 
 main ul:nth-of-type(2) li{
-  margin-left: 1em;
   background-color: var(--general-background);
   list-style: none;
-  border:solid 1px var(--color-text-lightgray);
+  border:solid 0.063em var(--color-text-lightgray);
   border-radius: .6em;
   padding: .5em 1em;
 }
 
-main ul:nth-of-type(2) li a{
+main ul:nth-of-type(2) li a img{
+  width: 3.75em;
+}
+
+main ul:nth-of-type(2) li a {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none; 
   height: 3em;
-  width: auto;
+  width: 5.938em;
 }
 
 /***log in voor nog meer voordeel*********************************************************************************/
@@ -612,10 +618,10 @@ main ul:nth-of-type(2) li a{
 main ul:nth-of-type(3){
   display: grid;
   grid-template-rows: repeat(2, 1fr); /* 2 rijen met dezelfde hoogte */
-  grid-template-columns: repeat(3, 262px); /* 3 kolommen met dezelfde breedte */
-  gap: 0px; /* Optioneel: voeg wat ruimte toe tussen de cellen */
+  grid-template-columns: repeat(3, 16.375em); /* 3 kolommen met dezelfde breedte */
+  gap: 0em; /* Optioneel: voeg wat ruimte toe tussen de cellen */
   overflow: auto;
-  max-height: 210px;
+  max-height: 13.125em;
   margin-left: 1em;
   padding-left: 0em;
 }
@@ -635,8 +641,8 @@ main ul:nth-of-type(3) li a{
   margin: 0em;
   text-decoration: none;
   display: grid;
-  grid-template-rows:36px 36px ; /* Twee rijen van automatische hoogte */
-  grid-template-columns: 72px 190px; /* Twee kolommen van automatische breedte */
+  grid-template-rows:2.25em 2.25em ; 
+  grid-template-columns: 4.5em 11.875em; 
 }
 
 
@@ -656,7 +662,7 @@ main ul:nth-of-type(3) li a h3{
 
 /*met position absolute blijft hi stan*/
 main ul:nth-of-type(3) li a p{
-  font-size: 14px;
+  font-size: 0.875em;
   padding-left: 1em;
   color: var(--color-text-zwart);
   order: 3;
@@ -679,7 +685,7 @@ main ul:nth-of-type(3) li a img{
 /***Diverse Vitamines*******************************************************************************/
 
 main>section:nth-of-type(1) article:nth-of-type(1){
-  max-height: 257px;
+  max-height: 16.063em;
   margin: 1em;
   background-color: var(--color-backgroundroze);
   border-radius: 0.625em;
@@ -692,7 +698,7 @@ main>section:nth-of-type(1) article:nth-of-type(1)>h2{
   margin-top: .5em;
   margin-left: .5em;
   margin-bottom: 0em;
-  font-size: 26px;
+  font-size: 1.625em;
   grid-row: 1/2;
   grid-column: 1/2;
 }
@@ -704,7 +710,7 @@ main>section:nth-of-type(1) article:nth-of-type(1)>p{
   align-self: flex-start;
   font-family: "Apercu Pro" ;
   max-width: 18em;
-  font-size: 13px;
+  font-size: 0.813em;
   line-height: 2em;
   grid-row: 2/3;
   grid-column: 1/2;
@@ -713,11 +719,11 @@ main>section:nth-of-type(1) article:nth-of-type(1)>p{
 main>section:nth-of-type(1) article:nth-of-type(1)>a{
   max-height: 3em;
   font-family: "Apercu Pro" ;
-  font-size: 13px;
+  font-size: 0.813em;
   margin-left: 1em;
   margin-bottom: 2em;
   margin-top: 4.5em;
-  padding: 10px 22px 12px 22px;
+  padding: 0.625em 1.375em 0.75em 1.375em;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
   color: var(--general-background);
@@ -732,8 +738,8 @@ main>section:nth-of-type(1) article:nth-of-type(1)>img{
   justify-self: center;
   align-self: center;
   padding-right: 2em;
-  max-width: 267px;
-  max-height: 192.984px;
+  max-width: 16.688em;
+  max-height: 12.062em;
   width: 100%;
   height: auto;
   margin: 0em;
@@ -742,7 +748,7 @@ main>section:nth-of-type(1) article:nth-of-type(1)>img{
 }
 /**2e**********************************************************/
 main>section:nth-of-type(1) article:nth-of-type(2){
-  max-height: 257px;
+  max-height: 16.063em;
   margin: 1em;
   background-color: var(--color-backgroundroze);
   border-radius: 0.625em;
@@ -755,7 +761,7 @@ main>section:nth-of-type(1) article:nth-of-type(2)>h2{
   margin-top: .5em;
   margin-left: .5em;
   margin-bottom: 0em;
-  font-size: 26px;
+  font-size: 1.625em;
   grid-row: 1/2;
   grid-column: 1/2;
 }
@@ -767,7 +773,7 @@ main>section:nth-of-type(1) article:nth-of-type(2)>p{
   align-self: flex-start;
   font-family: "Apercu Pro" ;
   max-width: 18em;
-  font-size: 13px;
+  font-size: 0.813em;
   line-height: 2em;
   grid-row: 2/3;
   grid-column: 1/2;
@@ -776,11 +782,11 @@ main>section:nth-of-type(1) article:nth-of-type(2)>p{
 main>section:nth-of-type(1) article:nth-of-type(2)>a{
   max-height: 3em;
   font-family: "Apercu Pro" ;
-  font-size: 13px;
+  font-size: 0.813em;
   margin-left: 1em;
   margin-bottom: 2em;
   margin-top: 4.5em;
-  padding: 10px 22px 12px 22px;
+  padding: 0.625em 1.375em 0.75em 1.375em;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
   color: var(--general-background);
@@ -795,8 +801,8 @@ main>section:nth-of-type(1) article:nth-of-type(2)>img{
   justify-self: center;
   align-self: center;
   padding-right: 2em;
-  max-width: 267px;
-  max-height: 192.984px;
+  max-width: 16.688em;
+  max-height: 12.062em;
   width: 100%;
   height: auto;
   margin: 0em;
@@ -1350,11 +1356,13 @@ main> ul:nth-of-type(5) li:nth-of-type(1){
 }
 
 /*titel*/
-main> ul:nth-of-type(5) li:nth-of-type(1) h3{
+main> ul:nth-of-type(5) li:nth-of-type(1) a {
   font-family: "Apercu Pro" ;
   font-size: 16px;
   grid-row: 5/6;
   grid-column: 1/3;
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 /*20stuks*/
@@ -1488,11 +1496,14 @@ main> ul:nth-of-type(5) li:nth-of-type(2)  {
 }
 
 /*titel*/
-main> ul:nth-of-type(5) li:nth-of-type(2) h3{
+main> ul:nth-of-type(5) li:nth-of-type(2) a {
   font-family: "Apercu Pro" ;
   font-size: 16px;
   grid-row: 5/6;
   grid-column: 1/3;
+  text-decoration: none;
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 /*20stuks*/
@@ -1625,11 +1636,13 @@ main> ul:nth-of-type(5) li:nth-of-type(3){
 }
 
 /*titel*/
-main> ul:nth-of-type(5) li:nth-of-type(3) h3{
+main> ul:nth-of-type(5) li:nth-of-type(3) a {
   font-family: "Apercu Pro" ;
   font-size: 16px;
   grid-row: 5/6;
   grid-column: 1/3;
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 /*20stuks*/
@@ -1762,11 +1775,13 @@ main> ul:nth-of-type(5) li:nth-of-type(4){
 }
 
 /*titel*/
-main> ul:nth-of-type(5) li:nth-of-type(4) h3{
+main> ul:nth-of-type(5) li:nth-of-type(4) a{
   font-family: "Apercu Pro" ;
   font-size: 16px;
   grid-row: 5/6;
   grid-column: 1/3;
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 /*20stuks*/
