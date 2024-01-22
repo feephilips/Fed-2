@@ -128,7 +128,10 @@ header > a:first-of-type img {
   --color-backgroundlichtpink3:rgb(242, 227, 227);
   --color-background:rgb(255, 255, 255);
   --color-backgroundproducten:rgb(245, 245, 245);
+  --color-backgrounddonkerroze:rgb(238, 97, 97);
+  --color-backgrounddonkerroze2:rgb(226, 55, 55);
   --color-text:#012;
+
   --general-background:#fff;
  
   --blackborder: rgb(0, 0, 0);
@@ -383,11 +386,15 @@ header nav ul:first-of-type li a{
   height:4em;
 }
 
+header nav ul:first-of-type li a p:hover{
+  color: var(--color-backgrounddonkerroze2);
+  font-size: 1em;
+}
+
 header nav ul:first-of-type li a p{
   order: 2;
   font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
   font-size: 0.875em;
- 
   justify-self: center;
   color: var(--color-text);
 }
@@ -569,6 +576,10 @@ main>article:first-of-type a{
   display: grid;
   text-decoration: none;
   order: 4;
+}
+
+main>article:first-of-type a:hover{
+  background-color: var(--color-backgrounddonkerroze);
 }
 
 /**SNELSHOPPEN*********************************************************************************/
@@ -779,6 +790,10 @@ main>section:nth-of-type(1) article:nth-of-type(1)>a{
   grid-column: 1/2;
 }
 
+main>section:nth-of-type(1) article:nth-of-type(1)>a:hover{
+  background-color: var(--color-backgrounddonkerroze);
+}
+
 main>section:nth-of-type(1) article:nth-of-type(1)>img{
   display: flex;
   justify-self: center;
@@ -840,6 +855,10 @@ main>section:nth-of-type(1) article:nth-of-type(2)>a{
   border-radius: 0.6em;
   grid-row: 3/4;;
   grid-column: 1/2;
+}
+
+main>section:nth-of-type(1) article:nth-of-type(2)>a:hover{
+  background-color: var(--color-backgrounddonkerroze);
 }
 
 main>section:nth-of-type(1) article:nth-of-type(2)>img{
@@ -958,6 +977,10 @@ main>section:nth-of-type(2) article:nth-of-type(1)>a{
   grid-column: 1/2;
 }
 
+main>section:nth-of-type(2) article:nth-of-type(1)>a:hover{
+  background-color: var(--color-backgrounddonkerroze);
+}
+
 main>section:nth-of-type(2) article:nth-of-type(1)>img{
   display: flex;
   justify-self: center;
@@ -1019,6 +1042,10 @@ main>section:nth-of-type(2) article:nth-of-type(2)>a{
   border-radius: 0.6em;
   grid-row: 3/4;;
   grid-column: 1/2;
+}
+
+main>section:nth-of-type(2) article:nth-of-type(2)>a:hover{
+  background-color: var(--color-backgrounddonkerroze);
 }
 
 main>section:nth-of-type(2) article:nth-of-type(2)>img{
@@ -1087,6 +1114,10 @@ main>section:nth-of-type(3) article:nth-of-type(1)>a:nth-of-type(1){
   grid-column: 1/2;
 }
 
+main>section:nth-of-type(3) article:nth-of-type(1)>a:nth-of-type(1):hover{
+  background-color: var(--color-backgrounddonkerroze);
+}
+
 main>section:nth-of-type(3) article:nth-of-type(1)>a:nth-of-type(2){
   max-height: 3em;
   font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
@@ -1101,6 +1132,10 @@ main>section:nth-of-type(3) article:nth-of-type(1)>a:nth-of-type(2){
   grid-row: 4/5;;
   grid-column: 1/2;
   margin-bottom: 2em;
+}
+
+main>section:nth-of-type(3) article:nth-of-type(1)>a:nth-of-type(2):hover{
+  background-color: var(--color-backgrounddonkerroze);
 }
 
 main>section:nth-of-type(3) article:nth-of-type(1)>img{
@@ -1165,6 +1200,10 @@ main>section:nth-of-type(3) article:nth-of-type(2)>a:nth-of-type(1){
   grid-row: 3/4;;
   grid-column: 1/2;
   margin-bottom: 2em;
+}
+
+main>section:nth-of-type(3) article:nth-of-type(2)>a:nth-of-type(1):hover{
+  background-color: var(--color-backgrounddonkerroze);
 }
 
 
@@ -1515,6 +1554,11 @@ main> ul:nth-of-type(5) li:nth-of-type(1) button:first-of-type{
   padding: 1.3em;
 }
 
+main> ul:nth-of-type(5) li:nth-of-type(1) button:first-of-type:hover{
+  background-color: var(--color-backgroundzwart);
+  color: var(--color-text-wit);
+}
+
 main> ul:nth-of-type(5) li:nth-of-type(1)>button:nth-of-type(2){
   height: max;
   width: max-content;
@@ -1654,6 +1698,11 @@ main> ul:nth-of-type(5) li:nth-of-type(2) button:first-of-type{
   justify-self: center;
   align-self: center;
   padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(2) button:first-of-type:hover{
+  background-color: var(--color-backgroundzwart);
+  color: var(--color-text-wit);
 }
 
 main> ul:nth-of-type(5) li:nth-of-type(2)>button:nth-of-type(2){
@@ -1798,6 +1847,11 @@ main> ul:nth-of-type(5) li:nth-of-type(3) button:first-of-type{
   padding: 1.3em;
 }
 
+main> ul:nth-of-type(5) li:nth-of-type(3) button:first-of-type:hover{
+  background-color: var(--color-backgroundzwart);
+  color: var(--color-text-wit);
+}
+
 main> ul:nth-of-type(5) li:nth-of-type(3)>button:nth-of-type(2){
   height: max;
   width: max-content;
@@ -1938,6 +1992,11 @@ main> ul:nth-of-type(5) li:nth-of-type(4) button:first-of-type{
   justify-self: center;
   align-self: center;
   padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(4) button:first-of-type:hover{
+  background-color: var(--color-backgroundzwart);
+  color: var(--color-text-wit);
 }
 
 main> ul:nth-of-type(5) li:nth-of-type(4)>button:nth-of-type(2){
@@ -2163,6 +2222,10 @@ footer>a{
   justify-content: center;
 }
 
+footer>a:hover{
+  background-color: var(--color-backgroundzwart);
+  color: var(--color-text-wit);
+}
 
 /*Betaalmethodes*/
 footer> ul:nth-of-type(5){
@@ -2641,6 +2704,13 @@ main> ul:nth-of-type(5) li:nth-of-type(1) button:first-of-type{
   padding: 1.3em;
 }
 
+
+
+main> ul:nth-of-type(5) li:nth-of-type(1) button:first-of-type:hover{
+  background-color: var(--color-backgroundzwart);
+  color: var(--color-text-wit);
+}
+
 main> ul:nth-of-type(5) li:nth-of-type(1) >button:nth-of-type(2){
   height: max-content;
   width: max-content;
@@ -2783,6 +2853,11 @@ main> ul:nth-of-type(5) li:nth-of-type(2) button:first-of-type{
   justify-self: center;
   align-self: center;
   padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(2) button:first-of-type:hover{
+  background-color: var(--color-backgroundzwart);
+  color: var(--color-text-wit);
 }
 
 main> ul:nth-of-type(5) li:nth-of-type(2) >button:nth-of-type(2){
@@ -2931,6 +3006,11 @@ main> ul:nth-of-type(5) li:nth-of-type(3) button:first-of-type{
   padding: 1.3em;
 }
 
+main> ul:nth-of-type(5) li:nth-of-type(3) button:first-of-type:hover{
+  background-color: var(--color-backgroundzwart);
+  color: var(--color-text-wit);
+}
+
 main> ul:nth-of-type(5) li:nth-of-type(3) >button:nth-of-type(2){
   height: max-content;
   width: max-content;
@@ -3074,6 +3154,11 @@ main> ul:nth-of-type(5) li:nth-of-type(4) button:first-of-type{
   justify-self: center;
   align-self: center;
   padding: 1.3em;
+}
+
+main> ul:nth-of-type(5) li:nth-of-type(4) button:first-of-type:hover{
+  background-color: var(--color-backgroundzwart);
+  color: var(--color-text-wit);
 }
 
 main> ul:nth-of-type(5) li:nth-of-type(4) >button:nth-of-type(2){
@@ -3857,3 +3942,6 @@ main> ul:nth-of-type(5) li.liked img:nth-of-type(1) {
 }
 
 
+main> a:hover{
+  background-color: var(--color-backgrounddonkerroze);
+}
