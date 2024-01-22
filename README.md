@@ -2,13 +2,10 @@
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
 
 
 # Notitites
-FED notities
+FED notities uit de lessen
 
 
 - Section moet wel een heading hebben
@@ -225,11 +222,15 @@ Sticky:
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home page
-  <img src="readme-images/homepage.png" width="375px" alt="Homepage">
+  <img src="readme-images/homepage.png"  alt="Homepage">
   
-  #### Screenshot(s) van de tweede pagina (small screen):
+  #### Screenshot(s) van de eerste pagina (middel screen):
   Pagina 2,
-  <img src="readme-images/make-up_pagina.png" width="375px" alt="Make-up pagina">
+  <img src="readme-images/middelscherm.voorbeeld.png"  alt="homepage">
+
+  #### Screenshot(s) van de eerste pagina (breed screen):
+  Pagina 2,
+  <img src="readme-images/breedschermvoorbeeld1.png"  alt="homepage">
  
 </details>
 
@@ -243,6 +244,20 @@ Sticky:
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   ik heb dit voor nu uitgeschreven in een word document.
+
+  WCAG checklist 
+  - Het onderdeel "log in voor nog meer voordeel" Ziet er niet zo mooi uit qua vromgeving, er staat een zwarte streep onder, als link maar dat maakt het een gek geheel. 
+  - het kleurverschil als je over buttons hovert is niet optimaal, dit wordt van wit naar licht grijs. dit zou een opvallendere kleur kunnen zijn
+  - er zit geen hover op de nav li p items dus als je daar over heen gaat zou de tekst wel een ander kleurtje en groter kunnen worden
+  - Voor mensen die geen rood zien is de website wel heel kleurloos, maar dit is lastig omdat de kleur van etos natuurlijk roze is
+
+  - De html en css is best netjes alleen veel gebruik gemaakt van div, sections en class. 
+  - webkit-box? maar ik weet niet wat dat inhoudt
+
+
+  er door heen met toetsenbrod:
+  - Je kon overal door heen alleen bij de footer ging het niet goed met de linkjes, sommige werden overgslagen
+  -Bij sommige onderdelen werden er twee keer dingen opgenoemd, zoals mak-up icoon, werd er twee keer make-up gezegd
 
 </details>
 
@@ -345,6 +360,16 @@ vragen morgen: Ik heb ook nog wat vragen over de toegankelijkheid test die ik ge
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  - Ik heb er voor gezorgd dat het contrast in kleur beter is geworden als je over buttons hovert. Zo heeft de orginele website een soort grijze kleur, ik heb dit donker roze gemaakt
+  - Bij de border rondom de zoekbalk een zwarte rand gegeven zo weten mensen beter waar ze op kunnen klikken om te zoeken
+  - Ik heb de vormgeving van de "log in voor nog meer voordeel" verbeterd door de strepen weg te halen, zo is het meer een geheel. 
+  - De h2 groote iets groter gemaakt
+
+toetsenbord
+- Je kon eerst niet door de footer heen, dus de betaalmethodes en deels van de andere iconen was niet een link. nu wel.
+
+  Ik vond de officiele website al best netjes over het algemeen. 
+
 </details>
 
 
@@ -357,7 +382,7 @@ vragen morgen: Ik heb ook nog wat vragen over de toegankelijkheid test die ik ge
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik ben eigelijk super lekker op weg. Ik moet nog wel heel veel doen dus de komende 1.5 week moet ik echt even doorpakken. Het menu nog breed maken en wil ik iets doen met javascript en met :hover. Ook nog alles controleren zoals px en em, ook alle alt teksten doorlopen en de extra fonts erbij zetten
 
 
   ### Agenda voor meeting
@@ -390,19 +415,27 @@ vragen morgen: Ik heb ook nog wat vragen over de toegankelijkheid test die ik ge
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/klein.png" width="375px" alt="Uiteindelijke scherm klein formaat">
+  <img src="readme-images/middel.png" width="375px" alt="Uiteindelijke scherm middel formaat">
+  <img src="readme-images/breed.png" width="375px" alt="Uiteindelijke scherm breed formaat">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  - in vergelijking met vorig jaar heb ik zo veel meer geleerd. Ik heb nu de tijd gehead om alles rustig uit te zoeken, vragen te stellen en rustig te proberen zonder in de stress te schieten. Ik vond het een heel fijn blok en ben trots op hoe veel er is gelukt. Ook al denk ik dat er nog super veel te verbeteren valt en ik sommige dingen veel beter had kunnen doen. Maar ik ben wel super blij dat er zo veel is gelukt en het best goed op de echte site is gaan lijken.
+  - Ik snapte nu veel beter waarom we met het toetsenbrod door de site moeten kunnen, vorige keer was me dit veel te chaotisch.
+  - Alles zef uitzoeken ging goed, dit kwam ook omdat ik veel tijd had om er rustig voor te zitten en dus minder snel beelde als het niet goed ging. Dan ging ik gewoon weer wat anders proberen
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  - Sommige dingen zijn ook niet gelukt, zo heb ik de dikte van de lettertypes niet kunnen aanpassen, hier heb ik echt van aslles geprobeert zowel in de html als in css maar het ligt denk ik aan de manier hoe ik de font heb opgeslagen in mn css en waar hij vandaan komt. 
+  - Ook vond ik het lastig om de css zo klein mogelijk te houden. Ik heb nu veel te veel overbodige code waardoor het einde best veel was en ook veel zoeken werd. De code van de bredere schermen werd hier door ook weer veel. Ik kreeg door de code meerdere keren bij verschillende :nth-of-type neer te zetten wel overzicht. Maar de volgende keer zou ik gaan uitzoeken hoe ik dit beter had kunnen doen. 
+  - Soms was het nog even zoeken met display:flex, ik merk dat ik het veel fijner vindt om met grid te werken, dit was soms even puzzelen en ik denk dat ik sommige dingen daar samantisch misschien ook niet goed heb, maar in vergelijking met de vorige keer snapte ik het nu veel beter en wou ik het liefste bij alles grid gebruiken. 
+  - De header heb ik ook met grid gedaan, nu heb ik wel onnodig div's gebruikt. maar omdat iuk aan het begin gelijk met grid iets wou doen heb ik dat toen zo gedaan. In de toekomst zou ik het wel met flex doen. Maar nu was de header in ieder geval wel goed gelukt en had ik gelijk grid beter onder de knie. 
+  - Ik blijf javasript lastig vinden dus heb dat wel aan de hand van de opdrachten van de les gedaan. Ik kan het uitleggen maar heb er wel een handvat bij nodig. Ik zelf denk dat ik in de toekomst hier nog wat filmpjes over zou kijken zo dat ik er meer beeld bij heb, maar heb me nu vooral gefocuts op de html en css begrijpen. 
+- volgende keer de var colors iets beter benamen
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -413,13 +446,13 @@ vragen morgen: Ik heb ook nog wat vragen over de toegankelijkheid test die ik ge
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
-
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Fonts, Bron: https://stackoverflow.com/questions/26976115/how-to-work-around-fontdeck-giving-different-font-families-for-one-font
+  2. Screenreader only: https://css-tricks.com/inclusively-hidden/************/
+  3. ChatGTP, voor het gebruik maken van vragen die je google niet kunt vragen, of als je in het nederlands weet uit te leggen waar je naar opzoek bent, welke engelse term je hiervoor moet gebruiken. Of voor px naar em 
+  4.flexbox,  https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  5. grid, https://css-tricks.com/snippets/css/complete-guide-grid/
+  6. hover, https://codepen.io/shooft/pen/eYbmRKJ
+  7. hartjes, https://codepen.io/shooft/pen/BarqGKx
+  8. menu, https://codepen.io/shooft/pen/MWZYoqa
 
 </details>

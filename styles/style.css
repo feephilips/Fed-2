@@ -1228,6 +1228,7 @@ main>div{
   overflow: auto;
 }
 
+/*chatgtp gebruikt hoe dit kon*/
 main>div article:nth-of-type(1){
   height: 21.875em;
   width: 18.438em;
