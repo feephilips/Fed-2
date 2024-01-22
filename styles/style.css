@@ -53,12 +53,58 @@ header > a:first-of-type img {
   url("https://db.onlinewebfonts.com/t/0406c39d71726a4efe1134bf8e3feb71.ttf")format("truetype"),
   url("https://db.onlinewebfonts.com/t/0406c39d71726a4efe1134bf8e3feb71.svg#Apercu Pro")format("svg");
 }
+@font-face {
+  font-family: "IvarDisplay";
+  src: url("https://db.onlinewebfonts.com/t/22aff4497483f2c6a5e001453850b935.eot");
+  src: url("https://db.onlinewebfonts.com/t/22aff4497483f2c6a5e001453850b935.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/22aff4497483f2c6a5e001453850b935.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/22aff4497483f2c6a5e001453850b935.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/22aff4497483f2c6a5e001453850b935.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/22aff4497483f2c6a5e001453850b935.svg#Ivar Text Hydro Regular")format("svg");
+}
+
+
 
 @font-face {
-  font-family: 'IvarDisplay';
-  src: url('path/to/IvarDisplay.woff') format('woff'),
-       url('path/to/IvarDisplay.ttf') format('truetype');
+  font-family: "Arial";
+  src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot");
+  src: url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/8d223b3ad8d4819e9dcf22757e4cc2c4.svg#Arial")format("svg");
 }
+
+@font-face {
+  font-family: "Neue";
+  src: url("https://db.onlinewebfonts.com/t/319f084531baf60194e74c8d66f482bd.eot");
+  src: url("https://db.onlinewebfonts.com/t/319f084531baf60194e74c8d66f482bd.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/319f084531baf60194e74c8d66f482bd.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/319f084531baf60194e74c8d66f482bd.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/319f084531baf60194e74c8d66f482bd.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/319f084531baf60194e74c8d66f482bd.svg#Neue")format("svg");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.eot");
+  src: url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/5c5a257758cff0acee4d28ff555f3bc5.svg#Helvetica")format("svg");
+}
+
+@font-face {
+  font-family: "Sans";
+  src: url("https://db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.eot");
+  src: url("https://db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/952bab25f6798d6bb1937d67e9bee4dd.svg#Sans")format("svg");
+}
+
 
 
 
@@ -207,9 +253,9 @@ header > div a img {
 }
 
 header > div:nth-of-type(2) a img {
-  width: 20px;;
-  width: 22px;
-  height: 22px;
+  width: 1.25em;;
+  width: 1.375em;
+  height: 1.375em;
 
 
 }
@@ -241,7 +287,7 @@ header button {
 
 /*menu p*/
 header button p{
-  font-family: "Apercu Pro";
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
   font-size: .7em;
   margin: 0em;
   
@@ -304,7 +350,7 @@ nav.toonMenu {
 
 /*eerste ul boven aan de nav*************************************/
 header nav h2{
-  font-family: "Apercu Pro";
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
   font-size: 1em;
 }
 
@@ -339,8 +385,8 @@ header nav ul:first-of-type li a{
 
 header nav ul:first-of-type li a p{
   order: 2;
-  font-family: "Apercu Pro";
-  font-size: 14px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
  
   justify-self: center;
   color: var(--color-text);
@@ -367,8 +413,8 @@ header nav ul:nth-of-type(2) li a{
 }
 
 header nav ul:nth-of-type(2) li a p{
-  font-family: "Apercu Pro";
-  font-size: 16px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 1em;
   color: var(--color-text);
 }
 
@@ -484,7 +530,7 @@ main>article:first-of-type{
 
 main>article:first-of-type h2{
   font-size: 2em;
-  font-family: "IvarDisplay";
+  font-family: "IvarDisplay","Neue","Helvetica", "Arial","Sans";
   order: 2;
   margin-top: .5em;
   margin-bottom: 0.625em;
@@ -492,7 +538,7 @@ main>article:first-of-type h2{
 }
 
 main>article:first-of-type p{
-  font-family: "Apercu Pro";
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
   font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 0em;
@@ -513,7 +559,7 @@ main>article:first-of-type img{
 main>article:first-of-type a{
   font-size: 0.8em;
   text-align: center;
-  font-family: "Apercu Pro";
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
   padding: 1em 1.2em 1em 1.2em;
   margin-top: 1.1em;
   max-width: 6.8em;
@@ -529,7 +575,7 @@ main>article:first-of-type a{
 
 /*Deze geldt voor alle H2 op de pagina*/
 main h2 {
-  font-family: 'IvarDisplay' ;
+  font-family: 'IvarDisplay',"Neue","Helvetica", "Arial","Sans" ;
   font-size: 1.6em;
   font-weight:600;
   margin-left:.8em ;
@@ -554,7 +600,7 @@ main ul:first-of-type li{
 
 main ul:first-of-type li a{
   text-decoration: none; 
-  font-family: "Apercu Pro" ;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
   font-size: 0.8em;
   color: var(--color-text-zwart);
   display: flex;
@@ -636,7 +682,7 @@ main ul:nth-of-type(3) li{
 
 
 main ul:nth-of-type(3) li a{
-  font-family: "Apercu Pro";
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
   
   margin: 0em;
   text-decoration: none;
@@ -708,7 +754,7 @@ main>section:nth-of-type(1) article:nth-of-type(1)>p{
   margin-top: 0em;
   margin-left: 1em;
   align-self: flex-start;
-  font-family: "Apercu Pro" ;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
   max-width: 18em;
   font-size: 0.813em;
   line-height: 2em;
@@ -718,7 +764,7 @@ main>section:nth-of-type(1) article:nth-of-type(1)>p{
 
 main>section:nth-of-type(1) article:nth-of-type(1)>a{
   max-height: 3em;
-  font-family: "Apercu Pro" ;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
   font-size: 0.813em;
   margin-left: 1em;
   margin-bottom: 2em;
@@ -771,7 +817,7 @@ main>section:nth-of-type(1) article:nth-of-type(2)>p{
   margin-top: 0em;
   margin-left: 1em;
   align-self: flex-start;
-  font-family: "Apercu Pro" ;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans"; 
   max-width: 18em;
   font-size: 0.813em;
   line-height: 2em;
@@ -781,7 +827,7 @@ main>section:nth-of-type(1) article:nth-of-type(2)>p{
 
 main>section:nth-of-type(1) article:nth-of-type(2)>a{
   max-height: 3em;
-  font-family: "Apercu Pro" ;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
   font-size: 0.813em;
   margin-left: 1em;
   margin-bottom: 2em;
@@ -826,7 +872,7 @@ main>ul:nth-of-type(4) li{
   border-radius: 0.625em;
   padding: 1em;
   margin: .3em;
-  max-width: 725px ;
+  max-width: 45.313em ;
 
 }
 
@@ -838,14 +884,14 @@ main>ul:nth-of-type(4) a{
 
 main>ul:nth-of-type(4) li a img:first-of-type{
   order:-1;
-  height: 46px;
-  width: 46px;
+  height: 2.875em;
+  width: 2.875em;
 }
 
 main>ul:nth-of-type(4) li a p{
   order: 1;
-  font-family: "Apercu Pro" ;
-  font-size: 13px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.813em;
   color: var(--color-text-zwart);
   text-decoration: none;
   padding-left: 1em;
@@ -854,8 +900,8 @@ main>ul:nth-of-type(4) li a p{
 
 main>ul:nth-of-type(4) li a img:nth-of-type(2){
   order: 2;
-  height: 46px;
-  width: 46px;
+  height: 2.875em;
+  width: 2.875em;
   display: flex;
   margin-left: auto;
  
@@ -864,7 +910,7 @@ main>ul:nth-of-type(4) li a img:nth-of-type(2){
 /****NOG 2*****************************************************************************************/
 
 main>section:nth-of-type(2) article:nth-of-type(1){
-  max-height: 257px;
+  max-height: 16.063em;
   margin: 1em;
   background-color: var(--color-backgroundroze);
   border-radius: 0.625em;
@@ -877,7 +923,7 @@ main>section:nth-of-type(2) article:nth-of-type(1)>h2{
   margin-top: .5em;
   margin-left: .5em;
   margin-bottom: 0em;
-  font-size: 26px;
+  font-size: 1.625em;
   grid-row: 1/2;
   grid-column: 1/2;
 }
@@ -887,9 +933,9 @@ main>section:nth-of-type(2) article:nth-of-type(1)>p{
   margin-top: 0em;
   margin-left: 1em;
   align-self: flex-start;
-  font-family: "Apercu Pro" ;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
   max-width: 18em;
-  font-size: 13px;
+  font-size: 0.813em;
   line-height: 2em;
   grid-row: 2/3;
   grid-column: 1/2;
@@ -897,12 +943,12 @@ main>section:nth-of-type(2) article:nth-of-type(1)>p{
 
 main>section:nth-of-type(2) article:nth-of-type(1)>a{
   max-height: 3em;
-  font-family: "Apercu Pro" ;
-  font-size: 13px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.813em;
   margin-left: 1em;
   margin-bottom: 2em;
   margin-top: 4.5em;
-  padding: 10px 22px 12px 22px;
+  padding: 0.625em 1.375em 0.75em 1.375em;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
   color: var(--general-background);
@@ -917,8 +963,8 @@ main>section:nth-of-type(2) article:nth-of-type(1)>img{
   justify-self: center;
   align-self: center;
   padding-right: 2em;
-  max-width: 267px;
-  max-height: 192.984px;
+  max-width: 16.688em;
+  max-height: 12.062em;
   width: 100%;
   height: auto;
   margin: 0em;
@@ -927,7 +973,7 @@ main>section:nth-of-type(2) article:nth-of-type(1)>img{
 }
 /**2e**********************************************************/
 main>section:nth-of-type(2) article:nth-of-type(2){
-  max-height: 257px;
+  max-height: 16.063em;
   margin: 1em;
   background-color: var(--color-backgroundroze);
   border-radius: 0.625em;
@@ -940,20 +986,19 @@ main>section:nth-of-type(2) article:nth-of-type(2)>h2{
   margin-top: .5em;
   margin-left: .5em;
   margin-bottom: 0em;
-  font-size: 26px;
+  font-size: 1.625em;
   grid-row: 1/2;
   grid-column: 1/2;
 }
-
 
 main>section:nth-of-type(2) article:nth-of-type(2)>p{
   display: flex;
   margin-top: 0em;
   margin-left: 1em;
   align-self: flex-start;
-  font-family: "Apercu Pro" ;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
   max-width: 18em;
-  font-size: 13px;
+  font-size: 0.813em;
   line-height: 2em;
   grid-row: 2/3;
   grid-column: 1/2;
@@ -961,12 +1006,12 @@ main>section:nth-of-type(2) article:nth-of-type(2)>p{
 
 main>section:nth-of-type(2) article:nth-of-type(2)>a{
   max-height: 3em;
-  font-family: "Apercu Pro" ;
-  font-size: 13px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.813em;
   margin-left: 1em;
   margin-bottom: 2em;
   margin-top: 4.5em;
-  padding: 10px 22px 12px 22px;
+  padding: 0.625em 1.375em 0.75em 1.375em;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
   color: var(--general-background);
@@ -981,8 +1026,8 @@ main>section:nth-of-type(2) article:nth-of-type(2)>img{
   justify-self: center;
   align-self: center;
   padding-right: 2em;
-  max-width: 267px;
-  max-height: 192.984px;
+  max-width: 16.688em;
+  max-height: 12.062em;
   width: 100%;
   height: auto;
   margin: 0em;
@@ -1009,7 +1054,7 @@ main>section:nth-of-type(3) article:nth-of-type(1) >h2{
   margin-left: 0em;
   margin-top: .5em;
   margin-bottom: 0em;
-  font-size: 26px;
+  font-size: 1.625em;
   grid-row: 1/2;
   grid-column: 1/2;
 }
@@ -1020,9 +1065,9 @@ main>section:nth-of-type(3) article:nth-of-type(1) >p{
   margin-top: 0em;
   margin-bottom: 2em;
   align-self: flex-start;
-  font-family: "Apercu Pro" ;
-  max-width: 304px;
-  font-size: 13px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  max-width: 19em;
+  font-size: 0.813em;
   line-height: 2em;
   grid-row: 2/3;
   grid-column: 1/2;
@@ -1030,9 +1075,9 @@ main>section:nth-of-type(3) article:nth-of-type(1) >p{
 
 main>section:nth-of-type(3) article:nth-of-type(1)>a:nth-of-type(1){
   max-height: 3em;
-  font-family: "Apercu Pro" ;
-  font-size: 13px;
-  padding: 10px 22px 12px 22px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.813em;
+  padding:  0.625em 1.375em 0.75em 1.375em;
   max-width: fit-content;
   background-color: var(--color-buttonpink);
   color: var(--color-text-zwart);
@@ -1044,10 +1089,10 @@ main>section:nth-of-type(3) article:nth-of-type(1)>a:nth-of-type(1){
 
 main>section:nth-of-type(3) article:nth-of-type(1)>a:nth-of-type(2){
   max-height: 3em;
-  font-family: "Apercu Pro" ;
-  font-size: 13px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.813em;
   margin-bottom: 1em;
-  padding: 10px 22px 12px 22px;
+  padding:  0.625em 1.375em 0.75em 1.375em;
   max-width: fit-content;
   background-color: var(--color-backgroundzwart) ;
   color: var(--general-background);
@@ -1063,8 +1108,8 @@ main>section:nth-of-type(3) article:nth-of-type(1)>img{
   justify-self: center;
   align-self: center;
   padding-right: 2em;
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 12.5em;
+  max-height: 12.5em;
   width: 100%;
   height: auto;
   grid-row: 1/-1;
@@ -1081,14 +1126,14 @@ main>section:nth-of-type(3) article:nth-of-type(2){
   grid-template-columns: repeat(2, 1fr); /* Twee kolommen van gelijke breedte */
   grid-template-rows: repeat(4,max-content );
   row-gap: .5em;
-  max-height: 249px;
+  max-height: 15.563em;
 }
 
 main>section:nth-of-type(3) article:nth-of-type(2) >h2{
   margin-left: 0em;
   margin-top: .5em;
   margin-bottom: 0em;
-  font-size: 26px;
+  font-size: 1.625em;
   grid-row: 1/2;
   grid-column: 1/2;
 }
@@ -1099,9 +1144,9 @@ main>section:nth-of-type(3) article:nth-of-type(2) >p{
   margin-top: 0em;
   margin-bottom: 2em;
   align-self: flex-start;
-  font-family: "Apercu Pro" ;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
   max-width: 418em;
-  font-size: 13px;
+  font-size: 0.813em;
   line-height: 2em;
   grid-row: 2/3;
   grid-column: 1/2;
@@ -1109,9 +1154,9 @@ main>section:nth-of-type(3) article:nth-of-type(2) >p{
 
 main>section:nth-of-type(3) article:nth-of-type(2)>a:nth-of-type(1){
   max-height: 3em;
-  font-family: "Apercu Pro" ;
-  font-size: 13px;
-  padding: 10px 22px 12px 22px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.813em;
+  padding:  0.625em 1.375em 0.75em 1.375em;
   max-width: fit-content;
   background-color: var(--color-buttonpink);
   color: var(--color-text-zwart);
@@ -1128,8 +1173,8 @@ main>section:nth-of-type(3) article:nth-of-type(2)>img{
   justify-self: center;
   align-self: center;
   padding: 1em;
-  max-width: 200px;
-    max-height: 200px;
+  max-width: 12.5em;
+    max-height: 12.5em;
     width: 100%;
     height: auto;
   grid-row: 1/-1;
@@ -1145,8 +1190,8 @@ main>div{
 }
 
 main>div article:nth-of-type(1){
-  height: 350px;
-  width: 295px;
+  height: 21.875em;
+  width: 18.438em;
   background-image: url('https://www.etos.nl/dw/image/v2/BCTN_PRD/on/demandware.static/-/Sites-etos-nl-Library/default/dwca83dceb/Content/Rich%20Content/RC-Inspiration-Detail-Hero/Gezondheid/Sport_Beginnen_Met_Sporten.jpg?sw=422');
   background-size: cover; /* Zorgt ervoor dat de achtergrondafbeelding het hele scherm bedekt */
   background-position: center; /* Plaatst de afbeelding in het midden van het element */
@@ -1163,37 +1208,38 @@ main>div article:nth-of-type(1) a{
   text-decoration: none;
   margin-left: 1em;
   display: grid;
-  grid-template-rows: repeat(4, max-content); /* Creëer 4 rijen met gelijke hoogte */
-  
+  grid-template-rows: repeat(4, max-content);
+  grid-template-columns: repeat(1, 17.5em);  
 }
 
 main div article:nth-of-type(1) a h3{
-  font-family: "Apercu Pro";
-  font-size: 14px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   color: var(--color-text-wit);
   order: 1;
+  
 }
 
 main div article:nth-of-type(1) a p{
-  font-family: "Apercu Pro";
-  font-size: 22px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 1.375em;
   color: var(--color-text-wit);
-  width: 265px;
+  width: auto;
   order: 2;
   margin-top: 0em;
 }
 
 main div article:nth-of-type(1) a>img:nth-of-type(1){
-  width: 24px;
-  min-height: 24px;
+  width: 1.5em;
+  min-height: 1.5em;
   order: 3;
   padding-bottom: 1em;
 }
 /*Lastig om deze boven in te krijgen, heb het op meerdere manieren geprobeerd eerst met siplay flex maar omdat je de rest
 onder in wilt hebben schuift het automatisch mee, en als ik een grid maak kan ik hem wel naar boven krijgen + werkt de align self en justify self*/
 main div article:nth-of-type(1) a>img:nth-of-type(2){
-  width: 16.25px;
-  height: 19.14px;
+  width: 1.016em;
+  height: 1.196em;
   justify-self: end;
   align-self: start;
   margin-bottom:4.5em;
@@ -1203,8 +1249,8 @@ main div article:nth-of-type(1) a>img:nth-of-type(2){
 /*2*/
 
 main div>article:nth-of-type(2){
-  height: 350px;
-  width: 295px;
+  height: 21.875em;
+  width: 18.438em;
   background-image: url('https://www.etos.nl/dw/image/v2/BCTN_PRD/on/demandware.static/-/Sites-etos-nl-Library/default/dwcbdbbb88/Content/Rich%20Content/RC-Inspiration-Detail-Hero/Verzorging/Topical_Droge-huid2.jpg?sw=844');
   background-size: cover; /* Zorgt ervoor dat de achtergrondafbeelding het hele scherm bedekt */
   background-position: center; /* Plaatst de afbeelding in het midden van het element */
@@ -1217,52 +1263,53 @@ main div>article:nth-of-type(2){
 }
 
 
-main div>article:nth-of-type(2) a { 
+main>div article:nth-of-type(2) a{ 
   text-decoration: none;
   margin-left: 1em;
   display: grid;
   grid-template-rows: repeat(4, max-content);
+  grid-template-columns: repeat(1, 17.5em);  
+}
+
+main div article:nth-of-type(2) a h3{
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
+  color: var(--color-text-wit);
+  order: 1;
   
 }
 
-main div>article:nth-of-type(2) a h3{
-  font-family: "Apercu Pro";
-  font-size: 14px;
-  color: var(--color-text-wit);
-  order: 1;
-}
-
 main div>article:nth-of-type(2) a p{
-  font-family: "Apercu Pro";
-  font-size: 22px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 1.375em;
   color: var(--color-text-wit);
-  width: 265px;
+  width: 16.563em;
   margin-top: 0em;
   order: 2;
 }
 
 main div>article:nth-of-type(2) a img:nth-of-type(1){
-  width: 24px;
-  min-height: 24px;
+  width: 1.5em;
+  min-height: 1.5em;
   order: 3;
   padding-bottom: 1em;
 }
 /*Lastig om deze boven in te krijgen, heb het op meerdere manieren geprobeerd eerst met siplay flex maar omdat je de rest
 onder in wilt hebben schuift het automatisch mee, en als ik een grid maak kan ik hem wel naar boven krijgen + werkt de align self en justify self*/
 main div>article:nth-of-type(2) a img:nth-of-type(2){
-  width: 16.25px;
-  height: 19.14px;
+  width: 1.016em;
+  height: 1.196em;
   justify-self: end;
   align-self: start;
-  margin-bottom:6.5em;
+  margin-bottom:8em;
   margin-right: 1.5em;
 }
 
 /*3e*/
 
 main>div article:nth-of-type(3){
-  height: 350px;
-  width: 295px;
+  height: 21.875em;
+  width: 18.438em;
   background-image: url("https://www.etos.nl/dw/image/v2/BCTN_PRD/on/demandware.static/-/Sites-etos-nl-Library/default/dwe30dea8e/Content/Home2Image/Adviescomp/Homepage-adviescomp-keelontsteking.jpg?sw=844");
   background-size: cover; /* Zorgt ervoor dat de achtergrondafbeelding het hele scherm bedekt */
   background-position: center; /* Plaatst de afbeelding in het midden van het element */
@@ -1275,41 +1322,42 @@ main>div article:nth-of-type(3){
 }
 
 
-main>div article:nth-of-type(3) a { 
+main>div article:nth-of-type(3) a{ 
   text-decoration: none;
   margin-left: 1em;
   display: grid;
-  grid-template-rows: repeat(4, max-content); /* Creëer 4 rijen met gelijke hoogte */
+  grid-template-rows: repeat(4, max-content);
+  grid-template-columns: repeat(1, 17.5em);  
+}
+
+main div article:nth-of-type(3) a h3{
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
+  color: var(--color-text-wit);
+  order: 1;
   
 }
 
-main>div article:nth-of-type(3) a h3{
-  font-family: "Apercu Pro";
-  font-size: 14px;
-  color: var(--color-text-wit);
-  order: 1;
-}
-
 main>div article:nth-of-type(3) a p{
-  font-family: "Apercu Pro";
-  font-size: 22px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 1.375em;
   color: var(--color-text-wit);
-  width: 265px;
+  width: 16.563em;
   margin-top: 0em;
   order: 2;
 }
 
 main>div article:nth-of-type(3) a img:nth-of-type(1){
-  width: 24px;
-  min-height: 24px;
+  width: 1.5em;
+  min-height: 1.5em;
   order: 3;
   padding-bottom: 1em;
 }
 /*Lastig om deze boven in te krijgen, heb het op meerdere manieren geprobeerd eerst met siplay flex maar omdat je de rest
 onder in wilt hebben schuift het automatisch mee, en als ik een grid maak kan ik hem wel naar boven krijgen + werkt de align self en justify self*/
 main>div article:nth-of-type(3) a img:nth-of-type(2){
-  width: 16.25px;
-  height: 19.14px;
+  width: 1.016em;
+  height: 1.196em;
   justify-self: end;
   align-self: start;
   margin-bottom:8.533em;
@@ -1340,8 +1388,8 @@ main> ul:nth-of-type(5){
   margin-bottom: 4em;
 }
 main> ul:nth-of-type(5) li:nth-of-type(1){
-  height: 453px;
-  width: 204px;
+  height: 28.313em;
+  width: 12.75em;
   display: grid;
   display: grid;
   grid-template-rows: repeat(7, 1fr); 
@@ -1350,15 +1398,15 @@ main> ul:nth-of-type(5) li:nth-of-type(1){
   color: var(--color-text-zwart);
   background-color: var(--color-backgroundproducten);
   padding: .5em;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
 /*titel*/
 main> ul:nth-of-type(5) li:nth-of-type(1) a {
-  font-family: "Apercu Pro" ;
-  font-size: 16px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1em;
   grid-row: 5/6;
   grid-column: 1/3;
   text-decoration: none;
@@ -1367,16 +1415,16 @@ main> ul:nth-of-type(5) li:nth-of-type(1) a {
 
 /*20stuks*/
 main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(1){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   color: var(--color-text-lightgray);
   grid-row: 4/5;
   grid-column: 2/3;
 }
 /*2.53*/
 main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(2){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   text-decoration: line-through;
   grid-row: 4/5;
   grid-column: 1/2;
@@ -1385,8 +1433,8 @@ main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(2){
 }
 /*1.53*/
 main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(3){
-  font-family: "Apercu Pro" ;
-  font-size: 17px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.063em;
   grid-row: 4/5;
   grid-column: 1/2;
   padding-top: .5em;
@@ -1396,10 +1444,10 @@ main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(3){
 
 /*vegan*/
 main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(4){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
-  border:solid 1px var(--greenborder);
-  border-radius: 10px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
+  border:solid 0.063em var(--greenborder);
+  border-radius: 0.625em;
   color: var(--color-text-groen);
   background-color: var(--color-backgroundwit);
   padding: .4em;
@@ -1417,7 +1465,7 @@ main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(4){
 
 /*virmine*/
 main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(1){
-  height: 140px;
+  height: 8.75em;
   width: auto;
   grid-row: 1/4;
   grid-column: 1/3;
@@ -1428,7 +1476,7 @@ main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(1){
 
 /*sterren*/
 main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(2){
-  height: 27px;
+  height: 1.688em;
   width: auto;
   grid-row: 6/7;
   grid-column: 1/3;
@@ -1439,8 +1487,8 @@ main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(2){
 
 /*mijnetos*/
 main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(3){
-  height: 80px;
-  width: 48px;
+  height: 5em;
+  width: 3em;
   display: flex;
   justify-self: flex-end;
   grid-row: 1/3;
@@ -1448,12 +1496,12 @@ main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(3){
 }
 /*voeg toe*/
 main> ul:nth-of-type(5) li:nth-of-type(1) button:first-of-type{
-  height: 17px;
-  width: 164px;
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
-  border:solid 2px var(--blackborder);
-  border-radius: 10px;
+  height: 1.063em;
+  width: 10.25em;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
+  border:solid 0.125em var(--blackborder);
+  border-radius: 0.625em;
   padding: 1em;
   display: flex;
   align-items: center;
@@ -1479,9 +1527,10 @@ main> ul:nth-of-type(5) li:nth-of-type(1)>button:nth-of-type(2){
 
 
 /********************************************************************8**********************/
-main> ul:nth-of-type(5) li:nth-of-type(2)  {
-  height: 453px;
-  width: 204px;
+
+main> ul:nth-of-type(5) li:nth-of-type(2){
+  height: 28.313em;
+  width: 12.75em;
   display: grid;
   display: grid;
   grid-template-rows: repeat(7, 1fr); 
@@ -1490,34 +1539,33 @@ main> ul:nth-of-type(5) li:nth-of-type(2)  {
   color: var(--color-text-zwart);
   background-color: var(--color-backgroundproducten);
   padding: .5em;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
 /*titel*/
 main> ul:nth-of-type(5) li:nth-of-type(2) a {
-  font-family: "Apercu Pro" ;
-  font-size: 16px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1em;
   grid-row: 5/6;
   grid-column: 1/3;
-  text-decoration: none;
   text-decoration: none;
   color: var(--color-text);
 }
 
 /*20stuks*/
 main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(1){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   color: var(--color-text-lightgray);
   grid-row: 4/5;
   grid-column: 2/3;
 }
 /*2.53*/
 main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(2){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   text-decoration: line-through;
   grid-row: 4/5;
   grid-column: 1/2;
@@ -1526,8 +1574,8 @@ main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(2){
 }
 /*1.53*/
 main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(3){
-  font-family: "Apercu Pro" ;
-  font-size: 17px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.063em;
   grid-row: 4/5;
   grid-column: 1/2;
   padding-top: .5em;
@@ -1537,10 +1585,10 @@ main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(3){
 
 /*vegan*/
 main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(4){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
-  border:solid 1px var(--greenborder);
-  border-radius: 10px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
+  border:solid 0.063em var(--greenborder);
+  border-radius: 0.625em;
   color: var(--color-text-groen);
   background-color: var(--color-backgroundwit);
   padding: .4em;
@@ -1558,7 +1606,7 @@ main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(4){
 
 /*virmine*/
 main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(1){
-  height: 140px;
+  height: 8.75em;
   width: auto;
   grid-row: 1/4;
   grid-column: 1/3;
@@ -1569,7 +1617,7 @@ main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(1){
 
 /*sterren*/
 main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(2){
-  height: 27px;
+  height: 1.688em;
   width: auto;
   grid-row: 6/7;
   grid-column: 1/3;
@@ -1580,8 +1628,8 @@ main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(2){
 
 /*mijnetos*/
 main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(3){
-  height: 80px;
-  width: 48px;
+  height: 5em;
+  width: 3em;
   display: flex;
   justify-self: flex-end;
   grid-row: 1/3;
@@ -1589,12 +1637,12 @@ main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(3){
 }
 /*voeg toe*/
 main> ul:nth-of-type(5) li:nth-of-type(2) button:first-of-type{
-  height: 17px;
-  width: 164px;
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
-  border:solid 2px var(--blackborder);
-  border-radius: 10px;
+  height: 1.063em;
+  width: 10.25em;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
+  border:solid 0.125em var(--blackborder);
+  border-radius: 0.625em;
   padding: 1em;
   display: flex;
   align-items: center;
@@ -1609,7 +1657,7 @@ main> ul:nth-of-type(5) li:nth-of-type(2) button:first-of-type{
 }
 
 main> ul:nth-of-type(5) li:nth-of-type(2)>button:nth-of-type(2){
-  height: max-content;
+  height: max;
   width: max-content;
   border: none;
   background: none;
@@ -1619,10 +1667,13 @@ main> ul:nth-of-type(5) li:nth-of-type(2)>button:nth-of-type(2){
 }
 
 
+
 /********************************************************************8**********************/
+
 main> ul:nth-of-type(5) li:nth-of-type(3){
-  height: 453px;
-  width: 204px;
+  height: 28.313em;
+  width: 12.75em;
+  display: grid;
   display: grid;
   grid-template-rows: repeat(7, 1fr); 
   grid-template-columns: repeat(2, 1fr); 
@@ -1630,15 +1681,15 @@ main> ul:nth-of-type(5) li:nth-of-type(3){
   color: var(--color-text-zwart);
   background-color: var(--color-backgroundproducten);
   padding: .5em;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
 /*titel*/
 main> ul:nth-of-type(5) li:nth-of-type(3) a {
-  font-family: "Apercu Pro" ;
-  font-size: 16px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1em;
   grid-row: 5/6;
   grid-column: 1/3;
   text-decoration: none;
@@ -1647,16 +1698,16 @@ main> ul:nth-of-type(5) li:nth-of-type(3) a {
 
 /*20stuks*/
 main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(1){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   color: var(--color-text-lightgray);
   grid-row: 4/5;
   grid-column: 2/3;
 }
 /*2.53*/
 main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(2){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   text-decoration: line-through;
   grid-row: 4/5;
   grid-column: 1/2;
@@ -1665,8 +1716,8 @@ main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(2){
 }
 /*1.53*/
 main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(3){
-  font-family: "Apercu Pro" ;
-  font-size: 17px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.063em;
   grid-row: 4/5;
   grid-column: 1/2;
   padding-top: .5em;
@@ -1676,10 +1727,10 @@ main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(3){
 
 /*vegan*/
 main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(4){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
-  border:solid 1px var(--greenborder);
-  border-radius: 10px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
+  border:solid 0.063em var(--greenborder);
+  border-radius: 0.625em;
   color: var(--color-text-groen);
   background-color: var(--color-backgroundwit);
   padding: .4em;
@@ -1697,7 +1748,7 @@ main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(4){
 
 /*virmine*/
 main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(1){
-  height: 140px;
+  height: 8.75em;
   width: auto;
   grid-row: 1/4;
   grid-column: 1/3;
@@ -1708,7 +1759,7 @@ main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(1){
 
 /*sterren*/
 main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(2){
-  height: 27px;
+  height: 1.688em;
   width: auto;
   grid-row: 6/7;
   grid-column: 1/3;
@@ -1719,8 +1770,8 @@ main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(2){
 
 /*mijnetos*/
 main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(3){
-  height: 80px;
-  width: 48px;
+  height: 5em;
+  width: 3em;
   display: flex;
   justify-self: flex-end;
   grid-row: 1/3;
@@ -1728,12 +1779,12 @@ main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(3){
 }
 /*voeg toe*/
 main> ul:nth-of-type(5) li:nth-of-type(3) button:first-of-type{
-  height: 17px;
-  width: 164px;
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
-  border:solid 2px var(--blackborder);
-  border-radius: 10px;
+  height: 1.063em;
+  width: 10.25em;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
+  border:solid 0.125em var(--blackborder);
+  border-radius: 0.625em;
   padding: 1em;
   display: flex;
   align-items: center;
@@ -1747,8 +1798,8 @@ main> ul:nth-of-type(5) li:nth-of-type(3) button:first-of-type{
   padding: 1.3em;
 }
 
-main> ul:nth-of-type(5) li:nth-of-type(3) >button:nth-of-type(2){
-  height: max-content;
+main> ul:nth-of-type(5) li:nth-of-type(3)>button:nth-of-type(2){
+  height: max;
   width: max-content;
   border: none;
   background: none;
@@ -1758,10 +1809,13 @@ main> ul:nth-of-type(5) li:nth-of-type(3) >button:nth-of-type(2){
 }
 
 
+
 /********************************************************************8**********************/
+
 main> ul:nth-of-type(5) li:nth-of-type(4){
-  height: 453px;
-  width: 204px;
+  height: 28.313em;
+  width: 12.75em;
+  display: grid;
   display: grid;
   grid-template-rows: repeat(7, 1fr); 
   grid-template-columns: repeat(2, 1fr); 
@@ -1769,15 +1823,15 @@ main> ul:nth-of-type(5) li:nth-of-type(4){
   color: var(--color-text-zwart);
   background-color: var(--color-backgroundproducten);
   padding: .5em;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
 /*titel*/
-main> ul:nth-of-type(5) li:nth-of-type(4) a{
-  font-family: "Apercu Pro" ;
-  font-size: 16px;
+main> ul:nth-of-type(5) li:nth-of-type(4) a {
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1em;
   grid-row: 5/6;
   grid-column: 1/3;
   text-decoration: none;
@@ -1786,16 +1840,16 @@ main> ul:nth-of-type(5) li:nth-of-type(4) a{
 
 /*20stuks*/
 main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(1){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   color: var(--color-text-lightgray);
   grid-row: 4/5;
   grid-column: 2/3;
 }
 /*2.53*/
 main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(2){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   text-decoration: line-through;
   grid-row: 4/5;
   grid-column: 1/2;
@@ -1804,8 +1858,8 @@ main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(2){
 }
 /*1.53*/
 main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(3){
-  font-family: "Apercu Pro" ;
-  font-size: 17px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.063em;
   grid-row: 4/5;
   grid-column: 1/2;
   padding-top: .5em;
@@ -1815,10 +1869,10 @@ main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(3){
 
 /*vegan*/
 main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(4){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
-  border:solid 1px var(--greenborder);
-  border-radius: 10px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
+  border:solid 0.063em var(--greenborder);
+  border-radius: 0.625em;
   color: var(--color-text-groen);
   background-color: var(--color-backgroundwit);
   padding: .4em;
@@ -1836,7 +1890,7 @@ main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(4){
 
 /*virmine*/
 main> ul:nth-of-type(5) li:nth-of-type(4) img:nth-of-type(1){
-  height: 140px;
+  height: 8.75em;
   width: auto;
   grid-row: 1/4;
   grid-column: 1/3;
@@ -1847,7 +1901,7 @@ main> ul:nth-of-type(5) li:nth-of-type(4) img:nth-of-type(1){
 
 /*sterren*/
 main> ul:nth-of-type(5) li:nth-of-type(4) img:nth-of-type(2){
-  height: 27px;
+  height: 1.688em;
   width: auto;
   grid-row: 6/7;
   grid-column: 1/3;
@@ -1857,9 +1911,9 @@ main> ul:nth-of-type(5) li:nth-of-type(4) img:nth-of-type(2){
 }
 
 /*mijnetos*/
-main> ul:nth-of-type(5) li:nth-of-type(4)  img:nth-of-type(3){
-  height: 80px;
-  width: 48px;
+main> ul:nth-of-type(5) li:nth-of-type(4) img:nth-of-type(3){
+  height: 5em;
+  width: 3em;
   display: flex;
   justify-self: flex-end;
   grid-row: 1/3;
@@ -1867,12 +1921,12 @@ main> ul:nth-of-type(5) li:nth-of-type(4)  img:nth-of-type(3){
 }
 /*voeg toe*/
 main> ul:nth-of-type(5) li:nth-of-type(4) button:first-of-type{
-  height: 17px;
-  width: 164px;
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
-  border:solid 2px var(--blackborder);
-  border-radius: 10px;
+  height: 1.063em;
+  width: 10.25em;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
+  border:solid 0.125em var(--blackborder);
+  border-radius: 0.625em;
   padding: 1em;
   display: flex;
   align-items: center;
@@ -1886,8 +1940,8 @@ main> ul:nth-of-type(5) li:nth-of-type(4) button:first-of-type{
   padding: 1.3em;
 }
 
-main> ul:nth-of-type(5) li:nth-of-type(4) >button:nth-of-type(2){
-  height: max-content;
+main> ul:nth-of-type(5) li:nth-of-type(4)>button:nth-of-type(2){
+  height: max;
   width: max-content;
   border: none;
   background: none;
@@ -1895,6 +1949,7 @@ main> ul:nth-of-type(5) li:nth-of-type(4) >button:nth-of-type(2){
   grid-column: 1/2;
   font-size: 2em;
 }
+
 
 
 
@@ -1917,7 +1972,7 @@ main>ul:nth-of-type(6){
   list-style: none;
   background-color: var(--color-backgroundlichtpink3);
   padding-left: 0em;
-  padding-left: 15px;
+  padding-left: 0.938em;
   padding-top: 2em;
   padding-bottom: 2em;
   margin-bottom: 0em;
@@ -1930,18 +1985,18 @@ main>ul:nth-of-type(6) li{
   gap: 1em;
   align-items: center;
   justify-content: flex-start;
-  height: 14px;
+  height: 0.875em;
 }
 
 main>ul:nth-of-type(6) li p{
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   order: 2;
 }
 
 main>ul:nth-of-type(6) li img{
-  height: 11px;
-  width: 12px;
+  height: 0.688em;
+  width: 0.75em;
   order: 1;
 }
 
@@ -1957,14 +2012,14 @@ footer{
 }
 
 footer>img{
-  height:48px;
-  width:60px ;
+  height:3em;
+  width:3.75em ;
   margin-top: 1.5em;
 }
 
 footer>p{
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   line-height: 2em;
 }
 
@@ -2005,22 +2060,22 @@ footer> ul:nth-of-type(3) li:not(:nth-of-type(1)){
 
 footer ul:nth-of-type(1) li a{
   text-decoration: none;
-  font-family: "Apercu Pro" ;
-  font-size: 16px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1em;
   color: var(--color-text-zwart);
 }
 
 footer ul:nth-of-type(2) li a{
   text-decoration: none;
-  font-family: "Apercu Pro" ;
-  font-size: 16px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1em;
   color: var(--color-text-zwart);
 }
 
 footer ul:nth-of-type(3) li a{
   text-decoration: none;
-  font-family: "Apercu Pro" ;
-  font-size: 16px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1em;
   color: var(--color-text-zwart);
 }
 
@@ -2031,24 +2086,24 @@ footer> div{
 }
 
 footer>div a{
-  font-family: "Apercu Pro" ;
-  font-size: 18px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.125em;
   text-decoration: none;
   color: var(--color-text-zwart);
   grid-column:1/2 ;
   grid-row:1/2;
   order: 1;
-  max-width: 270px;
+  max-width: 16.875em;
 }
 
 footer>div p{
-  font-family: "Apercu Pro";
-  font-size: 12px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   grid-column: 1/2;
   grid-row: 2/3;
   order: 2;
   margin-top: 0em;
-  max-width: 270px;
+  max-width: 16.875em;
 }
 
 footer>div img{
@@ -2056,7 +2111,7 @@ footer>div img{
   align-self: center;
   justify-self: start;
   height:auto ;
-  width: 100px;
+  width: 6.25em;
   grid-column: 2/3;
   grid-row: 1/-1;
   order: 3;
@@ -2076,30 +2131,30 @@ footer> ul:nth-of-type(4) li{
   gap: 1em;
   align-items: center;
   justify-content: flex-start;
-  height: 14px;
+  height: 0.875em;
   
 }
 
 footer> ul:nth-of-type(4) li p{
-  font-family: "Apercu Pro";
-  font-size: 12px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   order:2;
 }
 
 footer> ul:nth-of-type(4) li img{
-  height: 11px;
-  width: 12px;
+  height: 0.688em;
+  width: 0.75em;
   order: 1;
 }
 
 footer>a{
   text-decoration: none;
-  font-family: "Apercu Pro";
-  font-size: 14px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   color: var(--color-text-zwart);
   background-color: var(--color-backgroundwit);
-  border:solid 1px var(--blackborder);
-  border-radius: 10px;
+  border:solid 0.063em var(--blackborder);
+  border-radius: 0.625em;
   padding-top: .6em;
   padding-bottom: .6em;
   padding-left: auto;
@@ -2115,7 +2170,7 @@ footer> ul:nth-of-type(5){
   display: flex;
   flex-direction: row;
   gap:1em;
-  border-radius: 10px;
+  border-radius: 0.625em;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -2127,7 +2182,7 @@ footer> ul:nth-of-type(5){
 
 footer> ul:nth-of-type(5) li img{
   height:auto ;
-  width: 30px;
+  width: 1.875em;
   display: flex;
   flex-direction: row;
 }
@@ -2148,7 +2203,7 @@ footer>ul:nth-of-type(6){
 
 footer> ul:nth-of-type(6) li img{
   height:auto ;
-  width: 30px;
+  width: 1.875em;
   display: flex;
   flex-direction: row;
 }
@@ -2167,22 +2222,22 @@ footer>ul:nth-of-type(7){
   justify-content: center;
   margin-top: 0em;
   background-color: var(--color-backgroundwit);
-  border-radius: 10px;
+  border-radius: 0.625em;
 }
 
 
 footer>ul:nth-of-type(7) p{
   text-decoration: none;
-  font-family: "Apercu Pro";
-  font-size: 12px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   color:var(--color-text-lightgray) ;
 }
 
 footer>ul:nth-of-type(7) a{
   text-decoration: none;
   color: var(--color-text-zwart);
-  font-family: "Apercu Pro";
-  font-size: 12px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
 }
 
 
@@ -2202,7 +2257,7 @@ footer>ul:nth-of-type(7) a{
 /* Vanaf hier middel scherm*/
 /********************************************************************************************************************************/
 
-@media (min-width:767px) {
+@media (min-width:47.938em) {
 
   main ul:first-of-type{
     margin: 1em ;
@@ -2218,7 +2273,7 @@ footer>ul:nth-of-type(7) a{
   }
   
   main h2{
-    font-size: 35px;
+    font-size: 2.188em;
   }
   main ul:first-of-type li{
     background-color: var(--color-achtergrond-snelshoppen);
@@ -2227,14 +2282,14 @@ footer>ul:nth-of-type(7) a{
   }
 
   main ul:first-of-type li a{
-    width: 155px;
-    height: 142px;
+    width: 9.688em;
+    height: 8.875em;
   }
   
   main ul:first-of-type a p{
     text-decoration: none; 
-    font-family: "Apercu Pro" ;
-    font-size: 14pxem;
+    font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+    font-size: 0.875em;
     color: var(--color-text-zwart);
     display: flex;
     justify-content: center;
@@ -2271,7 +2326,7 @@ main ul:nth-of-type(2) li{
   margin-bottom: 1em;
   background-color: var(--general-background);
   list-style: none;
-  border:solid 1px var(--color-text-lightgray);
+  border:solid 0.063em var(--color-text-lightgray);
   border-radius: .6em;
   padding: .3em 3.5em;
 }
@@ -2291,10 +2346,10 @@ main ul:nth-of-type(2) li a{
 main ul:nth-of-type(3){
   display: grid;
   grid-template-rows: repeat(2, 1fr); 
-  grid-template-columns: repeat(3, 400px);
-  gap: 0px; 
+  grid-template-columns: repeat(3, 25em);
+  gap: 0em; 
   overflow: auto;
-  max-height: 310px;
+  max-height: 19.375em;
   margin-left: 1em;
   padding-left: 0em;
 }
@@ -2308,12 +2363,12 @@ main ul:nth-of-type(3) li{
 
 
 main ul:nth-of-type(3) li a{
-  font-family: "Apercu Pro";
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
   margin: 0em;
   text-decoration: none;
   display: grid;
-  grid-template-rows:36px 36px ; /* Twee rijen van automatische hoogte */
-  grid-template-columns: 72px 190px; /* Twee kolommen van automatische breedte */
+  grid-template-rows:2.25em 2.25em ; 
+  grid-template-columns: 4.5em 11.875em; 
 }
 
 
@@ -2333,7 +2388,7 @@ main ul:nth-of-type(3) li a h3{
 
 /*met position absolute blijft hi stan*/
 main ul:nth-of-type(3) li a p{
-  font-size: 14px;
+  font-size: 0.875em;
   padding-left: 1em;
   color: var(--color-text-zwart);
   order: 3;
@@ -2368,7 +2423,7 @@ main>ul:nth-of-type(4) li{
   border-radius: 0.625em;
   padding: 1em;
   margin: .3em;
-  height: 162px;
+  height: 10.125em;
   display: flex;
   justify-content: center;
 
@@ -2409,8 +2464,8 @@ main>ul:nth-of-type(4) a{
 
 main>ul:nth-of-type(4) li a img:first-of-type{
   order:-1;
-  height: 100px;
-  width: 100px;
+  height: 6.25em;
+  width: 6.25em;
   display: flex;
   grid-row: 1/2;  
   grid-column: 1/-1;
@@ -2418,8 +2473,8 @@ main>ul:nth-of-type(4) li a img:first-of-type{
 
 main>ul:nth-of-type(4) li a p{
   order: 2;
-  font-family: "Apercu Pro" ;
-  font-size: 13px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.813em;
   color: var(--color-text-zwart);
   text-decoration: none;
   padding-left: 1em;
@@ -2432,8 +2487,8 @@ main>ul:nth-of-type(4) li a p{
 
 main>ul:nth-of-type(4) li a img:nth-of-type(2){
   order: 1;
-  height: 70px;
-  width: 70px;
+  height: 4.375em;
+  width: 4.375em;
   display: flex;
   margin-left: auto;
   grid-row: 1/2; 
@@ -2461,8 +2516,8 @@ main> ul:nth-of-type(5){
 
 
 main> ul:nth-of-type(5) li:nth-of-type(1){
-  height: 553px;
-  min-width: 304px;
+  height: 34.563em;
+  min-width: 19em;
   display: grid;
   display: grid;
   grid-template-rows: repeat(7, 1fr); 
@@ -2471,31 +2526,31 @@ main> ul:nth-of-type(5) li:nth-of-type(1){
   color: var(--color-text-zwart);
   background-color: var(--color-backgroundproducten);
   padding: .5em;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
 /*titel*/
 main> ul:nth-of-type(5) li:nth-of-type(1) h3{
-  font-family: "Apercu Pro" ;
-  font-size: 18px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.125em;
   grid-row: 5/6;
   grid-column: 1/3;
 }
 
 /*20stuks*/
 main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(1){
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   color: var(--color-text-lightgray);
   grid-row: 4/5;
   grid-column: 2/3;
 }
 /*2.53*/
 main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(2){
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   text-decoration: line-through;
   grid-row: 4/5;
   grid-column: 1/2;
@@ -2504,8 +2559,8 @@ main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(2){
 }
 /*1.53*/
 main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(3){
-  font-family: "Apercu Pro" ;
-  font-size: 17px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.063em;
   grid-row: 4/5;
   grid-column: 1/2;
   padding-top: .5em;
@@ -2515,10 +2570,10 @@ main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(3){
 
 /*vegan*/
 main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(4){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
-  border:solid 1px var(--greenborder);
-  border-radius: 10px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
+  border:solid 0.063em var(--greenborder);
+  border-radius: 0.625em;
   color: var(--color-text-groen);
   background-color: var(--color-backgroundwit);
   padding: .4em;
@@ -2536,7 +2591,7 @@ main> ul:nth-of-type(5) li:nth-of-type(1) p:nth-of-type(4){
 
 /*virmine*/
 main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(1){
-  height: 190px;
+  height: 11.875em;
   width: auto;
   grid-row: 1/4;
   grid-column: 1/3;
@@ -2547,7 +2602,7 @@ main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(1){
 
 /*sterren*/
 main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(2){
-  height: 27px;
+  height: 1.688em;
   width: auto;
   grid-row: 6/7;
   grid-column: 1/3;
@@ -2558,8 +2613,8 @@ main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(2){
 
 /*mijnetos*/
 main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(3){
-  height: 90px;
-  width: 58px;
+  height: 5.625em;
+  width: 3.625;
   display: flex;
   justify-self: flex-end;
   grid-row: 1/3;
@@ -2567,12 +2622,12 @@ main> ul:nth-of-type(5) li:nth-of-type(1) img:nth-of-type(3){
 }
 /*voeg toe*/
 main> ul:nth-of-type(5) li:nth-of-type(1) button:first-of-type{
-  height: 20px;
-  width: 164px;
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
-  border:solid 2px var(--blackborder);
-  border-radius: 10px;
+  height: 1.25em;
+  width: 10.25em;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
+  border:solid 0.125em var(--blackborder);
+  border-radius: 0.625em;
   padding: 1em;
   display: flex;
   align-items: center;
@@ -2597,7 +2652,7 @@ main> ul:nth-of-type(5) li:nth-of-type(1) >button:nth-of-type(2){
 
 main> ul:nth-of-type(5) li:nth-of-type(1) button:nth-of-type(2) img{
   height: auto;
-  width: 24px;
+  width: 1.5em;
   grid-row: 1/2;
   grid-column: 1/2;
 }
@@ -2605,8 +2660,8 @@ main> ul:nth-of-type(5) li:nth-of-type(1) button:nth-of-type(2) img{
 
 
 main> ul:nth-of-type(5) li:nth-of-type(2){
-  height: 553px;
-  min-width: 304px;
+  height: 34.563em;
+  min-width: 19em;
   display: grid;
   display: grid;
   grid-template-rows: repeat(7, 1fr); 
@@ -2615,31 +2670,31 @@ main> ul:nth-of-type(5) li:nth-of-type(2){
   color: var(--color-text-zwart);
   background-color: var(--color-backgroundproducten);
   padding: .5em;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
 /*titel*/
 main> ul:nth-of-type(5) li:nth-of-type(2) h3{
-  font-family: "Apercu Pro" ;
-  font-size: 18px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.125em;
   grid-row: 5/6;
   grid-column: 1/3;
 }
 
 /*20stuks*/
 main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(1){
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   color: var(--color-text-lightgray);
   grid-row: 4/5;
   grid-column: 2/3;
 }
 /*2.53*/
 main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(2){
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   text-decoration: line-through;
   grid-row: 4/5;
   grid-column: 1/2;
@@ -2648,8 +2703,8 @@ main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(2){
 }
 /*1.53*/
 main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(3){
-  font-family: "Apercu Pro" ;
-  font-size: 17px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.063em;
   grid-row: 4/5;
   grid-column: 1/2;
   padding-top: .5em;
@@ -2659,10 +2714,10 @@ main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(3){
 
 /*vegan*/
 main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(4){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
-  border:solid 1px var(--greenborder);
-  border-radius: 10px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
+  border:solid 0.063em var(--greenborder);
+  border-radius: 0.625em;
   color: var(--color-text-groen);
   background-color: var(--color-backgroundwit);
   padding: .4em;
@@ -2680,7 +2735,7 @@ main> ul:nth-of-type(5) li:nth-of-type(2) p:nth-of-type(4){
 
 /*virmine*/
 main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(1){
-  height: 190px;
+  height: 11.875em;
   width: auto;
   grid-row: 1/4;
   grid-column: 1/3;
@@ -2691,7 +2746,7 @@ main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(1){
 
 /*sterren*/
 main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(2){
-  height: 27px;
+  height: 1.688em;
   width: auto;
   grid-row: 6/7;
   grid-column: 1/3;
@@ -2702,8 +2757,8 @@ main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(2){
 
 /*mijnetos*/
 main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(3){
-  height: 90px;
-  width: 58px;
+  height: 5.625em;
+  width: 3.625;
   display: flex;
   justify-self: flex-end;
   grid-row: 1/3;
@@ -2711,12 +2766,12 @@ main> ul:nth-of-type(5) li:nth-of-type(2) img:nth-of-type(3){
 }
 /*voeg toe*/
 main> ul:nth-of-type(5) li:nth-of-type(2) button:first-of-type{
-  height: 20px;
-  width: 164px;
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
-  border:solid 2px var(--blackborder);
-  border-radius: 10px;
+  height: 1.25em;
+  width: 10.25em;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
+  border:solid 0.125em var(--blackborder);
+  border-radius: 0.625em;
   padding: 1em;
   display: flex;
   align-items: center;
@@ -2730,7 +2785,7 @@ main> ul:nth-of-type(5) li:nth-of-type(2) button:first-of-type{
   padding: 1.3em;
 }
 
-main> ul:nth-of-type(5) li:nth-of-type(2)>button:nth-of-type(2){
+main> ul:nth-of-type(5) li:nth-of-type(2) >button:nth-of-type(2){
   height: max-content;
   width: max-content;
   border: none;
@@ -2739,9 +2794,9 @@ main> ul:nth-of-type(5) li:nth-of-type(2)>button:nth-of-type(2){
   grid-column: 1/2;
 }
 
-main> ul:nth-of-type(5) li:nth-of-type(2)button:nth-of-type(2) img{
+main> ul:nth-of-type(5) li:nth-of-type(2) button:nth-of-type(2) img{
   height: auto;
-  width: 24px;
+  width: 1.5em;
   grid-row: 1/2;
   grid-column: 1/2;
 }
@@ -2749,9 +2804,10 @@ main> ul:nth-of-type(5) li:nth-of-type(2)button:nth-of-type(2) img{
 /*******************************************************************************/
 
 
+
 main> ul:nth-of-type(5) li:nth-of-type(3){
-  height: 553px;
-  min-width: 304px;
+  height: 34.563em;
+  min-width: 19em;
   display: grid;
   display: grid;
   grid-template-rows: repeat(7, 1fr); 
@@ -2760,31 +2816,31 @@ main> ul:nth-of-type(5) li:nth-of-type(3){
   color: var(--color-text-zwart);
   background-color: var(--color-backgroundproducten);
   padding: .5em;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
 /*titel*/
 main> ul:nth-of-type(5) li:nth-of-type(3) h3{
-  font-family: "Apercu Pro" ;
-  font-size: 18px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.125em;
   grid-row: 5/6;
   grid-column: 1/3;
 }
 
 /*20stuks*/
-main> ul:nth-of-type(5) li:nth-of-type(3)  p:nth-of-type(1){
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(1){
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   color: var(--color-text-lightgray);
   grid-row: 4/5;
   grid-column: 2/3;
 }
 /*2.53*/
 main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(2){
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   text-decoration: line-through;
   grid-row: 4/5;
   grid-column: 1/2;
@@ -2793,8 +2849,8 @@ main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(2){
 }
 /*1.53*/
 main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(3){
-  font-family: "Apercu Pro" ;
-  font-size: 17px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.063em;
   grid-row: 4/5;
   grid-column: 1/2;
   padding-top: .5em;
@@ -2804,10 +2860,10 @@ main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(3){
 
 /*vegan*/
 main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(4){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
-  border:solid 1px var(--greenborder);
-  border-radius: 10px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
+  border:solid 0.063em var(--greenborder);
+  border-radius: 0.625em;
   color: var(--color-text-groen);
   background-color: var(--color-backgroundwit);
   padding: .4em;
@@ -2825,7 +2881,7 @@ main> ul:nth-of-type(5) li:nth-of-type(3) p:nth-of-type(4){
 
 /*virmine*/
 main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(1){
-  height: 190px;
+  height: 11.875em;
   width: auto;
   grid-row: 1/4;
   grid-column: 1/3;
@@ -2836,7 +2892,7 @@ main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(1){
 
 /*sterren*/
 main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(2){
-  height: 27px;
+  height: 1.688em;
   width: auto;
   grid-row: 6/7;
   grid-column: 1/3;
@@ -2847,8 +2903,8 @@ main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(2){
 
 /*mijnetos*/
 main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(3){
-  height: 90px;
-  width: 58px;
+  height: 5.625em;
+  width: 3.625;
   display: flex;
   justify-self: flex-end;
   grid-row: 1/3;
@@ -2856,12 +2912,12 @@ main> ul:nth-of-type(5) li:nth-of-type(3) img:nth-of-type(3){
 }
 /*voeg toe*/
 main> ul:nth-of-type(5) li:nth-of-type(3) button:first-of-type{
-  height: 20px;
-  width: 164px;
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
-  border:solid 2px var(--blackborder);
-  border-radius: 10px;
+  height: 1.25em;
+  width: 10.25em;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
+  border:solid 0.125em var(--blackborder);
+  border-radius: 0.625em;
   padding: 1em;
   display: flex;
   align-items: center;
@@ -2875,7 +2931,7 @@ main> ul:nth-of-type(5) li:nth-of-type(3) button:first-of-type{
   padding: 1.3em;
 }
 
-main> ul:nth-of-type(5) li:nth-of-type(3)>button:nth-of-type(2){
+main> ul:nth-of-type(5) li:nth-of-type(3) >button:nth-of-type(2){
   height: max-content;
   width: max-content;
   border: none;
@@ -2886,7 +2942,7 @@ main> ul:nth-of-type(5) li:nth-of-type(3)>button:nth-of-type(2){
 
 main> ul:nth-of-type(5) li:nth-of-type(3) button:nth-of-type(2) img{
   height: auto;
-  width: 24px;
+  width: 1.5em;
   grid-row: 1/2;
   grid-column: 1/2;
 }
@@ -2895,8 +2951,8 @@ main> ul:nth-of-type(5) li:nth-of-type(3) button:nth-of-type(2) img{
 
 
 main> ul:nth-of-type(5) li:nth-of-type(4){
-  height: 553px;
-  min-width: 304px;
+  height: 34.563em;
+  min-width: 19em;
   display: grid;
   display: grid;
   grid-template-rows: repeat(7, 1fr); 
@@ -2905,31 +2961,31 @@ main> ul:nth-of-type(5) li:nth-of-type(4){
   color: var(--color-text-zwart);
   background-color: var(--color-backgroundproducten);
   padding: .5em;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
 /*titel*/
 main> ul:nth-of-type(5) li:nth-of-type(4) h3{
-  font-family: "Apercu Pro" ;
-  font-size: 18px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.125em;
   grid-row: 5/6;
   grid-column: 1/3;
 }
 
 /*20stuks*/
-main> ul:nth-of-type(5) li:nth-of-type(4)  p:nth-of-type(1){
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(1){
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   color: var(--color-text-lightgray);
   grid-row: 4/5;
   grid-column: 2/3;
 }
 /*2.53*/
 main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(2){
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   text-decoration: line-through;
   grid-row: 4/5;
   grid-column: 1/2;
@@ -2938,8 +2994,8 @@ main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(2){
 }
 /*1.53*/
 main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(3){
-  font-family: "Apercu Pro" ;
-  font-size: 17px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.063em;
   grid-row: 4/5;
   grid-column: 1/2;
   padding-top: .5em;
@@ -2949,10 +3005,10 @@ main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(3){
 
 /*vegan*/
 main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(4){
-  font-family: "Apercu Pro" ;
-  font-size: 12px;
-  border:solid 1px var(--greenborder);
-  border-radius: 10px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
+  border:solid 0.063em var(--greenborder);
+  border-radius: 0.625em;
   color: var(--color-text-groen);
   background-color: var(--color-backgroundwit);
   padding: .4em;
@@ -2970,7 +3026,7 @@ main> ul:nth-of-type(5) li:nth-of-type(4) p:nth-of-type(4){
 
 /*virmine*/
 main> ul:nth-of-type(5) li:nth-of-type(4) img:nth-of-type(1){
-  height: 190px;
+  height: 11.875em;
   width: auto;
   grid-row: 1/4;
   grid-column: 1/3;
@@ -2981,7 +3037,7 @@ main> ul:nth-of-type(5) li:nth-of-type(4) img:nth-of-type(1){
 
 /*sterren*/
 main> ul:nth-of-type(5) li:nth-of-type(4) img:nth-of-type(2){
-  height: 27px;
+  height: 1.688em;
   width: auto;
   grid-row: 6/7;
   grid-column: 1/3;
@@ -2992,8 +3048,8 @@ main> ul:nth-of-type(5) li:nth-of-type(4) img:nth-of-type(2){
 
 /*mijnetos*/
 main> ul:nth-of-type(5) li:nth-of-type(4) img:nth-of-type(3){
-  height: 90px;
-  width: 58px;
+  height: 5.625em;
+  width: 3.625;
   display: flex;
   justify-self: flex-end;
   grid-row: 1/3;
@@ -3001,12 +3057,12 @@ main> ul:nth-of-type(5) li:nth-of-type(4) img:nth-of-type(3){
 }
 /*voeg toe*/
 main> ul:nth-of-type(5) li:nth-of-type(4) button:first-of-type{
-  height: 20px;
-  width: 164px;
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
-  border:solid 2px var(--blackborder);
-  border-radius: 10px;
+  height: 1.25em;
+  width: 10.25em;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
+  border:solid 0.125em var(--blackborder);
+  border-radius: 0.625em;
   padding: 1em;
   display: flex;
   align-items: center;
@@ -3020,7 +3076,7 @@ main> ul:nth-of-type(5) li:nth-of-type(4) button:first-of-type{
   padding: 1.3em;
 }
 
-main> ul:nth-of-type(5) li:nth-of-type(4)>button:nth-of-type(2){
+main> ul:nth-of-type(5) li:nth-of-type(4) >button:nth-of-type(2){
   height: max-content;
   width: max-content;
   border: none;
@@ -3031,7 +3087,7 @@ main> ul:nth-of-type(5) li:nth-of-type(4)>button:nth-of-type(2){
 
 main> ul:nth-of-type(5) li:nth-of-type(4) button:nth-of-type(2) img{
   height: auto;
-  width: 24px;
+  width: 1.5em;
   grid-row: 1/2;
   grid-column: 1/2;
 }
@@ -3048,7 +3104,7 @@ main>ul:nth-of-type(6){
   padding-bottom: 1em;
   margin-bottom: 1em;
   gap: 2em;
-  height: 180px;
+  height: 11.25em;
 }
 
 main>ul:nth-of-type(6) li{
@@ -3057,13 +3113,13 @@ main>ul:nth-of-type(6) li{
   gap: 1em;
   align-items: center;
   justify-content: flex-start;
-  height: 14px;
+  height: 0.875em;
   width: 100%;
 }
 
 main>ul:nth-of-type(6) li p{
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   order: 2;
   text-align: center;
 }
@@ -3074,8 +3130,8 @@ main>ul:nth-of-type(6) li img:nth-of-type(1){
 
 main>ul:nth-of-type(6) li img:nth-of-type(2){
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 2.438em;
+  width: 1.875em;
   order: 1;
 }
 
@@ -3087,7 +3143,7 @@ footer{
   background-color: var(--color-backgroundfooter);
   display: grid;
   grid-template-rows: repeat(6, max-content);
-  grid-template-columns: repeat (minmax(250px, 1fr));
+  grid-template-columns: repeat (minmax(15.625em, 1fr));
   column-gap: 2em;
   width: auto;
   height: auto;
@@ -3095,21 +3151,21 @@ footer{
 
 
 footer>img{
-  height:48px;
-  width:60px ;
+  height:3em;
+  width:3.75em ;
   margin-top: 1.5em;
   grid-column: 1/2;
   grid-row: 1/2;
 }
 
 footer>p{
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   line-height: 2em;
   grid-column: 1/2;
   grid-row: 2/3;
-  max-width: 390px;
-  min-width: 256px;
+  max-width: 24.375em;
+  min-width: 16em;
   display: flex;
   align-items: flex-start;
   margin-bottom: 1em;
@@ -3124,7 +3180,7 @@ footer>ul:nth-of-type(1) {
   margin-top: 1em;
   grid-column: 1/2;
   grid-row: 3/4;
-  max-width: 355px;
+  max-width: 22.188em;
   align-self: flex-end;
 }
 
@@ -3142,7 +3198,7 @@ footer>ul:nth-of-type(2) {
   padding-left: 0em;
   grid-column: 2/3;
   grid-row: 2/3;
-  max-width: 155px;
+  max-width: 9.688em;
 }
 
 footer> ul:nth-of-type(2) li:not(:nth-of-type(1)){
@@ -3159,7 +3215,7 @@ footer>ul:nth-of-type(3) {
   padding-left: 0em;
   grid-column: 2/3;
   grid-row: 3/4;
-  max-width: 155px;
+  max-width: 9.688em;
 }
 
 footer> ul:nth-of-type(3) li:not(:nth-of-type(1)){
@@ -3170,31 +3226,31 @@ footer> ul:nth-of-type(3) li:not(:nth-of-type(1)){
 
 footer ul:nth-of-type(1) li a{
   text-decoration: none;
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   color: var(--color-text-zwart);
 }
 footer ul:nth-of-type(1) li:first-of-type a{
-  font-size: 16px;
+  font-size: 1em;
 }
 
 footer ul:nth-of-type(2) li a{
   text-decoration: none;
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   color: var(--color-text-zwart);
 }
 footer ul:nth-of-type(2) li:first-of-type a{
-  font-size: 16px;
+  font-size: 1em;
 }
 footer ul:nth-of-type(3) li a{
   text-decoration: none;
-  font-family: "Apercu Pro" ;
-  font-size: 14px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   color: var(--color-text-zwart);
 }
 footer ul:nth-of-type(3) li:first-of-type a{
-  font-size: 16px;
+  font-size: 1em;
 }
 
 footer> div{
@@ -3203,28 +3259,28 @@ footer> div{
   grid-template-rows: repeat(2, max-content);
   grid-column: 3/4;
   grid-row: 2/3;
-  max-width: 355px;
+  max-width: 22.188em;
 }
 
 footer>div a{
-  font-family: "Apercu Pro" ;
-  font-size: 18px;
+  font-family: "Apercu Pro" ,"Neue","Helvetica", "Arial","Sans";
+  font-size: 1.125em;
   text-decoration: none;
   color: var(--color-text-zwart);
   grid-column:1/2 ;
   grid-row:1/2;
   order: 1;
-  max-width: 270px;
+  max-width: 16.875em;
 }
 
 footer>div p{
-  font-family: "Apercu Pro";
-  font-size: 12px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   grid-column: 1/2;
   grid-row: 2/3;
   order: 2;
   margin-top: 0em;
-  max-width: 150px;
+  max-width: 9.375em;
 }
 
 footer>div img{
@@ -3232,7 +3288,7 @@ footer>div img{
   align-self: center;
   justify-self: start;
   height:auto ;
-  width: 100px;
+  width: 6.25em;
   grid-column: 2/3;
   grid-row: 1/-1;
   order: 3;
@@ -3246,7 +3302,7 @@ footer> ul:nth-of-type(4){
   padding-left: 0em;
   grid-column: 3/4;
   grid-row: 2/3;
-  max-width: 355px;
+  max-width: 22.188em;
   display: flex;
   align-self: flex-end;
 }
@@ -3257,30 +3313,30 @@ footer> ul:nth-of-type(4) li{
   gap: 1em;
   align-items: center;
   justify-content: flex-start;
-  height: 14px;
+  height: 0.875em;
   
 }
 
 footer> ul:nth-of-type(4) li p{
-  font-family: "Apercu Pro";
-  font-size: 12px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   order:2;
 }
 
 footer> ul:nth-of-type(4) li img{
-  height: 11px;
-  width: 12px;
+  height: 0.688em;
+  width: 0.75em;
   order: 1;
 }
 
 footer>a{
   text-decoration: none;
-  font-family: "Apercu Pro";
-  font-size: 14px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.875em;
   color: var(--color-text-zwart);
   background-color: var(--color-backgroundwit);
-  border:solid 1px var(--blackborder);
-  border-radius: 10px;
+  border:solid 0.065em var(--blackborder);
+  border-radius: 0.625em;
   padding-top: .6em;
   padding-bottom: .6em;
   padding-left: auto;
@@ -3289,8 +3345,8 @@ footer>a{
   justify-content: center;
   grid-column: 3/4;
   grid-row: 3/4;
-  max-width: 355px;
-  max-height: 48px;
+  max-width: 22.188em;
+  max-height: 3em;
 }
 
 
@@ -3300,7 +3356,7 @@ footer> ul:nth-of-type(5){
   display: flex;
   flex-direction: row;
   gap:1em;
-  border-radius: 10px;
+  border-radius: 0.625em;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -3314,7 +3370,7 @@ footer> ul:nth-of-type(5){
 
 footer> ul:nth-of-type(5) li img{
   height:auto ;
-  width: 30px;
+  width: 1.875em;
   display: flex;
   flex-direction: row;
 }
@@ -3337,7 +3393,7 @@ footer>ul:nth-of-type(6){
 
 footer> ul:nth-of-type(6) li img{
   height:auto ;
-  width: 30px;
+  width: 1.875em;
   display: flex;
   flex-direction: row;
 }
@@ -3356,7 +3412,7 @@ footer>ul:nth-of-type(7){
   justify-content: center;
   margin-top: 0em;
   background-color: var(--color-backgroundwit);
-  border-radius: 10px;
+  border-radius: 0.625em;
   grid-column: 1/4;
   grid-row: 6/7;
 }
@@ -3364,22 +3420,17 @@ footer>ul:nth-of-type(7){
 
 footer>ul:nth-of-type(7) p{
   text-decoration: none;
-  font-family: "Apercu Pro";
-  font-size: 12px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
   color:var(--color-text-lightgray) ;
 }
 
 footer>ul:nth-of-type(7) a{
   text-decoration: none;
   color: var(--color-text-zwart);
-  font-family: "Apercu Pro";
-  font-size: 12px;
+  font-family: "Apercu Pro","Neue","Helvetica", "Arial","Sans";
+  font-size: 0.75em;
 }
-
-
-
-
-
 
 
 
@@ -3402,10 +3453,10 @@ footer>ul:nth-of-type(7) a{
 /* styling voor de header als de browser minimaal 38em breed is */
 /****************************************************************/
 
-@media (min-width:1023px) {
+@media (min-width:63.938em) {
   
 body{
-  max-width:1297px;
+  max-width:81.063em;
   margin: auto;
 }
 
@@ -3445,7 +3496,7 @@ body{
   
     header{
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 82px 50px ; 
+      grid-template-rows: 5.125em 3.125em ; 
       padding-left: 2em;
       padding-right: 2em;
       background: var(--general-background);
@@ -3468,12 +3519,12 @@ body{
     
     header>div:nth-of-type(1) a img{
       width: auto;
-      height: 50px;
+      height: 3.125em;
     }
   
     header>div:nth-last-of-type(2) a img{
       width: auto;
-      height: 25px;
+      height: 1.563em;
       padding-left:1.8em;
     }
   
@@ -3501,7 +3552,7 @@ body{
       grid-template-columns: 10fr 1fr;
       padding: 0.1em 1em 0.1em 1em;
       border-radius: 2em;
-      border: 1px black solid;
+      border: 0.063em black solid;
       justify-self: center;
       background-color: var(--color-background);
       margin: 0.5em;
@@ -3522,7 +3573,7 @@ body{
       display: flex;
       flex-direction: row;
       gap:.5em;
-      width: 985px;
+      width: 61.563em;
     }
   
     header> nav img{
@@ -3548,12 +3599,12 @@ body{
     }
   
     header> nav ul:first-of-type p{
-      font-size: 16px;
+      font-size: 1em;
       white-space: nowrap;
     }
   
     header>nav ul:first-of-type li a {
-      height: 14px;
+      height: 0.875em;
      
     }
     /*DE MAIN*************************************************************/
@@ -3580,13 +3631,13 @@ body{
       grid-column: 1/2;
       grid-row: 2/3;
       margin-left: 2em;
-      max-width: 510px;
+      max-width: 31.875em;
     }
     
     main> article:first-of-type a{
       grid-column: 1/2;
       grid-row: 3/4;
-      height: 50px;
+      height: 3.125em;
       margin-left: 2em;
       margin-top: 2em;
       margin-bottom: 5em;
@@ -3678,39 +3729,57 @@ body{
  main div{
   gap: 1em;
   width: 100%;
-  
  }
+
  main>div article:nth-of-type(2) {
-  height: 450px;
-  width: 400px;
+  height: 28.125em;
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 main>div article:nth-of-type(1) a img:nth-of-type(2) {
-  width: 18.25px;
-  height: 23.14px;
-  margin-bottom: 10em;
-}
- main>div article:nth-of-type(1) {
-  height: 450px;
-  width: 400px;
-}
-main>div article:nth-of-type(2) a img:nth-of-type(2) {
-  width: 18.25px;
-  height: 23.14px;
+  width: 1.141em;
+  height: 1.446em;
   margin-bottom: 12em;
 }
+ main>div article:nth-of-type(1) {
+  height: 28.125em;
+  width: 25em;
+}
+main>div article:nth-of-type(2) a img:nth-of-type(2) {
+  width: 1.141em;
+  height: 1.446em;
+  margin-bottom: 14em;
+}
  main>div article:nth-of-type(3) {
-  height: 450px;
-  width: 400px;
+  height: 28.125em;
+  width: 25em;
 }
 
 main>div article:nth-of-type(3) a img:nth-of-type(2) {
-  width: 18.25px;
-  height: 23.14px;
+  width: 1.141em;
+  height: 1.446em;
   margin-bottom: 14em;
 }
 
+main>div article:nth-of-type(1) a {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  grid-template-columns: repeat(1,  23.125em);
+}
 
+main>div article:nth-of-type(2) a {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  grid-template-columns: repeat(1, 23.125em);
+}
+main>div article:nth-of-type(3) a {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+  grid-template-columns: repeat(1, 23.125em);
+}
 
 /*Footer*/
 footer{
@@ -3747,7 +3816,7 @@ footer> ul:nth-of-type(3){
 footer ul:nth-of-type(5){
   grid-row: 2/3;
   grid-column: 4/5;
-  max-width:120px;
+  max-width: 7.5em;
   display: flex;
   justify-self: center;
   align-self: center;
@@ -3756,7 +3825,7 @@ footer ul:nth-of-type(5){
 footer ul:nth-of-type(6){
   grid-row: 3/4;
   grid-column: 4/5;
-   max-width:190px;
+   max-width: 11.875em;
   display: flex;
   justify-self: center;
   align-self: flex-start;
