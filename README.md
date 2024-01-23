@@ -356,6 +356,10 @@ vragen morgen: Ik heb ook nog wat vragen over de toegankelijkheid test die ik ge
 
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+  <img src="readme-images/1" width="375px" alt="">
+  <img src="readme-images/2" width="375px" alt="">
+  <img src="readme-images/3" width="375px" alt="">
+  <img src="readme-images/4" width="375px" alt="">
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
@@ -369,6 +373,8 @@ toetsenbord
 - Je kon eerst niet door de footer heen, dus de betaalmethodes en deels van de andere iconen was niet een link. nu wel.
 
   Ik vond de officiele website al best netjes over het algemeen. 
+
+
 
 </details>
 
