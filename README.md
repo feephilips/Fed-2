@@ -356,10 +356,10 @@ vragen morgen: Ik heb ook nog wat vragen over de toegankelijkheid test die ik ge
 
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
-  <img src="readme-images/1" width="375px" alt="">
-  <img src="readme-images/2" width="375px" alt="">
-  <img src="readme-images/3" width="375px" alt="">
-  <img src="readme-images/4" width="375px" alt="">
+  <img src="readme-images/eerste" width="375px" alt="">
+  <img src="readme-images/tweede" width="375px" alt="">
+  <img src="readme-images/derde" width="375px" alt="">
+  <img src="readme-images/vierde" width="375px" alt="">
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
