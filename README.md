@@ -356,10 +356,11 @@ vragen morgen: Ik heb ook nog wat vragen over de toegankelijkheid test die ik ge
 
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
-  <img src="readme-images/eerste" width="375px" alt="">
-  <img src="readme-images/tweede" width="375px" alt="">
-  <img src="readme-images/derde" width="375px" alt="">
-  <img src="readme-images/vierde" width="375px" alt="">
+
+<img width="283" alt="eerste" src="https://github.com/feephilips/Fed-2/assets/118175206/367ce78f-0069-45c0-bdf5-450be81e9d3e">
+<img width="307" alt="tweede" src="https://github.com/feephilips/Fed-2/assets/118175206/4e8b3c1c-14cd-4ac1-a9f5-a2fe590207bd">
+<img width="332" alt="derde" src="https://github.com/feephilips/Fed-2/assets/118175206/e3ba11f1-115d-44da-8e11-2322bc1ff5dd">
+<img width="301" alt="vierde" src="https://github.com/feephilips/Fed-2/assets/118175206/a8c9e7a2-4dc5-4da1-b026-a8f825fe820a">
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
